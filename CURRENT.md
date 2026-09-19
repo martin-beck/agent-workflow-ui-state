@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0071](tasks/AR-0071.md): Remote self-bootstrapping UI handoff | Bootstrap the GUI/TUI decision client from the authoritative SSH host on an unprepared controlling machine. | Implement and qualify self-bootstrapping remote UI handoff. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |

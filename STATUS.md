@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**70 ARs tracked** across 1 active status categories.
+**71 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -98,6 +98,7 @@ flowchart LR
         AR_0068["AR-0068 - Done"]:::status_done
         AR_0069["AR-0069 - Done"]:::status_done
         AR_0070["AR-0070 - Done"]:::status_done
+        AR_0071["AR-0071 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -219,7 +220,10 @@ flowchart LR
     AR_0067 --> AR_0070
     AR_0068 --> AR_0069
     AR_0068 --> AR_0070
+    AR_0068 --> AR_0071
     AR_0069 --> AR_0070
+    AR_0069 --> AR_0071
+    AR_0070 --> AR_0071
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -301,11 +305,18 @@ flowchart LR
 | [AR-0065](tasks/AR-0065.md) | [AR-0059](tasks/AR-0059.md), [AR-0061](tasks/AR-0061.md), [AR-0063](tasks/AR-0063.md) | [AR-0066](tasks/AR-0066.md), [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md) |
 | [AR-0066](tasks/AR-0066.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md) | None |
 | [AR-0067](tasks/AR-0067.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md) | [AR-0069](tasks/AR-0069.md), [AR-0070](tasks/AR-0070.md) |
-| [AR-0068](tasks/AR-0068.md) | [AR-0055](tasks/AR-0055.md), [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md), [AR-0059](tasks/AR-0059.md), [AR-0065](tasks/AR-0065.md) | [AR-0069](tasks/AR-0069.md), [AR-0070](tasks/AR-0070.md) |
-| [AR-0069](tasks/AR-0069.md) | [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md) | [AR-0070](tasks/AR-0070.md) |
-| [AR-0070](tasks/AR-0070.md) | [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md), [AR-0069](tasks/AR-0069.md) | None |
+| [AR-0068](tasks/AR-0068.md) | [AR-0055](tasks/AR-0055.md), [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md), [AR-0059](tasks/AR-0059.md), [AR-0065](tasks/AR-0065.md) | [AR-0069](tasks/AR-0069.md), [AR-0070](tasks/AR-0070.md), [AR-0071](tasks/AR-0071.md) |
+| [AR-0069](tasks/AR-0069.md) | [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md) | [AR-0070](tasks/AR-0070.md), [AR-0071](tasks/AR-0071.md) |
+| [AR-0070](tasks/AR-0070.md) | [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md), [AR-0069](tasks/AR-0069.md) | [AR-0071](tasks/AR-0071.md) |
+| [AR-0071](tasks/AR-0071.md) | [AR-0068](tasks/AR-0068.md), [AR-0069](tasks/AR-0069.md), [AR-0070](tasks/AR-0070.md) | None |
 
 ## Complete AR inventory
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0071](tasks/AR-0071.md): Remote self-bootstrapping UI handoff | Unclaimed | Bootstrap the GUI/TUI decision client from the authoritative SSH host on an unprepared controlling machine. | Implement and qualify self-bootstrapping remote UI handoff. |
 
 ### Done (70)
 
