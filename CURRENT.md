@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0071](tasks/AR-0071.md): Remote self-bootstrapping UI handoff | Bootstrap the GUI/TUI decision client from the authoritative SSH host on an unprepared controlling machine. | Release and qualify the single-temp-path bootstrap hardening. | - |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -39,6 +33,7 @@ Never edit this file directly.
 | P0 | [AR-0049](tasks/AR-0049.md): Context-backed live event transport | Wire real context-backed TUI actions to Coordinator-compatible envelopes. | Route live context actions through the revision-bound transport and expose acknowledgements without changing legacy callbacks. | - |
 | P0 | [AR-0067](tasks/AR-0067.md): GUI batch journal and guarded lifecycle | Ensure GUI sessions return every revision-bound decision event and cannot silently lose or discard work. | Verify GUI journal semantics during the next UI refresh. | - |
 | P0 | [AR-0070](tasks/AR-0070.md): Canonical live event envelope | Make every live UI event schema-valid and consumable by the Coordinator bridge. | Verify future protocol extensions against the versioned bridge contract. | - |
+| P0 | [AR-0071](tasks/AR-0071.md): Remote self-bootstrapping UI handoff | Bootstrap the GUI/TUI decision client from the authoritative SSH host on an unprepared controlling machine. | Verify future launcher releases against the environment-negotiation contract. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
