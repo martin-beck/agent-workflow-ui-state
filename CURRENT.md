@@ -3,6 +3,15 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0073](tasks/AR-0073.md): Short decision-batch token contract | Define authoritative short tokens for complete, revision-bound decision batches. | Design and validate the revision-bound short batch-token schema and coordinator persistence mapping. | - |
+| P1 | [AR-0074](tasks/AR-0074.md): One-time awui launcher installation | Install the awui launcher once so subsequent decision commands are short. | Specify and implement the reversible no-admin Windows awui launcher installation and configuration contract. | - |
+| P1 | [AR-0075](tasks/AR-0075.md): Tokenized short decision launcher | Run a complete remote decision batch with a 20–30 character command. | Implement awui token resolution and GUI-first/TUI-fallback execution for complete decision batches. | - |
+| P1 | [AR-0076](tasks/AR-0076.md): Short-launcher security and compatibility gates | Prove and document the tokenized short-command decision workflow end to end. | Add cross-platform security, integration, CI, release, and user-documentation gates for the short launcher workflow. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
