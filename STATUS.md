@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**76 ARs tracked** across 1 active status categories.
+**77 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -104,6 +104,7 @@ flowchart LR
         AR_0074["AR-0074 - Done"]:::status_done
         AR_0075["AR-0075 - Done"]:::status_done
         AR_0076["AR-0076 - Done"]:::status_done
+        AR_0077["AR-0077 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -237,6 +238,8 @@ flowchart LR
     AR_0074 --> AR_0075
     AR_0074 --> AR_0076
     AR_0075 --> AR_0076
+    AR_0075 --> AR_0077
+    AR_0076 --> AR_0077
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -325,10 +328,17 @@ flowchart LR
 | [AR-0072](tasks/AR-0072.md) | [AR-0071](tasks/AR-0071.md) | [AR-0073](tasks/AR-0073.md) |
 | [AR-0073](tasks/AR-0073.md) | [AR-0072](tasks/AR-0072.md) | [AR-0074](tasks/AR-0074.md), [AR-0075](tasks/AR-0075.md), [AR-0076](tasks/AR-0076.md) |
 | [AR-0074](tasks/AR-0074.md) | [AR-0073](tasks/AR-0073.md) | [AR-0075](tasks/AR-0075.md), [AR-0076](tasks/AR-0076.md) |
-| [AR-0075](tasks/AR-0075.md) | [AR-0073](tasks/AR-0073.md), [AR-0074](tasks/AR-0074.md) | [AR-0076](tasks/AR-0076.md) |
-| [AR-0076](tasks/AR-0076.md) | [AR-0073](tasks/AR-0073.md), [AR-0074](tasks/AR-0074.md), [AR-0075](tasks/AR-0075.md) | None |
+| [AR-0075](tasks/AR-0075.md) | [AR-0073](tasks/AR-0073.md), [AR-0074](tasks/AR-0074.md) | [AR-0076](tasks/AR-0076.md), [AR-0077](tasks/AR-0077.md) |
+| [AR-0076](tasks/AR-0076.md) | [AR-0073](tasks/AR-0073.md), [AR-0074](tasks/AR-0074.md), [AR-0075](tasks/AR-0075.md) | [AR-0077](tasks/AR-0077.md) |
+| [AR-0077](tasks/AR-0077.md) | [AR-0075](tasks/AR-0075.md), [AR-0076](tasks/AR-0076.md) | None |
 
 ## Complete AR inventory
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0077](tasks/AR-0077.md): POSIX awui installer and bootstrap parity | Unclaimed | Add the Linux/POSIX one-time awui installer and test all bootstrap paths. | Implement and test POSIX installer parity, then merge, release, and update the umbrella pin. |
 
 ### Done (76)
 

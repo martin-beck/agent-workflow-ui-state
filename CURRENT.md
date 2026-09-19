@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0077](tasks/AR-0077.md): POSIX awui installer and bootstrap parity | Add the Linux/POSIX one-time awui installer and test all bootstrap paths. | Implement and test POSIX installer parity, then merge, release, and update the umbrella pin. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
