@@ -5,7 +5,7 @@
 
 ## Portfolio overview
 
-**71 ARs tracked** across 1 active status categories.
+**72 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
@@ -14,7 +14,7 @@
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 71 |
+| **Done** | Accepted, integrated, and durably verified | 72 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -99,6 +99,7 @@ flowchart LR
         AR_0069["AR-0069 - Done"]:::status_done
         AR_0070["AR-0070 - Done"]:::status_done
         AR_0071["AR-0071 - Done"]:::status_done
+        AR_0072["AR-0072 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -224,6 +225,7 @@ flowchart LR
     AR_0069 --> AR_0070
     AR_0069 --> AR_0071
     AR_0070 --> AR_0071
+    AR_0071 --> AR_0072
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -308,11 +310,12 @@ flowchart LR
 | [AR-0068](tasks/AR-0068.md) | [AR-0055](tasks/AR-0055.md), [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md), [AR-0059](tasks/AR-0059.md), [AR-0065](tasks/AR-0065.md) | [AR-0069](tasks/AR-0069.md), [AR-0070](tasks/AR-0070.md), [AR-0071](tasks/AR-0071.md) |
 | [AR-0069](tasks/AR-0069.md) | [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md) | [AR-0070](tasks/AR-0070.md), [AR-0071](tasks/AR-0071.md) |
 | [AR-0070](tasks/AR-0070.md) | [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md), [AR-0069](tasks/AR-0069.md) | [AR-0071](tasks/AR-0071.md) |
-| [AR-0071](tasks/AR-0071.md) | [AR-0068](tasks/AR-0068.md), [AR-0069](tasks/AR-0069.md), [AR-0070](tasks/AR-0070.md) | None |
+| [AR-0071](tasks/AR-0071.md) | [AR-0068](tasks/AR-0068.md), [AR-0069](tasks/AR-0069.md), [AR-0070](tasks/AR-0070.md) | [AR-0072](tasks/AR-0072.md) |
+| [AR-0072](tasks/AR-0072.md) | [AR-0071](tasks/AR-0071.md) | None |
 
 ## Complete AR inventory
 
-### Done (71)
+### Done (72)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -387,3 +390,4 @@ flowchart LR
 | P1 | [AR-0066](tasks/AR-0066.md): GUI UX and handoff documentation | Unclaimed | Document the professional GUI interaction model and the one-command local/remote workflow. | Verify documentation links during the next UI release refresh. |
 | P1 | [AR-0068](tasks/AR-0068.md): Portable runtime bootstrap and environment negotiation | Unclaimed | Make the one-command handoff able to provision a temporary compatible UI runtime on the controlling machine. | Verify trusted native ARM archives when available. |
 | P1 | [AR-0069](tasks/AR-0069.md): Remote GUI/TUI invocation matrix | Unclaimed | Exercise complete request/UI/result flows across remote Linux, Windows-compatible, and architecture-matrix environments. | Extend to trusted native ARM runners when available. |
+| P1 | [AR-0072](tasks/AR-0072.md): Compact remote decision handoff | Unclaimed | Shorten Windows/Linux remote self-bootstrap commands without weakening the decision handoff contract. | Verify future launcher releases against the compact handoff contract. |
