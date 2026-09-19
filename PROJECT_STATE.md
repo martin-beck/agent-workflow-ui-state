@@ -15,10 +15,10 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35468904290 | `3825b5b2495a` | push | TUI scenarios | in_progress:- |
+| 35468904290 | `3825b5b2495a` | push | TUI scenarios | completed:success |
 | 35468904280 | `3825b5b2495a` | push | TUI Windows compatibility | completed:success |
 | 35468898648 | `3825b5b2495a` | push | TUI Windows compatibility | completed:success |
-| 35468898646 | `3825b5b2495a` | push | TUI scenarios | in_progress:- |
+| 35468898646 | `3825b5b2495a` | push | TUI scenarios | completed:success |
 | 35468658523 | `a150cdf1ed3b` | pull_request | TUI Windows compatibility | completed:success |
 | 35468658517 | `a150cdf1ed3b` | pull_request | TUI scenarios | completed:success |
 | 35468658226 | `a150cdf1ed3b` | push | TUI Windows compatibility | completed:success |
