@@ -3,6 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0078](tasks/AR-0078.md): Coordinator-issued dynamic decision tokens | Generate an authoritative short token dynamically for each complete revision-bound decision batch. | Specify and implement Coordinator issuance, registry, audit, and batch-binding behavior. | - |
+| P0 | [AR-0079](tasks/AR-0079.md): Remote token resolution and single-use completion | Resolve dynamically issued tokens from remote machines and consume them exactly once after durable batch completion. | Implement atomic completion/consumption and a real SSH end-to-end test path for GUI and TUI. | - |
+| P1 | [AR-0080](tasks/AR-0080.md): Remote-machine installation and environment prerequisites | Make dynamic-token launch reliable on fresh Windows, Linux, and macOS controlling machines. | Harden installer configuration, environment negotiation, GUI-first selection, and cleanup tests. | - |
+| P1 | [AR-0081](tasks/AR-0081.md): Real-environment dynamic-token qualification | Qualify Coordinator-issued token sessions across separate machines, platforms, architectures, and failure modes. | Build disposable SSH/CI matrix tests that issue, execute, persist, retry, and replay one complete batch. | - |
+| P1 | [AR-0082](tasks/AR-0082.md): Dynamic-token operator documentation and compatibility release | Publish the supported dynamic-token workflow and synchronize compatible Agent Workflow releases after qualification. | Refresh operator docs, generated scenarios, stale release references, and compatibility pins after AR-0078 through AR-0081. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
