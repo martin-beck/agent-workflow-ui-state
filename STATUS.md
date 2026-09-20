@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**77 ARs tracked** across 2 active status categories.
+**77 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 76 |
+| **Done** | Accepted, integrated, and durably verified | 77 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -104,7 +104,7 @@ flowchart LR
         AR_0074["AR-0074 - Done"]:::status_done
         AR_0075["AR-0075 - Done"]:::status_done
         AR_0076["AR-0076 - Done"]:::status_done
-        AR_0077["AR-0077 - Open"]:::status_open
+        AR_0077["AR-0077 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -334,13 +334,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0077](tasks/AR-0077.md): POSIX awui installer and bootstrap parity | Unclaimed | Add the Linux/POSIX one-time awui installer and test all bootstrap paths. | Implement and test POSIX installer parity, then merge, release, and update the umbrella pin. |
-
-### Done (76)
+### Done (77)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -420,3 +414,4 @@ flowchart LR
 | P1 | [AR-0074](tasks/AR-0074.md): One-time awui launcher installation | Unclaimed | Install the awui launcher once so subsequent decision commands are short. | Verify future installer releases against the per-user security and repair contract. |
 | P1 | [AR-0075](tasks/AR-0075.md): Tokenized short decision launcher | Unclaimed | Run a complete remote decision batch with a 20–30 character command. | Verify future launcher releases against the tokenized batch and GUI/TUI bridge contract. |
 | P1 | [AR-0076](tasks/AR-0076.md): Short-launcher security and compatibility gates | Unclaimed | Prove and document the tokenized short-command decision workflow end to end. | Verify future releases against the short-launcher CI and documentation gates. |
+| P1 | [AR-0077](tasks/AR-0077.md): POSIX awui installer and bootstrap parity | Unclaimed | Add the Linux/POSIX one-time awui installer and test all bootstrap paths. | Verify future POSIX installer releases against the bootstrap parity contract. |

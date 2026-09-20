@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0077](tasks/AR-0077.md): POSIX awui installer and bootstrap parity | Add the Linux/POSIX one-time awui installer and test all bootstrap paths. | Implement and test POSIX installer parity, then merge, release, and update the umbrella pin. | - |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -89,3 +83,4 @@ Never edit this file directly.
 | P1 | [AR-0074](tasks/AR-0074.md): One-time awui launcher installation | Install the awui launcher once so subsequent decision commands are short. | Verify future installer releases against the per-user security and repair contract. | - |
 | P1 | [AR-0075](tasks/AR-0075.md): Tokenized short decision launcher | Run a complete remote decision batch with a 20–30 character command. | Verify future launcher releases against the tokenized batch and GUI/TUI bridge contract. | - |
 | P1 | [AR-0076](tasks/AR-0076.md): Short-launcher security and compatibility gates | Prove and document the tokenized short-command decision workflow end to end. | Verify future releases against the short-launcher CI and documentation gates. | - |
+| P1 | [AR-0077](tasks/AR-0077.md): POSIX awui installer and bootstrap parity | Add the Linux/POSIX one-time awui installer and test all bootstrap paths. | Verify future POSIX installer releases against the bootstrap parity contract. | - |
