@@ -3,16 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0078](tasks/AR-0078.md): Coordinator-issued dynamic decision tokens | Generate an authoritative short token dynamically for each complete revision-bound decision batch. | Specify and implement Coordinator issuance, registry, audit, and batch-binding behavior. | - |
-| P0 | [AR-0079](tasks/AR-0079.md): Remote token resolution and single-use completion | Resolve dynamically issued tokens from remote machines and consume them exactly once after durable batch completion. | Implement atomic completion/consumption and a real SSH end-to-end test path for GUI and TUI. | - |
-| P1 | [AR-0080](tasks/AR-0080.md): Remote-machine installation and environment prerequisites | Make dynamic-token launch reliable on fresh Windows, Linux, and macOS controlling machines. | Harden installer configuration, environment negotiation, GUI-first selection, and cleanup tests. | - |
-| P1 | [AR-0081](tasks/AR-0081.md): Real-environment dynamic-token qualification | Qualify Coordinator-issued token sessions across separate machines, platforms, architectures, and failure modes. | Build disposable SSH/CI matrix tests that issue, execute, persist, retry, and replay one complete batch. | - |
-| P1 | [AR-0082](tasks/AR-0082.md): Dynamic-token operator documentation and compatibility release | Publish the supported dynamic-token workflow and synchronize compatible Agent Workflow releases after qualification. | Refresh operator docs, generated scenarios, stale release references, and compatibility pins after AR-0078 through AR-0081. | - |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -44,6 +34,8 @@ Never edit this file directly.
 | P0 | [AR-0067](tasks/AR-0067.md): GUI batch journal and guarded lifecycle | Ensure GUI sessions return every revision-bound decision event and cannot silently lose or discard work. | Verify GUI journal semantics during the next UI refresh. | - |
 | P0 | [AR-0070](tasks/AR-0070.md): Canonical live event envelope | Make every live UI event schema-valid and consumable by the Coordinator bridge. | Verify future protocol extensions against the versioned bridge contract. | - |
 | P0 | [AR-0071](tasks/AR-0071.md): Remote self-bootstrapping UI handoff | Bootstrap the GUI/TUI decision client from the authoritative SSH host on an unprepared controlling machine. | Verify future launcher releases against the environment-negotiation contract. | - |
+| P0 | [AR-0078](tasks/AR-0078.md): Coordinator-issued dynamic decision tokens | Generate an authoritative short token dynamically for each complete revision-bound decision batch. | Verify future Coordinator token issuers against the batch-binding and privacy contract. | - |
+| P0 | [AR-0079](tasks/AR-0079.md): Remote token resolution and single-use completion | Resolve dynamically issued tokens from remote machines and consume them exactly once after durable batch completion. | Verify future remote finalizers against single-use, retry, and replay guarantees. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
@@ -94,3 +86,6 @@ Never edit this file directly.
 | P1 | [AR-0075](tasks/AR-0075.md): Tokenized short decision launcher | Run a complete remote decision batch with a 20–30 character command. | Verify future launcher releases against the tokenized batch and GUI/TUI bridge contract. | - |
 | P1 | [AR-0076](tasks/AR-0076.md): Short-launcher security and compatibility gates | Prove and document the tokenized short-command decision workflow end to end. | Verify future releases against the short-launcher CI and documentation gates. | - |
 | P1 | [AR-0077](tasks/AR-0077.md): POSIX awui installer and bootstrap parity | Add the Linux/POSIX one-time awui installer and test all bootstrap paths. | Verify future POSIX installer releases against the bootstrap parity contract. | - |
+| P1 | [AR-0080](tasks/AR-0080.md): Remote-machine installation and environment prerequisites | Make dynamic-token launch reliable on fresh Windows, Linux, and macOS controlling machines. | Verify future installer releases against fresh-machine routing and capability detection. | - |
+| P1 | [AR-0081](tasks/AR-0081.md): Real-environment dynamic-token qualification | Qualify Coordinator-issued token sessions across separate machines, platforms, architectures, and failure modes. | Extend the qualification matrix when additional supported architectures or host operating systems are introduced. | - |
+| P1 | [AR-0082](tasks/AR-0082.md): Dynamic-token operator documentation and compatibility release | Publish the supported dynamic-token workflow and synchronize compatible Agent Workflow releases after qualification. | Verify future releases against the dynamic-token operator and compatibility contract. | - |
