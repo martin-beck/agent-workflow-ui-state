@@ -3,6 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0083](tasks/AR-0083.md): PowerShell inline-bootstrap compatibility | Make the documented Windows bootstrap command work both from a temporary script file and from inline PowerShell ScriptBlock execution. | Add a disposable PowerShell harness that executes the published installer through irm and ScriptBlock::Create, then verify install, repair, and cleanup paths. | - |
+| P0 | [AR-0084](tasks/AR-0084.md): Authoritative dynamic-token issuance and publication | Ensure the Coordinator issues each batch token on the authoritative host and publishes the matching registry and request atomically before the user command is printed. | Specify and test the Coordinator-to-authority publication transaction, including crash recovery, expiry, and no-local-only-token failure. | - |
+| P1 | [AR-0085](tasks/AR-0085.md): Real Windows SSH GUI/TUI qualification | Qualify the complete tokenized batched decision flow from Windows PowerShell through SSH for GUI-first and TUI fallback execution. | Run the matrix on clean Windows runners and a reachable SSH authority, recording command, backend selection, returned journal, and cleanup evidence. | - |
+| P1 | [AR-0086](tasks/AR-0086.md): Authoritative batch fixture and scenario documentation | Generate and validate complete multi-AR decision fixtures and scenario documentation from the authoritative AR graph. | Add a fixture audit that rejects dropped top-level requests, mismatched packet digests, and stale generated screenshots or recordings. | - |
+| P1 | [AR-0087](tasks/AR-0087.md): Release and bootstrap freshness gate | Keep published UI releases, installer URLs, bootstrap hashes, umbrella pins, and operator commands mutually consistent. | Add a release gate that tests the exact published tag and rejects stale local checkouts or mismatched installer hashes. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
