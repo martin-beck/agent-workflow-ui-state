@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0089](tasks/AR-0089.md): UI compatibility release and umbrella synchronization | Publish a release containing the completed UI work and update the Agent Workflow umbrella to the exact compatible release and commit. | Bump the UI package release, run the complete product gates, publish the immutable tag, and merge the umbrella pin update. | codex-ar0089 |
+| P1 | [AR-0089](tasks/AR-0089.md): UI compatibility release and umbrella synchronization | v0.6.0 is published from the completed UI main and the umbrella pins its exact tag and commit. | Verify future UI releases against the compatibility and immutable-pin contract. | codex-ar0089 |
 
 ## Done
 
