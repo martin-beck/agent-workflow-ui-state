@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. | ar0103_resilience |
-| P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. | ar0102-audit-control |
 
 ## Planned
 
@@ -121,3 +120,4 @@ Never edit this file directly.
 | P1 | [AR-0099](tasks/AR-0099.md): Discoverable keyboard, accessibility, and focus system | Make the full decision workflow discoverable, keyboard-complete, and accessible with consistent GUI/TUI controls. | Implement the shared command palette, key-hint footer, focus model, and accessibility checks for GUI and TUI. | - |
 | P1 | [AR-0100](tasks/AR-0100.md): Decision workspace intelligence and batch control | Turn the decision list into a scalable workspace with batch progress, dependency explanations, and evidence drill-down. | Implement dependency-aware batch filtering, grouping, progress, and evidence drill-down in both renderers. | - |
 | P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Review and merge PR #123 after required CI checks pass; then close AR-0101. | - |
+| P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. | - |
