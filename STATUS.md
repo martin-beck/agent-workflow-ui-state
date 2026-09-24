@@ -14,7 +14,7 @@
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 85 |
+| **Done** | Accepted, integrated, and durably verified | 82 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -208,7 +208,6 @@ flowchart LR
     AR_0053 --> AR_0078
     AR_0054 --> AR_0055
     AR_0054 --> AR_0060
-    AR_0054 --> AR_0086
     AR_0055 --> AR_0057
     AR_0055 --> AR_0058
     AR_0055 --> AR_0068
@@ -238,7 +237,6 @@ flowchart LR
     AR_0065 --> AR_0079
     AR_0067 --> AR_0069
     AR_0067 --> AR_0070
-    AR_0067 --> AR_0086
     AR_0068 --> AR_0069
     AR_0068 --> AR_0070
     AR_0068 --> AR_0071
@@ -246,7 +244,6 @@ flowchart LR
     AR_0069 --> AR_0070
     AR_0069 --> AR_0071
     AR_0069 --> AR_0081
-    AR_0069 --> AR_0085
     AR_0070 --> AR_0071
     AR_0070 --> AR_0078
     AR_0071 --> AR_0072
@@ -265,11 +262,9 @@ flowchart LR
     AR_0077 --> AR_0080
     AR_0078 --> AR_0079
     AR_0078 --> AR_0082
-    AR_0078 --> AR_0084
     AR_0079 --> AR_0080
     AR_0079 --> AR_0081
     AR_0079 --> AR_0082
-    AR_0079 --> AR_0084
     AR_0080 --> AR_0081
     AR_0080 --> AR_0082
     AR_0081 --> AR_0082
@@ -346,7 +341,7 @@ flowchart LR
 | [AR-0051](tasks/AR-0051.md) | [AR-0050](tasks/AR-0050.md) | [AR-0052](tasks/AR-0052.md) |
 | [AR-0052](tasks/AR-0052.md) | [AR-0051](tasks/AR-0051.md) | [AR-0053](tasks/AR-0053.md) |
 | [AR-0053](tasks/AR-0053.md) | [AR-0052](tasks/AR-0052.md) | [AR-0054](tasks/AR-0054.md), [AR-0056](tasks/AR-0056.md), [AR-0078](tasks/AR-0078.md) |
-| [AR-0054](tasks/AR-0054.md) | [AR-0053](tasks/AR-0053.md) | [AR-0055](tasks/AR-0055.md), [AR-0060](tasks/AR-0060.md), [AR-0086](tasks/AR-0086.md) |
+| [AR-0054](tasks/AR-0054.md) | [AR-0053](tasks/AR-0053.md) | [AR-0055](tasks/AR-0055.md), [AR-0060](tasks/AR-0060.md) |
 | [AR-0055](tasks/AR-0055.md) | [AR-0054](tasks/AR-0054.md) | [AR-0057](tasks/AR-0057.md), [AR-0058](tasks/AR-0058.md), [AR-0068](tasks/AR-0068.md) |
 | [AR-0056](tasks/AR-0056.md) | [AR-0053](tasks/AR-0053.md) | [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md), [AR-0068](tasks/AR-0068.md) |
 | [AR-0057](tasks/AR-0057.md) | [AR-0055](tasks/AR-0055.md), [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md) | [AR-0061](tasks/AR-0061.md) |
@@ -359,9 +354,9 @@ flowchart LR
 | [AR-0064](tasks/AR-0064.md) | [AR-0063](tasks/AR-0063.md) | [AR-0066](tasks/AR-0066.md), [AR-0067](tasks/AR-0067.md) |
 | [AR-0065](tasks/AR-0065.md) | [AR-0059](tasks/AR-0059.md), [AR-0061](tasks/AR-0061.md), [AR-0063](tasks/AR-0063.md) | [AR-0066](tasks/AR-0066.md), [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md), [AR-0079](tasks/AR-0079.md) |
 | [AR-0066](tasks/AR-0066.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md) | None |
-| [AR-0067](tasks/AR-0067.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md) | [AR-0069](tasks/AR-0069.md), [AR-0070](tasks/AR-0070.md), [AR-0086](tasks/AR-0086.md) |
+| [AR-0067](tasks/AR-0067.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md) | [AR-0069](tasks/AR-0069.md), [AR-0070](tasks/AR-0070.md) |
 | [AR-0068](tasks/AR-0068.md) | [AR-0055](tasks/AR-0055.md), [AR-0056](tasks/AR-0056.md), [AR-0058](tasks/AR-0058.md), [AR-0059](tasks/AR-0059.md), [AR-0065](tasks/AR-0065.md) | [AR-0069](tasks/AR-0069.md), [AR-0070](tasks/AR-0070.md), [AR-0071](tasks/AR-0071.md), [AR-0080](tasks/AR-0080.md) |
-| [AR-0069](tasks/AR-0069.md) | [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md) | [AR-0070](tasks/AR-0070.md), [AR-0071](tasks/AR-0071.md), [AR-0081](tasks/AR-0081.md), [AR-0085](tasks/AR-0085.md) |
+| [AR-0069](tasks/AR-0069.md) | [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md) | [AR-0070](tasks/AR-0070.md), [AR-0071](tasks/AR-0071.md), [AR-0081](tasks/AR-0081.md) |
 | [AR-0070](tasks/AR-0070.md) | [AR-0067](tasks/AR-0067.md), [AR-0068](tasks/AR-0068.md), [AR-0069](tasks/AR-0069.md) | [AR-0071](tasks/AR-0071.md), [AR-0078](tasks/AR-0078.md) |
 | [AR-0071](tasks/AR-0071.md) | [AR-0068](tasks/AR-0068.md), [AR-0069](tasks/AR-0069.md), [AR-0070](tasks/AR-0070.md) | [AR-0072](tasks/AR-0072.md) |
 | [AR-0072](tasks/AR-0072.md) | [AR-0071](tasks/AR-0071.md) | [AR-0073](tasks/AR-0073.md) |
@@ -370,8 +365,8 @@ flowchart LR
 | [AR-0075](tasks/AR-0075.md) | [AR-0073](tasks/AR-0073.md), [AR-0074](tasks/AR-0074.md) | [AR-0076](tasks/AR-0076.md), [AR-0077](tasks/AR-0077.md), [AR-0079](tasks/AR-0079.md) |
 | [AR-0076](tasks/AR-0076.md) | [AR-0073](tasks/AR-0073.md), [AR-0074](tasks/AR-0074.md), [AR-0075](tasks/AR-0075.md) | [AR-0077](tasks/AR-0077.md) |
 | [AR-0077](tasks/AR-0077.md) | [AR-0075](tasks/AR-0075.md), [AR-0076](tasks/AR-0076.md) | [AR-0080](tasks/AR-0080.md) |
-| [AR-0078](tasks/AR-0078.md) | [AR-0053](tasks/AR-0053.md), [AR-0070](tasks/AR-0070.md), [AR-0073](tasks/AR-0073.md) | [AR-0079](tasks/AR-0079.md), [AR-0082](tasks/AR-0082.md), [AR-0084](tasks/AR-0084.md) |
-| [AR-0079](tasks/AR-0079.md) | [AR-0065](tasks/AR-0065.md), [AR-0075](tasks/AR-0075.md), [AR-0078](tasks/AR-0078.md) | [AR-0080](tasks/AR-0080.md), [AR-0081](tasks/AR-0081.md), [AR-0082](tasks/AR-0082.md), [AR-0084](tasks/AR-0084.md) |
+| [AR-0078](tasks/AR-0078.md) | [AR-0053](tasks/AR-0053.md), [AR-0070](tasks/AR-0070.md), [AR-0073](tasks/AR-0073.md) | [AR-0079](tasks/AR-0079.md), [AR-0082](tasks/AR-0082.md) |
+| [AR-0079](tasks/AR-0079.md) | [AR-0065](tasks/AR-0065.md), [AR-0075](tasks/AR-0075.md), [AR-0078](tasks/AR-0078.md) | [AR-0080](tasks/AR-0080.md), [AR-0081](tasks/AR-0081.md), [AR-0082](tasks/AR-0082.md) |
 | [AR-0080](tasks/AR-0080.md) | [AR-0068](tasks/AR-0068.md), [AR-0074](tasks/AR-0074.md), [AR-0077](tasks/AR-0077.md), [AR-0079](tasks/AR-0079.md) | [AR-0081](tasks/AR-0081.md), [AR-0082](tasks/AR-0082.md) |
 | [AR-0081](tasks/AR-0081.md) | [AR-0069](tasks/AR-0069.md), [AR-0079](tasks/AR-0079.md), [AR-0080](tasks/AR-0080.md) | [AR-0082](tasks/AR-0082.md) |
 | [AR-0082](tasks/AR-0082.md) | [AR-0078](tasks/AR-0078.md), [AR-0079](tasks/AR-0079.md), [AR-0080](tasks/AR-0080.md), [AR-0081](tasks/AR-0081.md) | None |
@@ -428,8 +423,6 @@ flowchart LR
 | P0 | [AR-0071](tasks/AR-0071.md): Remote self-bootstrapping UI handoff | Unclaimed | Bootstrap the GUI/TUI decision client from the authoritative SSH host on an unprepared controlling machine. | Verify future launcher releases against the environment-negotiation contract. |
 | P0 | [AR-0078](tasks/AR-0078.md): Coordinator-issued dynamic decision tokens | Unclaimed | Generate an authoritative short token dynamically for each complete revision-bound decision batch. | Verify future Coordinator token issuers against the batch-binding and privacy contract. |
 | P0 | [AR-0079](tasks/AR-0079.md): Remote token resolution and single-use completion | Unclaimed | Resolve dynamically issued tokens from remote machines and consume them exactly once after durable batch completion. | Verify future remote finalizers against single-use, retry, and replay guarantees. |
-| P0 | [AR-0083](tasks/AR-0083.md): PowerShell inline-bootstrap compatibility | Unclaimed | PowerShell inline bootstrap is scriptblock-safe and covered by disposable Windows tests. | Verify future installer releases against the inline invocation contract. |
-| P0 | [AR-0084](tasks/AR-0084.md): Authoritative dynamic-token issuance and publication | Unclaimed | Authoritative token publication is atomic, private, digest-only, restart-safe, and covered by hosted checks. | Verify future authority publication against the batch-binding and replay contract. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
@@ -483,4 +476,3 @@ flowchart LR
 | P1 | [AR-0080](tasks/AR-0080.md): Remote-machine installation and environment prerequisites | Unclaimed | Make dynamic-token launch reliable on fresh Windows, Linux, and macOS controlling machines. | Verify future installer releases against fresh-machine routing and capability detection. |
 | P1 | [AR-0081](tasks/AR-0081.md): Real-environment dynamic-token qualification | Unclaimed | Qualify Coordinator-issued token sessions across separate machines, platforms, architectures, and failure modes. | Extend the qualification matrix when additional supported architectures or host operating systems are introduced. |
 | P1 | [AR-0082](tasks/AR-0082.md): Dynamic-token operator documentation and compatibility release | Unclaimed | Publish the supported dynamic-token workflow and synchronize compatible Agent Workflow releases after qualification. | Verify future releases against the dynamic-token operator and compatibility contract. |
-| P1 | [AR-0085](tasks/AR-0085.md): Real Windows SSH GUI/TUI qualification | Unclaimed | Windows GUI-first/TUI-fallback SSH qualification is implemented and merged with amd64/arm64 evidence. | Verify future Windows SSH qualification against the capability and batch-journal contract. |
