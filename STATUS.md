@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**87 ARs tracked** across 4 active status categories.
+**87 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -110,7 +110,7 @@ flowchart LR
         AR_0080["AR-0080 - Done"]:::status_done
         AR_0081["AR-0081 - Done"]:::status_done
         AR_0082["AR-0082 - Done"]:::status_done
-        AR_0083["AR-0083 - Open"]:::status_open
+        AR_0083["AR-0083 - In progress"]:::status_in_progress
         AR_0084["AR-0084 - In progress"]:::status_in_progress
         AR_0085["AR-0085 - Planned"]:::status_planned
         AR_0086["AR-0086 - Planned"]:::status_planned
@@ -383,17 +383,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0083](tasks/AR-0083.md): PowerShell inline-bootstrap compatibility | codex-ar0083 | Make the documented Windows bootstrap command work both from a temporary script file and from inline PowerShell ScriptBlock execution. | Add a disposable PowerShell harness that executes the published installer through irm and ScriptBlock::Create, then verify install, repair, and cleanup paths. |
 | P0 | [AR-0084](tasks/AR-0084.md): Authoritative dynamic-token issuance and publication | ar0084-tokens | Ensure the Coordinator issues each batch token on the authoritative host and publishes the matching registry and request atomically before the user command is printed. | Specify and test the Coordinator-to-authority publication transaction, including crash recovery, expiry, and no-local-only-token failure. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0083](tasks/AR-0083.md): PowerShell inline-bootstrap compatibility | Unclaimed | Make the documented Windows bootstrap command work both from a temporary script file and from inline PowerShell ScriptBlock execution. | Add a disposable PowerShell harness that executes the published installer through irm and ScriptBlock::Create, then verify install, repair, and cleanup paths. |
 
 ### Planned (3)
 
