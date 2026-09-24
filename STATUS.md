@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**87 ARs tracked** across 2 active status categories.
+**87 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 3 |
+| **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 84 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -112,7 +112,7 @@ flowchart LR
         AR_0082["AR-0082 - Done"]:::status_done
         AR_0083["AR-0083 - Done"]:::status_done
         AR_0084["AR-0084 - Done"]:::status_done
-        AR_0085["AR-0085 - Planned"]:::status_planned
+        AR_0085["AR-0085 - Open"]:::status_open
         AR_0086["AR-0086 - Planned"]:::status_planned
         AR_0087["AR-0087 - Planned"]:::status_planned
     end
@@ -383,11 +383,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (3)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0085](tasks/AR-0085.md): Real Windows SSH GUI/TUI qualification | Unclaimed | Qualify the complete tokenized batched decision flow from Windows PowerShell through SSH for GUI-first and TUI fallback execution. | Run the matrix on clean Windows runners and a reachable SSH authority, recording command, backend selection, returned journal, and cleanup evidence. |
+
+### Planned (2)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0086](tasks/AR-0086.md): Authoritative batch fixture and scenario documentation | Unclaimed | Generate and validate complete multi-AR decision fixtures and scenario documentation from the authoritative AR graph. | Add a fixture audit that rejects dropped top-level requests, mismatched packet digests, and stale generated screenshots or recordings. |
 | P1 | [AR-0087](tasks/AR-0087.md): Release and bootstrap freshness gate | Unclaimed | Keep published UI releases, installer URLs, bootstrap hashes, umbrella pins, and operator commands mutually consistent. | Add a release gate that tests the exact published tag and rejects stale local checkouts or mismatched installer hashes. |
 
