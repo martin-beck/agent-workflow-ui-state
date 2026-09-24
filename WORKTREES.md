@@ -14,8 +14,10 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `build/`, `src/agent_workflow_ui.egg-info/` |
 | `agent-workflow-ui-ar0099-accessible-command-system` | `ar0099-accessible-command-system` | `927ab3ba6589` | 0 | behind 4, ahead 0 |
 | `agent-workflow-ui-ar0100` | `ar0100-decision-workspace-control` | `daeffc64162f` | 0 | behind 1, ahead 0 |
+| `agent-workflow-ui-ar0102` | `ar0102-audit-privacy-control-plane` | `0528d3d91afb` | 0 | behind 0, ahead 2 |
+| `agent-workflow-ui-ar0103` | `ar0103-fault-injection-resilience` | `604e29e3952f` | 0 | behind 0, ahead 1 |
 | `agent-workflow-ui-ar0095` | `ar-0095-scenario-artifact-provenance` | `f70fefeeff37` | 0 | behind 22, ahead 0 |
-| `agent-workflow-ui-ar0101` | `ar0101-synchronized-document-navigation` | `2d5f8025ee01` | 0 | behind 3, ahead 2 |
+| `agent-workflow-ui-ar0101` | `ar0101-synchronized-document-navigation` | `ea6912a866c7` | 0 | behind 0, ahead 3 |
 | `agent-workflow-tui-ar0035` | `feature/ar-0035-scenario-artifact-hardening` | `32dfc428d32c` | 0 | behind 120, ahead 0 |
 | `agent-workflow-tui-ar0040` | `feature/ar-0040-terminal-lifecycle-v2` | `be4e8de93fb9` | 0 | behind 113, ahead 0 |
 | `agent-workflow-tui-ar0094` | `ar0094-cross-platform-remote-bootstrap` | `d9644c092435` | 0 | behind 15, ahead 0 |
