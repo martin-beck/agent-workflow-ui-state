@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0085](tasks/AR-0085.md): Real Windows SSH GUI/TUI qualification | Qualify the complete tokenized batched decision flow from Windows PowerShell through SSH for GUI-first and TUI fallback execution. | Run the matrix on clean Windows runners and a reachable SSH authority, recording command, backend selection, returned journal, and cleanup evidence. | - |
+| P1 | [AR-0085](tasks/AR-0085.md): Real Windows SSH GUI/TUI qualification | Qualify the complete tokenized batched decision flow from Windows PowerShell through SSH for GUI-first and TUI fallback execution. | Run the matrix on clean Windows runners and a reachable SSH authority, recording command, backend selection, returned journal, and cleanup evidence. | codex-ar0085 |
 
 ## Planned
 
