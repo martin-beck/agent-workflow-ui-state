@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0084](tasks/AR-0084.md): Authoritative dynamic-token issuance and publication | Authoritative token publication is atomic, private, digest-only, restart-safe, and covered by hosted checks. | Verify future authority publication against the batch-binding and replay contract. | ar0084-tokens |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -51,6 +45,7 @@ Never edit this file directly.
 | P0 | [AR-0078](tasks/AR-0078.md): Coordinator-issued dynamic decision tokens | Generate an authoritative short token dynamically for each complete revision-bound decision batch. | Verify future Coordinator token issuers against the batch-binding and privacy contract. | - |
 | P0 | [AR-0079](tasks/AR-0079.md): Remote token resolution and single-use completion | Resolve dynamically issued tokens from remote machines and consume them exactly once after durable batch completion. | Verify future remote finalizers against single-use, retry, and replay guarantees. | - |
 | P0 | [AR-0083](tasks/AR-0083.md): PowerShell inline-bootstrap compatibility | PowerShell inline bootstrap is scriptblock-safe and covered by disposable Windows tests. | Verify future installer releases against the inline invocation contract. | - |
+| P0 | [AR-0084](tasks/AR-0084.md): Authoritative dynamic-token issuance and publication | Authoritative token publication is atomic, private, digest-only, restart-safe, and covered by hosted checks. | Verify future authority publication against the batch-binding and replay contract. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
