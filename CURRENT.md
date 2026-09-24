@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | Extend scenarios/corpus.json and the UX/requirement-matrix documentation for all new flows. | Extend the scenario corpus and UX docs, then open a review PR. | ar0088-scenarios |
+| P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | Current dashboard, hierarchy, directive, pause/resume, and rollback/conflict flows are scenario-covered with regenerated terminal and GUI artifacts. | Verify future UI changes regenerate all scenario artifacts and requirement documentation. | ar0088-scenarios |
 
 ## Done
 
