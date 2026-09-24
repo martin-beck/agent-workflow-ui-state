@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0085](tasks/AR-0085.md): Directive entry for board instructions | Add a board-instruction entry path in the TUI using the revision-bound envelope and decision batch token contract. | Implement the directive entry path and scenario, then open a review PR. | ar0085-directive |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Render decision packets with effective-window and rollback markings so the user sees the current effective decision and rollback state. | Implement effective-window and rollback display, then open a review PR. | - |
+| P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Render decision packets with effective-window and rollback markings so the user sees the current effective decision and rollback state. | Implement effective-window and rollback display, then open a review PR. | codex-ar0087 |
 
 ## Planned
 
