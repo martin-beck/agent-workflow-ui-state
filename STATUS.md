@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**88 ARs tracked** across 3 active status categories.
+**88 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 3 |
+| **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 82 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -113,7 +113,7 @@ flowchart LR
         AR_0083["AR-0083 - In progress"]:::status_in_progress
         AR_0084["AR-0084 - Planned"]:::status_planned
         AR_0085["AR-0085 - In progress"]:::status_in_progress
-        AR_0086["AR-0086 - Planned"]:::status_planned
+        AR_0086["AR-0086 - Open"]:::status_open
         AR_0087["AR-0087 - In progress"]:::status_in_progress
         AR_0088["AR-0088 - Planned"]:::status_planned
     end
@@ -387,12 +387,17 @@ flowchart LR
 | P1 | [AR-0085](tasks/AR-0085.md): Directive entry for board instructions | ar0085-directive | Add a board-instruction entry path in the TUI using the revision-bound envelope and decision batch token contract. | Implement the directive entry path and scenario, then open a review PR. |
 | P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | codex-ar0087 | Render decision packets with effective-window and rollback markings so the user sees the current effective decision and rollback state. | Implement effective-window and rollback display, then open a review PR. |
 
-### Planned (3)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0086](tasks/AR-0086.md): Paused-session card and resume flow | Unclaimed | Render paused sessions in the TUI and resume them through the host transport and handoff contract. | Implement paused-session cards and resume, then open a review PR. |
+
+### Planned (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | Unclaimed | Add task-tree navigation (company, role/team, task) with bounded depth, consuming coordinator rollup pages. | Implement hierarchy drill-down and scenarios, then open a review PR. |
-| P1 | [AR-0086](tasks/AR-0086.md): Paused-session card and resume flow | Unclaimed | Render paused sessions in the TUI and resume them through the host transport and handoff contract. | Implement paused-session cards and resume, then open a review PR. |
 | P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | Unclaimed | Extend scenarios/corpus.json and the UX/requirement-matrix documentation for all new flows. | Extend the scenario corpus and UX docs, then open a review PR. |
 
 ### Done (82)
