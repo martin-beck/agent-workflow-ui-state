@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0091](tasks/AR-0091.md): Mandatory autonomous decision routing trace | Make important autonomous-worker decisions obligatorily use one batched AR--UI bridge session instead of chat questions. | Implement the live Guidance-to-Coordinator-to-UI routing trace and fail-closed bypass tests. | worker-ar0091 |
 | P1 | [AR-0090](tasks/AR-0090.md): Pinned-family compatibility probe | Machine-check the umbrella's immutable UI, Coordinator, Guidance, and Quality release pins and shared bridge schemas. | Implement the immutable cross-project compatibility probe and its CI gate. | worker-ar0090 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0091](tasks/AR-0091.md): Mandatory autonomous decision routing trace | Make important autonomous-worker decisions obligatorily use one batched AR--UI bridge session instead of chat questions. | Implement the live Guidance-to-Coordinator-to-UI routing trace and fail-closed bypass tests. | - |
 
 ## Planned
 
