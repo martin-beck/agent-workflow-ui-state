@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 6 |
+| **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 89 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -118,7 +118,7 @@ flowchart LR
         AR_0088["AR-0088 - Done"]:::status_done
         AR_0089["AR-0089 - Done"]:::status_done
         AR_0090["AR-0090 - Open"]:::status_open
-        AR_0091["AR-0091 - Planned"]:::status_planned
+        AR_0091["AR-0091 - Open"]:::status_open
         AR_0092["AR-0092 - Planned"]:::status_planned
         AR_0093["AR-0093 - Planned"]:::status_planned
         AR_0094["AR-0094 - Planned"]:::status_planned
@@ -414,17 +414,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0090](tasks/AR-0090.md): Pinned-family compatibility probe | Unclaimed | Machine-check the umbrella&#x27;s immutable UI, Coordinator, Guidance, and Quality release pins and shared bridge schemas. | Implement the immutable cross-project compatibility probe and its CI gate. |
-
-### Planned (6)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0091](tasks/AR-0091.md): Mandatory autonomous decision routing trace | Unclaimed | Make important autonomous-worker decisions obligatorily use one batched AR--UI bridge session instead of chat questions. | Implement the live Guidance-to-Coordinator-to-UI routing trace and fail-closed bypass tests. |
+| P1 | [AR-0090](tasks/AR-0090.md): Pinned-family compatibility probe | Unclaimed | Machine-check the umbrella&#x27;s immutable UI, Coordinator, Guidance, and Quality release pins and shared bridge schemas. | Implement the immutable cross-project compatibility probe and its CI gate. |
+
+### Planned (5)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0092](tasks/AR-0092.md): Authoritative multi-AR batch and document projection | Unclaimed | Generate one complete revision-bound decision batch and matching Design/Work plan Markdown for all independent AR decisions. | Implement the multi-AR batch envelope and structure-graph Markdown/highlight projection. |
 | P1 | [AR-0093](tasks/AR-0093.md): Native Windows UI qualification | Unclaimed | Qualify real Windows GUI and TUI interaction, packaging, resizing, and bridge output on native supported architectures. | Add native Windows GUI/TUI interaction qualification and architecture attestation. |
 | P1 | [AR-0094](tasks/AR-0094.md): Real cross-platform remote bootstrap round trip | Unclaimed | Prove the one-command remote GUI/TUI decision flow from real Windows and POSIX clients through SSH and back. | Implement Windows and POSIX remote bootstrap round trips with failure/reconnect coverage. |
