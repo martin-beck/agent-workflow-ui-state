@@ -12,6 +12,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-ui-ar0088` | `ar-0088-scenario-corpus` | `8ba1cc8996be` | 0 | behind 14, ahead 2 |
 | `agent-workflow-ui-ar0093` | `ar-0093-native-windows` | `b11e79e3d448` | 2 | behind 11, ahead 0 |
 | changed files | - | - | - | `build/`, `src/agent_workflow_ui.egg-info/` |
+| `agent-workflow-ui-ar0099-accessible-command-system` | `ar0099-accessible-command-system` | `b33fb5a757e8` | 0 | behind 0, ahead 0 |
 | `agent-workflow-ui-ar0095` | `ar-0095-scenario-artifact-provenance` | `f70fefeeff37` | 0 | behind 11, ahead 0 |
 | `agent-workflow-tui-ar0035` | `feature/ar-0035-scenario-artifact-hardening` | `32dfc428d32c` | 0 | behind 109, ahead 0 |
 | `agent-workflow-tui-ar0040` | `feature/ar-0040-terminal-lifecycle-v2` | `be4e8de93fb9` | 0 | behind 102, ahead 0 |
