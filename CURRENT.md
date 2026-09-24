@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0092](tasks/AR-0092.md): Authoritative multi-AR batch and document projection | Generate one complete revision-bound decision batch and matching Design/Work plan Markdown for all independent AR decisions. | Implement the multi-AR batch envelope and structure-graph Markdown/highlight projection. | worker-ar0092 |
-| P1 | [AR-0090](tasks/AR-0090.md): Pinned-family compatibility probe | Machine-check the umbrella's immutable UI, Coordinator, Guidance, and Quality release pins and shared bridge schemas. | Implement the immutable cross-project compatibility probe and its CI gate. | worker-ar0090 |
 
 ## Planned
 
@@ -113,3 +112,4 @@ Never edit this file directly.
 | P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Decision packets now render effective windows, rollback ancestry, and conflict reasons with regression coverage. | Verify future checkpoint and conflict displays against the revision-bound packet contract. | - |
 | P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | Current dashboard, hierarchy, directive, pause/resume, and rollback/conflict flows are scenario-covered with regenerated terminal and GUI artifacts. | Verify future UI changes regenerate all scenario artifacts and requirement documentation. | - |
 | P1 | [AR-0089](tasks/AR-0089.md): UI compatibility release and umbrella synchronization | v0.6.0 is published from the completed UI main and the umbrella pins its exact tag and commit. | Verify future UI releases against the compatibility and immutable-pin contract. | - |
+| P1 | [AR-0090](tasks/AR-0090.md): Pinned-family compatibility probe | Machine-check the umbrella's immutable UI, Coordinator, Guidance, and Quality release pins and shared bridge schemas. | Implement the immutable cross-project compatibility probe and its CI gate. | - |
