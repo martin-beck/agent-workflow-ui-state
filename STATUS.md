@@ -383,7 +383,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | ui-ar0083-dashboard | Add task-tree navigation (company, role/team, task) with bounded depth, consuming coordinator rollup pages. | Implement hierarchy drill-down and scenarios, then open a review PR. |
+| P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | ui-ar0083-dashboard | Add task-tree navigation (company, role/team, task) with bounded depth, consuming coordinator rollup pages. | Await PR #113 hosted checks; merge when all checks are green, then release and reconcile. |
 
 ### Planned (1)
 
