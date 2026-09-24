@@ -385,7 +385,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0083](tasks/AR-0083.md): Company dashboard pane | ui-ar0083-dashboard | Add a board view to awui-live consuming rollup pages via a new board request type in the coordinator TUI bridge, with revision-bound envelopes. | Await PR #112 checks; merge when all checks are green, then reconcile release evidence. |
 | P1 | [AR-0085](tasks/AR-0085.md): Directive entry for board instructions | ar0085-directive | Add a board-instruction entry path in the TUI using the revision-bound envelope and decision batch token contract. | Implement the directive entry path and scenario, then open a review PR. |
-| P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | codex-ar0087 | Render decision packets with effective-window and rollback markings so the user sees the current effective decision and rollback state. | Implement effective-window and rollback display, then open a review PR. |
+| P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | codex-ar0087 | Decision packets now render effective windows, rollback ancestry, and conflict reasons with regression coverage. | Verify future checkpoint and conflict displays against the revision-bound packet contract. |
 
 ### Planned (2)
 
