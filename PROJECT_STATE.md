@@ -16,9 +16,9 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35940787067 | `f89103b70d18` | push | TUI Windows compatibility | completed:success |
-| 35940786840 | `f89103b70d18` | push | TUI scenarios | in_progress:- |
+| 35940786840 | `f89103b70d18` | push | TUI scenarios | completed:success |
 | 35940776270 | `f89103b70d18` | push | TUI Windows compatibility | completed:success |
-| 35940776237 | `f89103b70d18` | push | TUI scenarios | in_progress:- |
+| 35940776237 | `f89103b70d18` | push | TUI scenarios | completed:success |
 | 35940324488 | `a771bc6770f3` | pull_request | TUI Windows compatibility | completed:success |
 | 35940324443 | `a771bc6770f3` | pull_request | TUI scenarios | completed:success |
 | 35940320729 | `a771bc6770f3` | push | TUI scenarios | completed:success |
