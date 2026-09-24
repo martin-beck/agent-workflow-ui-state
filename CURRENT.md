@@ -9,11 +9,16 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0099](tasks/AR-0099.md): Discoverable keyboard, accessibility, and focus system | Make the full decision workflow discoverable, keyboard-complete, and accessible with consistent GUI/TUI controls. | Implement the shared command palette, key-hint footer, focus model, and accessibility checks for GUI and TUI. | ar0099_accessibility |
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0098](tasks/AR-0098.md): Session recovery, cancellation, and bounded transport control | Make remote and local sessions recoverable, cancellable, bounded, and cleanup-safe under real transport failures. | Implement bounded reconnect/cancel/timeout lifecycle control and prove cleanup under injected transport failures. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. | - |
 | P1 | [AR-0100](tasks/AR-0100.md): Decision workspace intelligence and batch control | Turn the decision list into a scalable workspace with batch progress, dependency explanations, and evidence drill-down. | Implement dependency-aware batch filtering, grouping, progress, and evidence drill-down in both renderers. | - |
 | P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Implement range-based anchor metadata and synchronized scroll/highlight behavior for GUI and TUI documents. | - |

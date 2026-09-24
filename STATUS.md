@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**104 ARs tracked** across 3 active status categories.
+**104 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 6 |
+| **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 97 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -125,7 +125,7 @@ flowchart LR
         AR_0095["AR-0095 - Done"]:::status_done
         AR_0096["AR-0096 - Done"]:::status_done
         AR_0097["AR-0097 - Done"]:::status_done
-        AR_0098["AR-0098 - Planned"]:::status_planned
+        AR_0098["AR-0098 - Open"]:::status_open
         AR_0099["AR-0099 - In progress"]:::status_in_progress
     end
     subgraph series_01["01 - Contracts and runtime"]
@@ -452,11 +452,16 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0099](tasks/AR-0099.md): Discoverable keyboard, accessibility, and focus system | ar0099_accessibility | Make the full decision workflow discoverable, keyboard-complete, and accessible with consistent GUI/TUI controls. | Implement the shared command palette, key-hint footer, focus model, and accessibility checks for GUI and TUI. |
 
-### Planned (6)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0098](tasks/AR-0098.md): Session recovery, cancellation, and bounded transport control | Unclaimed | Make remote and local sessions recoverable, cancellable, bounded, and cleanup-safe under real transport failures. | Implement bounded reconnect/cancel/timeout lifecycle control and prove cleanup under injected transport failures. |
+
+### Planned (5)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Unclaimed | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. |
 | P1 | [AR-0100](tasks/AR-0100.md): Decision workspace intelligence and batch control | Unclaimed | Turn the decision list into a scalable workspace with batch progress, dependency explanations, and evidence drill-down. | Implement dependency-aware batch filtering, grouping, progress, and evidence drill-down in both renderers. |
 | P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | Unclaimed | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Implement range-based anchor metadata and synchronized scroll/highlight behavior for GUI and TUI documents. |
