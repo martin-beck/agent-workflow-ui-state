@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0100](tasks/AR-0100.md): Decision workspace intelligence and batch control | Turn the decision list into a scalable workspace with batch progress, dependency explanations, and evidence drill-down. | Implement dependency-aware batch filtering, grouping, progress, and evidence drill-down in both renderers. | ar0100-batch-workspace |
 | P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Review and merge PR #123 after required CI checks pass; then close AR-0101. | ar0101_document_navigation |
 
 ## Planned
@@ -121,3 +120,4 @@ Never edit this file directly.
 | P1 | [AR-0095](tasks/AR-0095.md): Scenario artifact provenance and freshness | Make terminal and GUI scenario artifacts reproducible, attributable, and fail-closed when stale. | Add provenance manifests and freshness checks for all scenario recordings, screenshots, and Markdown. | - |
 | P1 | [AR-0096](tasks/AR-0096.md): Compatibility release and operator qualification | Publish a compatibility-verified UI and umbrella release after cross-project, native-platform, remote, and artifact gates pass. | Integrate the completed qualification series, update the umbrella pins, and publish a synchronized release. | - |
 | P1 | [AR-0099](tasks/AR-0099.md): Discoverable keyboard, accessibility, and focus system | Make the full decision workflow discoverable, keyboard-complete, and accessible with consistent GUI/TUI controls. | Implement the shared command palette, key-hint footer, focus model, and accessibility checks for GUI and TUI. | - |
+| P1 | [AR-0100](tasks/AR-0100.md): Decision workspace intelligence and batch control | Turn the decision list into a scalable workspace with batch progress, dependency explanations, and evidence drill-down. | Implement dependency-aware batch filtering, grouping, progress, and evidence drill-down in both renderers. | - |
