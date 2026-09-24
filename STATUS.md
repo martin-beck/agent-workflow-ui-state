@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 96 |
+| **Done** | Accepted, integrated, and durably verified | 97 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -124,7 +124,7 @@ flowchart LR
         AR_0094["AR-0094 - Done"]:::status_done
         AR_0095["AR-0095 - Done"]:::status_done
         AR_0096["AR-0096 - Done"]:::status_done
-        AR_0097["AR-0097 - In progress"]:::status_in_progress
+        AR_0097["AR-0097 - Done"]:::status_done
         AR_0098["AR-0098 - Planned"]:::status_planned
         AR_0099["AR-0099 - In progress"]:::status_in_progress
     end
@@ -446,11 +446,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0097](tasks/AR-0097.md): Durable save and GUI/TUI persistence parity | ar0097-durable-save | Make GUI and TUI persistence controls produce identical durable revision-bound journals instead of local-only saved flags. | Implement durable Save and Save + Exit event parity for GUI and TUI, then add crash-safe recovery tests. |
 | P1 | [AR-0099](tasks/AR-0099.md): Discoverable keyboard, accessibility, and focus system | ar0099_accessibility | Make the full decision workflow discoverable, keyboard-complete, and accessible with consistent GUI/TUI controls. | Implement the shared command palette, key-hint footer, focus model, and accessibility checks for GUI and TUI. |
 
 ### Planned (6)
@@ -464,7 +463,7 @@ flowchart LR
 | P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | Unclaimed | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. |
 | P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Unclaimed | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. |
 
-### Done (96)
+### Done (97)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -499,6 +498,7 @@ flowchart LR
 | P0 | [AR-0079](tasks/AR-0079.md): Remote token resolution and single-use completion | Unclaimed | Resolve dynamically issued tokens from remote machines and consume them exactly once after durable batch completion. | Verify future remote finalizers against single-use, retry, and replay guarantees. |
 | P0 | [AR-0091](tasks/AR-0091.md): Mandatory autonomous decision routing trace | Unclaimed | Make important autonomous-worker decisions obligatorily use one batched AR--UI bridge session instead of chat questions. | Verify future mandatory-routing traces against the versioned contract. |
 | P0 | [AR-0092](tasks/AR-0092.md): Authoritative multi-AR batch and document projection | Unclaimed | Generate one complete revision-bound decision batch and matching Design/Work plan Markdown for all independent AR decisions. | Implement the multi-AR batch envelope and structure-graph Markdown/highlight projection. |
+| P0 | [AR-0097](tasks/AR-0097.md): Durable save and GUI/TUI persistence parity | Unclaimed | Make GUI and TUI persistence controls produce identical durable revision-bound journals instead of local-only saved flags. | Implement durable Save and Save + Exit event parity for GUI and TUI, then add crash-safe recovery tests. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
