@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. | - |
+| P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. | ar0104-release-hardening |
 
 ## Done
 
