@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #123 | `ar0101-synchronized-document-navigation@50b281f88b5a` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SKIPPED, COMPLETED:SKIPPED | feat: precise synchronized document anchors (AR-0101) |
+| #123 | `ar0101-synchronized-document-navigation@50b281f88b5a` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SKIPPED, COMPLETED:SKIPPED | feat: precise synchronized document anchors (AR-0101) |
 
 ## Recent workflows
 
