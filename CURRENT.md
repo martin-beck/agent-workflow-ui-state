@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0089](tasks/AR-0089.md): UI compatibility release and umbrella synchronization | Publish a release containing the completed UI work and update the Agent Workflow umbrella to the exact compatible release and commit. | Bump the UI package release, run the complete product gates, publish the immutable tag, and merge the umbrella pin update. | - |
+| P1 | [AR-0089](tasks/AR-0089.md): UI compatibility release and umbrella synchronization | Publish a release containing the completed UI work and update the Agent Workflow umbrella to the exact compatible release and commit. | Bump the UI package release, run the complete product gates, publish the immutable tag, and merge the umbrella pin update. | codex-ar0089 |
 
 ## Done
 

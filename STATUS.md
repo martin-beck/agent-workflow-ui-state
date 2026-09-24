@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -116,7 +116,7 @@ flowchart LR
         AR_0086["AR-0086 - Done"]:::status_done
         AR_0087["AR-0087 - Done"]:::status_done
         AR_0088["AR-0088 - Done"]:::status_done
-        AR_0089["AR-0089 - Open"]:::status_open
+        AR_0089["AR-0089 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -387,11 +387,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0089](tasks/AR-0089.md): UI compatibility release and umbrella synchronization | Unclaimed | Publish a release containing the completed UI work and update the Agent Workflow umbrella to the exact compatible release and commit. | Bump the UI package release, run the complete product gates, publish the immutable tag, and merge the umbrella pin update. |
+| P1 | [AR-0089](tasks/AR-0089.md): UI compatibility release and umbrella synchronization | codex-ar0089 | Publish a release containing the completed UI work and update the Agent Workflow umbrella to the exact compatible release and commit. | Bump the UI package release, run the complete product gates, publish the immutable tag, and merge the umbrella pin update. |
 
 ### Done (88)
 
