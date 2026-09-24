@@ -9,12 +9,17 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0093](tasks/AR-0093.md): Native Windows UI qualification | Qualify real Windows GUI and TUI interaction, packaging, resizing, and bridge output on native supported architectures. | Add native Windows GUI/TUI interaction qualification and architecture attestation. | worker-ar0093 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0095](tasks/AR-0095.md): Scenario artifact provenance and freshness | Make terminal and GUI scenario artifacts reproducible, attributable, and fail-closed when stale. | Add provenance manifests and freshness checks for all scenario recordings, screenshots, and Markdown. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0094](tasks/AR-0094.md): Real cross-platform remote bootstrap round trip | Prove the one-command remote GUI/TUI decision flow from real Windows and POSIX clients through SSH and back. | Implement Windows and POSIX remote bootstrap round trips with failure/reconnect coverage. | - |
-| P1 | [AR-0095](tasks/AR-0095.md): Scenario artifact provenance and freshness | Make terminal and GUI scenario artifacts reproducible, attributable, and fail-closed when stale. | Add provenance manifests and freshness checks for all scenario recordings, screenshots, and Markdown. | - |
 | P1 | [AR-0096](tasks/AR-0096.md): Compatibility release and operator qualification | Publish a compatibility-verified UI and umbrella release after cross-project, native-platform, remote, and artifact gates pass. | Integrate the completed qualification series, update the umbrella pins, and publish a synchronized release. | - |
 
 ## Done
