@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**88 ARs tracked** across 1 active status categories.
+**89 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 88 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -116,6 +116,7 @@ flowchart LR
         AR_0086["AR-0086 - Done"]:::status_done
         AR_0087["AR-0087 - Done"]:::status_done
         AR_0088["AR-0088 - Done"]:::status_done
+        AR_0089["AR-0089 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -270,10 +271,16 @@ flowchart LR
     AR_0081 --> AR_0082
     AR_0083 --> AR_0084
     AR_0083 --> AR_0088
+    AR_0083 --> AR_0089
     AR_0084 --> AR_0088
+    AR_0084 --> AR_0089
     AR_0085 --> AR_0088
+    AR_0085 --> AR_0089
     AR_0086 --> AR_0088
+    AR_0086 --> AR_0089
     AR_0087 --> AR_0088
+    AR_0087 --> AR_0089
+    AR_0088 --> AR_0089
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -370,14 +377,21 @@ flowchart LR
 | [AR-0080](tasks/AR-0080.md) | [AR-0068](tasks/AR-0068.md), [AR-0074](tasks/AR-0074.md), [AR-0077](tasks/AR-0077.md), [AR-0079](tasks/AR-0079.md) | [AR-0081](tasks/AR-0081.md), [AR-0082](tasks/AR-0082.md) |
 | [AR-0081](tasks/AR-0081.md) | [AR-0069](tasks/AR-0069.md), [AR-0079](tasks/AR-0079.md), [AR-0080](tasks/AR-0080.md) | [AR-0082](tasks/AR-0082.md) |
 | [AR-0082](tasks/AR-0082.md) | [AR-0078](tasks/AR-0078.md), [AR-0079](tasks/AR-0079.md), [AR-0080](tasks/AR-0080.md), [AR-0081](tasks/AR-0081.md) | None |
-| [AR-0083](tasks/AR-0083.md) | None | [AR-0084](tasks/AR-0084.md), [AR-0088](tasks/AR-0088.md) |
-| [AR-0084](tasks/AR-0084.md) | [AR-0083](tasks/AR-0083.md) | [AR-0088](tasks/AR-0088.md) |
-| [AR-0085](tasks/AR-0085.md) | None | [AR-0088](tasks/AR-0088.md) |
-| [AR-0086](tasks/AR-0086.md) | None | [AR-0088](tasks/AR-0088.md) |
-| [AR-0087](tasks/AR-0087.md) | None | [AR-0088](tasks/AR-0088.md) |
-| [AR-0088](tasks/AR-0088.md) | [AR-0083](tasks/AR-0083.md), [AR-0084](tasks/AR-0084.md), [AR-0085](tasks/AR-0085.md), [AR-0086](tasks/AR-0086.md), [AR-0087](tasks/AR-0087.md) | None |
+| [AR-0083](tasks/AR-0083.md) | None | [AR-0084](tasks/AR-0084.md), [AR-0088](tasks/AR-0088.md), [AR-0089](tasks/AR-0089.md) |
+| [AR-0084](tasks/AR-0084.md) | [AR-0083](tasks/AR-0083.md) | [AR-0088](tasks/AR-0088.md), [AR-0089](tasks/AR-0089.md) |
+| [AR-0085](tasks/AR-0085.md) | None | [AR-0088](tasks/AR-0088.md), [AR-0089](tasks/AR-0089.md) |
+| [AR-0086](tasks/AR-0086.md) | None | [AR-0088](tasks/AR-0088.md), [AR-0089](tasks/AR-0089.md) |
+| [AR-0087](tasks/AR-0087.md) | None | [AR-0088](tasks/AR-0088.md), [AR-0089](tasks/AR-0089.md) |
+| [AR-0088](tasks/AR-0088.md) | [AR-0083](tasks/AR-0083.md), [AR-0084](tasks/AR-0084.md), [AR-0085](tasks/AR-0085.md), [AR-0086](tasks/AR-0086.md), [AR-0087](tasks/AR-0087.md) | [AR-0089](tasks/AR-0089.md) |
+| [AR-0089](tasks/AR-0089.md) | [AR-0083](tasks/AR-0083.md), [AR-0084](tasks/AR-0084.md), [AR-0085](tasks/AR-0085.md), [AR-0086](tasks/AR-0086.md), [AR-0087](tasks/AR-0087.md), [AR-0088](tasks/AR-0088.md) | None |
 
 ## Complete AR inventory
+
+### Planned (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0089](tasks/AR-0089.md): UI compatibility release and umbrella synchronization | Unclaimed | Publish a release containing the completed UI work and update the Agent Workflow umbrella to the exact compatible release and commit. | Bump the UI package release, run the complete product gates, publish the immutable tag, and merge the umbrella pin update. |
 
 ### Done (88)
 
