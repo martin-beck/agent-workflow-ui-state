@@ -387,7 +387,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0083](tasks/AR-0083.md): PowerShell inline-bootstrap compatibility | codex-ar0083 | Make the documented Windows bootstrap command work both from a temporary script file and from inline PowerShell ScriptBlock execution. | Add a disposable PowerShell harness that executes the published installer through irm and ScriptBlock::Create, then verify install, repair, and cleanup paths. |
+| P0 | [AR-0083](tasks/AR-0083.md): PowerShell inline-bootstrap compatibility | codex-ar0083 | PowerShell inline bootstrap is scriptblock-safe and covered by disposable Windows tests. | Verify future installer releases against the inline invocation contract. |
 | P0 | [AR-0084](tasks/AR-0084.md): Authoritative dynamic-token issuance and publication | ar0084-tokens | Ensure the Coordinator issues each batch token on the authoritative host and publishes the matching registry and request atomically before the user command is printed. | Specify and test the Coordinator-to-authority publication transaction, including crash recovery, expiry, and no-local-only-token failure. |
 
 ### Planned (3)
