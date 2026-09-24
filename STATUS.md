@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 100 |
+| **Done** | Accepted, integrated, and durably verified | 101 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -131,7 +131,7 @@ flowchart LR
     subgraph series_01["01 - Contracts and runtime"]
         direction TB
         AR_0100["AR-0100 - Done"]:::status_done
-        AR_0101["AR-0101 - In progress"]:::status_in_progress
+        AR_0101["AR-0101 - Done"]:::status_done
         AR_0102["AR-0102 - In progress"]:::status_in_progress
         AR_0103["AR-0103 - In progress"]:::status_in_progress
         AR_0104["AR-0104 - Planned"]:::status_planned
@@ -446,12 +446,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | ar0103_resilience | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. |
-| P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | ar0101_document_navigation | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Review and merge PR #123 after required CI checks pass; then close AR-0101. |
 | P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | ar0102-audit-control | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. |
 
 ### Planned (1)
@@ -460,7 +459,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Unclaimed | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. |
 
-### Done (100)
+### Done (101)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -564,3 +563,4 @@ flowchart LR
 | P1 | [AR-0096](tasks/AR-0096.md): Compatibility release and operator qualification | Unclaimed | Publish a compatibility-verified UI and umbrella release after cross-project, native-platform, remote, and artifact gates pass. | Integrate the completed qualification series, update the umbrella pins, and publish a synchronized release. |
 | P1 | [AR-0099](tasks/AR-0099.md): Discoverable keyboard, accessibility, and focus system | Unclaimed | Make the full decision workflow discoverable, keyboard-complete, and accessible with consistent GUI/TUI controls. | Implement the shared command palette, key-hint footer, focus model, and accessibility checks for GUI and TUI. |
 | P1 | [AR-0100](tasks/AR-0100.md): Decision workspace intelligence and batch control | Unclaimed | Turn the decision list into a scalable workspace with batch progress, dependency explanations, and evidence drill-down. | Implement dependency-aware batch filtering, grouping, progress, and evidence drill-down in both renderers. |
+| P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | Unclaimed | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Review and merge PR #123 after required CI checks pass; then close AR-0101. |
