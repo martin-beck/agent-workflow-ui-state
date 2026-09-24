@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0085](tasks/AR-0085.md): Real Windows SSH GUI/TUI qualification | Windows GUI-first/TUI-fallback SSH qualification is implemented and merged with amd64/arm64 evidence. | Verify future Windows SSH qualification against the capability and batch-journal contract. | codex-ar0085 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -104,3 +98,4 @@ Never edit this file directly.
 | P1 | [AR-0080](tasks/AR-0080.md): Remote-machine installation and environment prerequisites | Make dynamic-token launch reliable on fresh Windows, Linux, and macOS controlling machines. | Verify future installer releases against fresh-machine routing and capability detection. | - |
 | P1 | [AR-0081](tasks/AR-0081.md): Real-environment dynamic-token qualification | Qualify Coordinator-issued token sessions across separate machines, platforms, architectures, and failure modes. | Extend the qualification matrix when additional supported architectures or host operating systems are introduced. | - |
 | P1 | [AR-0082](tasks/AR-0082.md): Dynamic-token operator documentation and compatibility release | Publish the supported dynamic-token workflow and synchronize compatible Agent Workflow releases after qualification. | Verify future releases against the dynamic-token operator and compatibility contract. | - |
+| P1 | [AR-0085](tasks/AR-0085.md): Real Windows SSH GUI/TUI qualification | Windows GUI-first/TUI-fallback SSH qualification is implemented and merged with amd64/arm64 evidence. | Verify future Windows SSH qualification against the capability and batch-journal contract. | - |

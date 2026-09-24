@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**87 ARs tracked** across 3 active status categories.
+**87 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 84 |
+| **Done** | Accepted, integrated, and durably verified | 85 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -112,7 +112,7 @@ flowchart LR
         AR_0082["AR-0082 - Done"]:::status_done
         AR_0083["AR-0083 - Done"]:::status_done
         AR_0084["AR-0084 - Done"]:::status_done
-        AR_0085["AR-0085 - In progress"]:::status_in_progress
+        AR_0085["AR-0085 - Done"]:::status_done
         AR_0086["AR-0086 - Planned"]:::status_planned
         AR_0087["AR-0087 - Planned"]:::status_planned
     end
@@ -383,12 +383,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0085](tasks/AR-0085.md): Real Windows SSH GUI/TUI qualification | codex-ar0085 | Windows GUI-first/TUI-fallback SSH qualification is implemented and merged with amd64/arm64 evidence. | Verify future Windows SSH qualification against the capability and batch-journal contract. |
-
 ### Planned (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -396,7 +390,7 @@ flowchart LR
 | P1 | [AR-0086](tasks/AR-0086.md): Authoritative batch fixture and scenario documentation | Unclaimed | Generate and validate complete multi-AR decision fixtures and scenario documentation from the authoritative AR graph. | Add a fixture audit that rejects dropped top-level requests, mismatched packet digests, and stale generated screenshots or recordings. |
 | P1 | [AR-0087](tasks/AR-0087.md): Release and bootstrap freshness gate | Unclaimed | Keep published UI releases, installer URLs, bootstrap hashes, umbrella pins, and operator commands mutually consistent. | Add a release gate that tests the exact published tag and rejects stale local checkouts or mismatched installer hashes. |
 
-### Done (84)
+### Done (85)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -484,3 +478,4 @@ flowchart LR
 | P1 | [AR-0080](tasks/AR-0080.md): Remote-machine installation and environment prerequisites | Unclaimed | Make dynamic-token launch reliable on fresh Windows, Linux, and macOS controlling machines. | Verify future installer releases against fresh-machine routing and capability detection. |
 | P1 | [AR-0081](tasks/AR-0081.md): Real-environment dynamic-token qualification | Unclaimed | Qualify Coordinator-issued token sessions across separate machines, platforms, architectures, and failure modes. | Extend the qualification matrix when additional supported architectures or host operating systems are introduced. |
 | P1 | [AR-0082](tasks/AR-0082.md): Dynamic-token operator documentation and compatibility release | Unclaimed | Publish the supported dynamic-token workflow and synchronize compatible Agent Workflow releases after qualification. | Verify future releases against the dynamic-token operator and compatibility contract. |
+| P1 | [AR-0085](tasks/AR-0085.md): Real Windows SSH GUI/TUI qualification | Unclaimed | Windows GUI-first/TUI-fallback SSH qualification is implemented and merged with amd64/arm64 evidence. | Verify future Windows SSH qualification against the capability and batch-journal contract. |
