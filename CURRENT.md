@@ -10,11 +10,16 @@ Never edit this file directly.
 | P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. | ar0103_resilience |
 | P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Review and merge PR #123 after required CI checks pass; then close AR-0101. | ar0101_document_navigation |
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. | - |
 
 ## Done
