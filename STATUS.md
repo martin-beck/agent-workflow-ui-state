@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**96 ARs tracked** across 1 active status categories.
+**104 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 96 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -124,6 +124,17 @@ flowchart LR
         AR_0094["AR-0094 - Done"]:::status_done
         AR_0095["AR-0095 - Done"]:::status_done
         AR_0096["AR-0096 - Done"]:::status_done
+        AR_0097["AR-0097 - Planned"]:::status_planned
+        AR_0098["AR-0098 - Planned"]:::status_planned
+        AR_0099["AR-0099 - Planned"]:::status_planned
+    end
+    subgraph series_01["01 - Contracts and runtime"]
+        direction TB
+        AR_0100["AR-0100 - Planned"]:::status_planned
+        AR_0101["AR-0101 - Planned"]:::status_planned
+        AR_0102["AR-0102 - Planned"]:::status_planned
+        AR_0103["AR-0103 - Planned"]:::status_planned
+        AR_0104["AR-0104 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -301,6 +312,19 @@ flowchart LR
     AR_0093 --> AR_0096
     AR_0094 --> AR_0096
     AR_0095 --> AR_0096
+    AR_0096 --> AR_0097
+    AR_0096 --> AR_0099
+    AR_0097 --> AR_0098
+    AR_0097 --> AR_0100
+    AR_0097 --> AR_0102
+    AR_0098 --> AR_0102
+    AR_0098 --> AR_0103
+    AR_0099 --> AR_0100
+    AR_0099 --> AR_0101
+    AR_0100 --> AR_0104
+    AR_0101 --> AR_0104
+    AR_0102 --> AR_0104
+    AR_0103 --> AR_0104
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -410,9 +434,30 @@ flowchart LR
 | [AR-0093](tasks/AR-0093.md) | [AR-0090](tasks/AR-0090.md) | [AR-0094](tasks/AR-0094.md), [AR-0096](tasks/AR-0096.md) |
 | [AR-0094](tasks/AR-0094.md) | [AR-0090](tasks/AR-0090.md), [AR-0093](tasks/AR-0093.md) | [AR-0096](tasks/AR-0096.md) |
 | [AR-0095](tasks/AR-0095.md) | [AR-0092](tasks/AR-0092.md) | [AR-0096](tasks/AR-0096.md) |
-| [AR-0096](tasks/AR-0096.md) | [AR-0090](tasks/AR-0090.md), [AR-0091](tasks/AR-0091.md), [AR-0092](tasks/AR-0092.md), [AR-0093](tasks/AR-0093.md), [AR-0094](tasks/AR-0094.md), [AR-0095](tasks/AR-0095.md) | None |
+| [AR-0096](tasks/AR-0096.md) | [AR-0090](tasks/AR-0090.md), [AR-0091](tasks/AR-0091.md), [AR-0092](tasks/AR-0092.md), [AR-0093](tasks/AR-0093.md), [AR-0094](tasks/AR-0094.md), [AR-0095](tasks/AR-0095.md) | [AR-0097](tasks/AR-0097.md), [AR-0099](tasks/AR-0099.md) |
+| [AR-0097](tasks/AR-0097.md) | [AR-0096](tasks/AR-0096.md) | [AR-0098](tasks/AR-0098.md), [AR-0100](tasks/AR-0100.md), [AR-0102](tasks/AR-0102.md) |
+| [AR-0098](tasks/AR-0098.md) | [AR-0097](tasks/AR-0097.md) | [AR-0102](tasks/AR-0102.md), [AR-0103](tasks/AR-0103.md) |
+| [AR-0099](tasks/AR-0099.md) | [AR-0096](tasks/AR-0096.md) | [AR-0100](tasks/AR-0100.md), [AR-0101](tasks/AR-0101.md) |
+| [AR-0100](tasks/AR-0100.md) | [AR-0097](tasks/AR-0097.md), [AR-0099](tasks/AR-0099.md) | [AR-0104](tasks/AR-0104.md) |
+| [AR-0101](tasks/AR-0101.md) | [AR-0099](tasks/AR-0099.md) | [AR-0104](tasks/AR-0104.md) |
+| [AR-0102](tasks/AR-0102.md) | [AR-0097](tasks/AR-0097.md), [AR-0098](tasks/AR-0098.md) | [AR-0104](tasks/AR-0104.md) |
+| [AR-0103](tasks/AR-0103.md) | [AR-0098](tasks/AR-0098.md) | [AR-0104](tasks/AR-0104.md) |
+| [AR-0104](tasks/AR-0104.md) | [AR-0100](tasks/AR-0100.md), [AR-0101](tasks/AR-0101.md), [AR-0102](tasks/AR-0102.md), [AR-0103](tasks/AR-0103.md) | None |
 
 ## Complete AR inventory
+
+### Planned (8)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0097](tasks/AR-0097.md): Durable save and GUI/TUI persistence parity | Unclaimed | Make GUI and TUI persistence controls produce identical durable revision-bound journals instead of local-only saved flags. | Implement durable Save and Save + Exit event parity for GUI and TUI, then add crash-safe recovery tests. |
+| P0 | [AR-0098](tasks/AR-0098.md): Session recovery, cancellation, and bounded transport control | Unclaimed | Make remote and local sessions recoverable, cancellable, bounded, and cleanup-safe under real transport failures. | Implement bounded reconnect/cancel/timeout lifecycle control and prove cleanup under injected transport failures. |
+| P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Unclaimed | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. |
+| P1 | [AR-0099](tasks/AR-0099.md): Discoverable keyboard, accessibility, and focus system | Unclaimed | Make the full decision workflow discoverable, keyboard-complete, and accessible with consistent GUI/TUI controls. | Implement the shared command palette, key-hint footer, focus model, and accessibility checks for GUI and TUI. |
+| P1 | [AR-0100](tasks/AR-0100.md): Decision workspace intelligence and batch control | Unclaimed | Turn the decision list into a scalable workspace with batch progress, dependency explanations, and evidence drill-down. | Implement dependency-aware batch filtering, grouping, progress, and evidence drill-down in both renderers. |
+| P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | Unclaimed | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Implement range-based anchor metadata and synchronized scroll/highlight behavior for GUI and TUI documents. |
+| P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | Unclaimed | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. |
+| P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Unclaimed | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. |
 
 ### Done (96)
 
