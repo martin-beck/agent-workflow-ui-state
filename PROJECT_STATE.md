@@ -2,28 +2,29 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `d07f80b10983fd6b9a7d5901fd10342d398244bb`
-- Local origin/main: `927af2c8b9e6f8d1d07eceb0ad5562e8cc39b5d5`
+- Product remote main: `844a00e1186242b4f34b05453514077f08c92606`
+- Local origin/main: `d07f80b10983fd6b9a7d5901fd10342d398244bb`
 - Primary worktree head: `78e55de7f81340f9195ec2aac0e316ba7d843994`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #112 | `ar/ar-0083-company-dashboard-pane@85dfea342dc3` | `main` | DIRTY | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add revision-bound company dashboard pane |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35936801592 | `d07f80b10983` | push | TUI scenarios | in_progress:- |
-| 35936801572 | `d07f80b10983` | push | TUI Windows compatibility | completed:success |
-| 35936793365 | `a716f5debbe0` | push | TUI scenarios | completed:cancelled |
-| 35936793320 | `a716f5debbe0` | push | TUI Windows compatibility | completed:cancelled |
-| 35936418444 | `a836fad8d4e1` | pull_request | TUI scenarios | completed:success |
-| 35936418393 | `a836fad8d4e1` | pull_request | TUI Windows compatibility | completed:success |
-| 35936415229 | `a836fad8d4e1` | push | TUI scenarios | completed:cancelled |
-| 35936415200 | `a836fad8d4e1` | push | TUI Windows compatibility | completed:success |
-| 35936296643 | `565e94e58402` | pull_request | TUI Windows compatibility | completed:success |
-| 35936296618 | `565e94e58402` | pull_request | TUI scenarios | completed:success |
-| 35936287735 | `565e94e58402` | push | TUI Windows compatibility | completed:success |
-| 35936287727 | `565e94e58402` | push | TUI scenarios | completed:success |
+| 35937951404 | `844a00e11862` | push | TUI Windows compatibility | in_progress:- |
+| 35937951375 | `844a00e11862` | push | TUI scenarios | in_progress:- |
+| 35937843853 | `85dfea342dc3` | pull_request | TUI Windows compatibility | completed:success |
+| 35937843798 | `85dfea342dc3` | pull_request | TUI scenarios | in_progress:- |
+| 35937833915 | `85dfea342dc3` | push | TUI Windows compatibility | completed:success |
+| 35937833898 | `85dfea342dc3` | push | TUI scenarios | in_progress:- |
+| 35937829255 | `340aab0971c6` | push | TUI scenarios | completed:cancelled |
+| 35937829237 | `340aab0971c6` | push | TUI Windows compatibility | completed:success |
+| 35937786085 | `31c7521c11a0` | push | TUI scenarios | completed:cancelled |
+| 35937786057 | `31c7521c11a0` | push | TUI Windows compatibility | completed:cancelled |
+| 35937628415 | `75efe60f0fa7` | pull_request | TUI Windows compatibility | completed:success |
+| 35937628401 | `75efe60f0fa7` | pull_request | TUI scenarios | completed:success |
