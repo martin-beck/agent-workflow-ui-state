@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 82 |
+| **Done** | Accepted, integrated, and durably verified | 83 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -110,7 +110,7 @@ flowchart LR
         AR_0080["AR-0080 - Done"]:::status_done
         AR_0081["AR-0081 - Done"]:::status_done
         AR_0082["AR-0082 - Done"]:::status_done
-        AR_0083["AR-0083 - In progress"]:::status_in_progress
+        AR_0083["AR-0083 - Done"]:::status_done
         AR_0084["AR-0084 - In progress"]:::status_in_progress
         AR_0085["AR-0085 - Planned"]:::status_planned
         AR_0086["AR-0086 - Planned"]:::status_planned
@@ -383,11 +383,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0083](tasks/AR-0083.md): PowerShell inline-bootstrap compatibility | codex-ar0083 | PowerShell inline bootstrap is scriptblock-safe and covered by disposable Windows tests. | Verify future installer releases against the inline invocation contract. |
 | P0 | [AR-0084](tasks/AR-0084.md): Authoritative dynamic-token issuance and publication | ar0084-tokens | Ensure the Coordinator issues each batch token on the authoritative host and publishes the matching registry and request atomically before the user command is printed. | Specify and test the Coordinator-to-authority publication transaction, including crash recovery, expiry, and no-local-only-token failure. |
 
 ### Planned (3)
@@ -398,7 +397,7 @@ flowchart LR
 | P1 | [AR-0086](tasks/AR-0086.md): Authoritative batch fixture and scenario documentation | Unclaimed | Generate and validate complete multi-AR decision fixtures and scenario documentation from the authoritative AR graph. | Add a fixture audit that rejects dropped top-level requests, mismatched packet digests, and stale generated screenshots or recordings. |
 | P1 | [AR-0087](tasks/AR-0087.md): Release and bootstrap freshness gate | Unclaimed | Keep published UI releases, installer URLs, bootstrap hashes, umbrella pins, and operator commands mutually consistent. | Add a release gate that tests the exact published tag and rejects stale local checkouts or mismatched installer hashes. |
 
-### Done (82)
+### Done (83)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -431,6 +430,7 @@ flowchart LR
 | P0 | [AR-0071](tasks/AR-0071.md): Remote self-bootstrapping UI handoff | Unclaimed | Bootstrap the GUI/TUI decision client from the authoritative SSH host on an unprepared controlling machine. | Verify future launcher releases against the environment-negotiation contract. |
 | P0 | [AR-0078](tasks/AR-0078.md): Coordinator-issued dynamic decision tokens | Unclaimed | Generate an authoritative short token dynamically for each complete revision-bound decision batch. | Verify future Coordinator token issuers against the batch-binding and privacy contract. |
 | P0 | [AR-0079](tasks/AR-0079.md): Remote token resolution and single-use completion | Unclaimed | Resolve dynamically issued tokens from remote machines and consume them exactly once after durable batch completion. | Verify future remote finalizers against single-use, retry, and replay guarantees. |
+| P0 | [AR-0083](tasks/AR-0083.md): PowerShell inline-bootstrap compatibility | Unclaimed | PowerShell inline bootstrap is scriptblock-safe and covered by disposable Windows tests. | Verify future installer releases against the inline invocation contract. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
