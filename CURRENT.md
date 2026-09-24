@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | Current dashboard, hierarchy, directive, pause/resume, and rollback/conflict flows are scenario-covered with regenerated terminal and GUI artifacts. | Verify future UI changes regenerate all scenario artifacts and requirement documentation. | ar0088-scenarios |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -100,3 +94,4 @@ Never edit this file directly.
 | P1 | [AR-0085](tasks/AR-0085.md): Directive entry for board instructions | Directive entry is revision-bound, token-aware, expiry-safe, and round-trip tested. | Verify future directive releases against the bridge and token contract. | - |
 | P1 | [AR-0086](tasks/AR-0086.md): Paused-session card and resume flow | Render paused sessions in the TUI and resume them through the host transport and handoff contract. | Implement paused-session cards and resume, then open a review PR. | - |
 | P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Decision packets now render effective windows, rollback ancestry, and conflict reasons with regression coverage. | Verify future checkpoint and conflict displays against the revision-bound packet contract. | - |
+| P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | Current dashboard, hierarchy, directive, pause/resume, and rollback/conflict flows are scenario-covered with regenerated terminal and GUI artifacts. | Verify future UI changes regenerate all scenario artifacts and requirement documentation. | - |

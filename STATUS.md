@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**88 ARs tracked** across 2 active status categories.
+**88 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 87 |
+| **Done** | Accepted, integrated, and durably verified | 88 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -115,7 +115,7 @@ flowchart LR
         AR_0085["AR-0085 - Done"]:::status_done
         AR_0086["AR-0086 - Done"]:::status_done
         AR_0087["AR-0087 - Done"]:::status_done
-        AR_0088["AR-0088 - In progress"]:::status_in_progress
+        AR_0088["AR-0088 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -379,13 +379,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | ar0088-scenarios | Current dashboard, hierarchy, directive, pause/resume, and rollback/conflict flows are scenario-covered with regenerated terminal and GUI artifacts. | Verify future UI changes regenerate all scenario artifacts and requirement documentation. |
-
-### Done (87)
+### Done (88)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -476,3 +470,4 @@ flowchart LR
 | P1 | [AR-0085](tasks/AR-0085.md): Directive entry for board instructions | Unclaimed | Directive entry is revision-bound, token-aware, expiry-safe, and round-trip tested. | Verify future directive releases against the bridge and token contract. |
 | P1 | [AR-0086](tasks/AR-0086.md): Paused-session card and resume flow | Unclaimed | Render paused sessions in the TUI and resume them through the host transport and handoff contract. | Implement paused-session cards and resume, then open a review PR. |
 | P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Unclaimed | Decision packets now render effective windows, rollback ancestry, and conflict reasons with regression coverage. | Verify future checkpoint and conflict displays against the revision-bound packet contract. |
+| P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | Unclaimed | Current dashboard, hierarchy, directive, pause/resume, and rollback/conflict flows are scenario-covered with regenerated terminal and GUI artifacts. | Verify future UI changes regenerate all scenario artifacts and requirement documentation. |
