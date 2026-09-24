@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0085](tasks/AR-0085.md): Real Windows SSH GUI/TUI qualification | Qualify the complete tokenized batched decision flow from Windows PowerShell through SSH for GUI-first and TUI fallback execution. | Run the matrix on clean Windows runners and a reachable SSH authority, recording command, backend selection, returned journal, and cleanup evidence. | codex-ar0085 |
+| P1 | [AR-0085](tasks/AR-0085.md): Real Windows SSH GUI/TUI qualification | Windows GUI-first/TUI-fallback SSH qualification is implemented and merged with amd64/arm64 evidence. | Verify future Windows SSH qualification against the capability and batch-journal contract. | codex-ar0085 |
 
 ## Planned
 
