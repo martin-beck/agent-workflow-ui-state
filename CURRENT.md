@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0089](tasks/AR-0089.md): UI compatibility release and umbrella synchronization | v0.6.0 is published from the completed UI main and the umbrella pins its exact tag and commit. | Verify future UI releases against the compatibility and immutable-pin contract. | codex-ar0089 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -101,3 +95,4 @@ Never edit this file directly.
 | P1 | [AR-0086](tasks/AR-0086.md): Paused-session card and resume flow | Render paused sessions in the TUI and resume them through the host transport and handoff contract. | Implement paused-session cards and resume, then open a review PR. | - |
 | P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Decision packets now render effective windows, rollback ancestry, and conflict reasons with regression coverage. | Verify future checkpoint and conflict displays against the revision-bound packet contract. | - |
 | P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | Current dashboard, hierarchy, directive, pause/resume, and rollback/conflict flows are scenario-covered with regenerated terminal and GUI artifacts. | Verify future UI changes regenerate all scenario artifacts and requirement documentation. | - |
+| P1 | [AR-0089](tasks/AR-0089.md): UI compatibility release and umbrella synchronization | v0.6.0 is published from the completed UI main and the umbrella pins its exact tag and commit. | Verify future UI releases against the compatibility and immutable-pin contract. | - |
