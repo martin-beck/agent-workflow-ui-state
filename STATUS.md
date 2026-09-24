@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 89 |
+| **Done** | Accepted, integrated, and durably verified | 90 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -118,7 +118,7 @@ flowchart LR
         AR_0088["AR-0088 - Done"]:::status_done
         AR_0089["AR-0089 - Done"]:::status_done
         AR_0090["AR-0090 - In progress"]:::status_in_progress
-        AR_0091["AR-0091 - In progress"]:::status_in_progress
+        AR_0091["AR-0091 - Done"]:::status_done
         AR_0092["AR-0092 - Planned"]:::status_planned
         AR_0093["AR-0093 - Planned"]:::status_planned
         AR_0094["AR-0094 - Planned"]:::status_planned
@@ -414,11 +414,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0091](tasks/AR-0091.md): Mandatory autonomous decision routing trace | worker-ar0091 | Make important autonomous-worker decisions obligatorily use one batched AR--UI bridge session instead of chat questions. | Implement the live Guidance-to-Coordinator-to-UI routing trace and fail-closed bypass tests. |
 | P1 | [AR-0090](tasks/AR-0090.md): Pinned-family compatibility probe | worker-ar0090 | Machine-check the umbrella&#x27;s immutable UI, Coordinator, Guidance, and Quality release pins and shared bridge schemas. | Implement the immutable cross-project compatibility probe and its CI gate. |
 
 ### Planned (5)
@@ -431,7 +430,7 @@ flowchart LR
 | P1 | [AR-0095](tasks/AR-0095.md): Scenario artifact provenance and freshness | Unclaimed | Make terminal and GUI scenario artifacts reproducible, attributable, and fail-closed when stale. | Add provenance manifests and freshness checks for all scenario recordings, screenshots, and Markdown. |
 | P1 | [AR-0096](tasks/AR-0096.md): Compatibility release and operator qualification | Unclaimed | Publish a compatibility-verified UI and umbrella release after cross-project, native-platform, remote, and artifact gates pass. | Integrate the completed qualification series, update the umbrella pins, and publish a synchronized release. |
 
-### Done (89)
+### Done (90)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -464,6 +463,7 @@ flowchart LR
 | P0 | [AR-0071](tasks/AR-0071.md): Remote self-bootstrapping UI handoff | Unclaimed | Bootstrap the GUI/TUI decision client from the authoritative SSH host on an unprepared controlling machine. | Verify future launcher releases against the environment-negotiation contract. |
 | P0 | [AR-0078](tasks/AR-0078.md): Coordinator-issued dynamic decision tokens | Unclaimed | Generate an authoritative short token dynamically for each complete revision-bound decision batch. | Verify future Coordinator token issuers against the batch-binding and privacy contract. |
 | P0 | [AR-0079](tasks/AR-0079.md): Remote token resolution and single-use completion | Unclaimed | Resolve dynamically issued tokens from remote machines and consume them exactly once after durable batch completion. | Verify future remote finalizers against single-use, retry, and replay guarantees. |
+| P0 | [AR-0091](tasks/AR-0091.md): Mandatory autonomous decision routing trace | Unclaimed | Make important autonomous-worker decisions obligatorily use one batched AR--UI bridge session instead of chat questions. | Implement the live Guidance-to-Coordinator-to-UI routing trace and fail-closed bypass tests. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
