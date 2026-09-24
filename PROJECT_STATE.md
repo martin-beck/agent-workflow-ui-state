@@ -10,13 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #118 | `ar0094-cross-platform-remote-bootstrap@f977fcfff5b6` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SKIPPED, COMPLETED:SKIPPED | feat: qualify cross-platform remote bootstrap round trips |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35958342022 | `f977fcfff5b6` | pull_request | TUI Windows compatibility | queued:- |
-| 35958342018 | `f977fcfff5b6` | pull_request | TUI scenarios | queued:- |
+| 35958342022 | `f977fcfff5b6` | pull_request | TUI Windows compatibility | in_progress:- |
+| 35958342018 | `f977fcfff5b6` | pull_request | TUI scenarios | in_progress:- |
 | 35958331355 | `f977fcfff5b6` | push | TUI Windows compatibility | in_progress:- |
 | 35958331307 | `f977fcfff5b6` | push | TUI scenarios | in_progress:- |
 | 35958263564 | `fff2f83d177c` | push | TUI scenarios | in_progress:- |
