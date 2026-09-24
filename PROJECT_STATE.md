@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `e44a681ba858b7e99bd1375948763fb9db878d39`
+- Product remote main: `13aec421210c465a50754afb2dc7c13c699ca15c`
 - Local origin/main: `e44a681ba858b7e99bd1375948763fb9db878d39`
 - Primary worktree head: `78e55de7f81340f9195ec2aac0e316ba7d843994`
 
@@ -10,21 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #122 | `ar0098-session-recovery-control@eade9dc60ebd` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SKIPPED | AR-0098: bound transport retries and clean runtime bootstrap |
+| #123 | `ar0101-synchronized-document-navigation@50b281f88b5a` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SKIPPED, COMPLETED:SKIPPED | feat: precise synchronized document anchors (AR-0101) |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35963984166 | `e44a681ba858` | push | TUI scenarios | in_progress:- |
-| 35963984128 | `e44a681ba858` | push | TUI Windows compatibility | completed:success |
-| 35963569209 | `927ab3ba6589` | pull_request | TUI Windows compatibility | completed:success |
-| 35963569182 | `927ab3ba6589` | pull_request | TUI scenarios | completed:success |
-| 35963566528 | `927ab3ba6589` | push | TUI Windows compatibility | completed:success |
-| 35963566482 | `927ab3ba6589` | push | TUI scenarios | completed:success |
-| 35963189904 | `eade9dc60ebd` | push | TUI Windows compatibility | completed:success |
-| 35963189870 | `eade9dc60ebd` | push | TUI scenarios | completed:success |
-| 35963168855 | `473f668b6da8` | pull_request | TUI scenarios | completed:failure |
-| 35963168848 | `473f668b6da8` | pull_request | TUI Windows compatibility | completed:success |
-| 35963165355 | `473f668b6da8` | push | TUI scenarios | completed:failure |
-| 35963165147 | `473f668b6da8` | push | TUI Windows compatibility | completed:success |
+| 35965064779 | `13aec421210c` | push | TUI Windows compatibility | in_progress:- |
+| 35965064656 | `13aec421210c` | push | TUI scenarios | in_progress:- |
+| 35964875995 | `50b281f88b5a` | pull_request | TUI scenarios | completed:failure |
+| 35964875872 | `50b281f88b5a` | pull_request | TUI Windows compatibility | completed:success |
+| 35964871600 | `50b281f88b5a` | push | TUI scenarios | completed:failure |
+| 35964871568 | `50b281f88b5a` | push | TUI Windows compatibility | completed:success |
+| 35964629067 | `14d4c952f4b8` | pull_request | TUI scenarios | completed:success |
+| 35964629001 | `14d4c952f4b8` | pull_request | TUI Windows compatibility | completed:success |
+| 35964625529 | `14d4c952f4b8` | push | TUI scenarios | completed:success |
+| 35964625468 | `14d4c952f4b8` | push | TUI Windows compatibility | completed:success |
+| 35964468539 | `0b15b0c46f86` | pull_request | TUI Windows compatibility | completed:success |
+| 35964468439 | `0b15b0c46f86` | pull_request | TUI scenarios | completed:failure |
