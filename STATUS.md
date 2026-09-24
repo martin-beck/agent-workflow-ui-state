@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**87 ARs tracked** across 2 active status categories.
+**88 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 2 |
+| **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 85 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -110,11 +110,12 @@ flowchart LR
         AR_0080["AR-0080 - Done"]:::status_done
         AR_0081["AR-0081 - Done"]:::status_done
         AR_0082["AR-0082 - Done"]:::status_done
-        AR_0083["AR-0083 - Done"]:::status_done
-        AR_0084["AR-0084 - Done"]:::status_done
-        AR_0085["AR-0085 - Done"]:::status_done
+        AR_0083["AR-0083 - Planned"]:::status_planned
+        AR_0084["AR-0084 - Planned"]:::status_planned
+        AR_0085["AR-0085 - Planned"]:::status_planned
         AR_0086["AR-0086 - Planned"]:::status_planned
         AR_0087["AR-0087 - Planned"]:::status_planned
+        AR_0088["AR-0088 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -272,13 +273,12 @@ flowchart LR
     AR_0080 --> AR_0081
     AR_0080 --> AR_0082
     AR_0081 --> AR_0082
-    AR_0083 --> AR_0085
-    AR_0083 --> AR_0087
-    AR_0084 --> AR_0085
-    AR_0084 --> AR_0086
-    AR_0084 --> AR_0087
-    AR_0085 --> AR_0087
-    AR_0086 --> AR_0087
+    AR_0083 --> AR_0084
+    AR_0083 --> AR_0088
+    AR_0084 --> AR_0088
+    AR_0085 --> AR_0088
+    AR_0086 --> AR_0088
+    AR_0087 --> AR_0088
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -375,22 +375,27 @@ flowchart LR
 | [AR-0080](tasks/AR-0080.md) | [AR-0068](tasks/AR-0068.md), [AR-0074](tasks/AR-0074.md), [AR-0077](tasks/AR-0077.md), [AR-0079](tasks/AR-0079.md) | [AR-0081](tasks/AR-0081.md), [AR-0082](tasks/AR-0082.md) |
 | [AR-0081](tasks/AR-0081.md) | [AR-0069](tasks/AR-0069.md), [AR-0079](tasks/AR-0079.md), [AR-0080](tasks/AR-0080.md) | [AR-0082](tasks/AR-0082.md) |
 | [AR-0082](tasks/AR-0082.md) | [AR-0078](tasks/AR-0078.md), [AR-0079](tasks/AR-0079.md), [AR-0080](tasks/AR-0080.md), [AR-0081](tasks/AR-0081.md) | None |
-| [AR-0083](tasks/AR-0083.md) | None | [AR-0085](tasks/AR-0085.md), [AR-0087](tasks/AR-0087.md) |
-| [AR-0084](tasks/AR-0084.md) | [AR-0078](tasks/AR-0078.md), [AR-0079](tasks/AR-0079.md) | [AR-0085](tasks/AR-0085.md), [AR-0086](tasks/AR-0086.md), [AR-0087](tasks/AR-0087.md) |
-| [AR-0085](tasks/AR-0085.md) | [AR-0069](tasks/AR-0069.md), [AR-0083](tasks/AR-0083.md), [AR-0084](tasks/AR-0084.md) | [AR-0087](tasks/AR-0087.md) |
-| [AR-0086](tasks/AR-0086.md) | [AR-0054](tasks/AR-0054.md), [AR-0067](tasks/AR-0067.md), [AR-0084](tasks/AR-0084.md) | [AR-0087](tasks/AR-0087.md) |
-| [AR-0087](tasks/AR-0087.md) | [AR-0083](tasks/AR-0083.md), [AR-0084](tasks/AR-0084.md), [AR-0085](tasks/AR-0085.md), [AR-0086](tasks/AR-0086.md) | None |
+| [AR-0083](tasks/AR-0083.md) | None | [AR-0084](tasks/AR-0084.md), [AR-0088](tasks/AR-0088.md) |
+| [AR-0084](tasks/AR-0084.md) | [AR-0083](tasks/AR-0083.md) | [AR-0088](tasks/AR-0088.md) |
+| [AR-0085](tasks/AR-0085.md) | None | [AR-0088](tasks/AR-0088.md) |
+| [AR-0086](tasks/AR-0086.md) | None | [AR-0088](tasks/AR-0088.md) |
+| [AR-0087](tasks/AR-0087.md) | None | [AR-0088](tasks/AR-0088.md) |
+| [AR-0088](tasks/AR-0088.md) | [AR-0083](tasks/AR-0083.md), [AR-0084](tasks/AR-0084.md), [AR-0085](tasks/AR-0085.md), [AR-0086](tasks/AR-0086.md), [AR-0087](tasks/AR-0087.md) | None |
 
 ## Complete AR inventory
 
-### Planned (2)
+### Planned (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0086](tasks/AR-0086.md): Authoritative batch fixture and scenario documentation | Unclaimed | Generate and validate complete multi-AR decision fixtures and scenario documentation from the authoritative AR graph. | Add a fixture audit that rejects dropped top-level requests, mismatched packet digests, and stale generated screenshots or recordings. |
-| P1 | [AR-0087](tasks/AR-0087.md): Release and bootstrap freshness gate | Unclaimed | Keep published UI releases, installer URLs, bootstrap hashes, umbrella pins, and operator commands mutually consistent. | Add a release gate that tests the exact published tag and rejects stale local checkouts or mismatched installer hashes. |
+| P1 | [AR-0083](tasks/AR-0083.md): Company dashboard pane | Unclaimed | Add a board view to awui-live consuming rollup pages via a new board request type in the coordinator TUI bridge, with revision-bound envelopes. | Implement the dashboard pane and bridge types, then open a review PR. |
+| P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | Unclaimed | Add task-tree navigation (company, role/team, task) with bounded depth, consuming coordinator rollup pages. | Implement hierarchy drill-down and scenarios, then open a review PR. |
+| P1 | [AR-0085](tasks/AR-0085.md): Directive entry for board instructions | Unclaimed | Add a board-instruction entry path in the TUI using the revision-bound envelope and decision batch token contract. | Implement the directive entry path and scenario, then open a review PR. |
+| P1 | [AR-0086](tasks/AR-0086.md): Paused-session card and resume flow | Unclaimed | Render paused sessions in the TUI and resume them through the host transport and handoff contract. | Implement paused-session cards and resume, then open a review PR. |
+| P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Unclaimed | Render decision packets with effective-window and rollback markings so the user sees the current effective decision and rollback state. | Implement effective-window and rollback display, then open a review PR. |
+| P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | Unclaimed | Extend scenarios/corpus.json and the UX/requirement-matrix documentation for all new flows. | Extend the scenario corpus and UX docs, then open a review PR. |
 
-### Done (85)
+### Done (82)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
