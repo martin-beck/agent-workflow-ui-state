@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0094](tasks/AR-0094.md): Real cross-platform remote bootstrap round trip | Prove the one-command remote GUI/TUI decision flow from real Windows and POSIX clients through SSH and back. | Implement Windows and POSIX remote bootstrap round trips with failure/reconnect coverage. | worker-ar0094 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -112,4 +106,5 @@ Never edit this file directly.
 | P1 | [AR-0089](tasks/AR-0089.md): UI compatibility release and umbrella synchronization | v0.6.0 is published from the completed UI main and the umbrella pins its exact tag and commit. | Verify future UI releases against the compatibility and immutable-pin contract. | - |
 | P1 | [AR-0090](tasks/AR-0090.md): Pinned-family compatibility probe | Machine-check the umbrella's immutable UI, Coordinator, Guidance, and Quality release pins and shared bridge schemas. | Implement the immutable cross-project compatibility probe and its CI gate. | - |
 | P1 | [AR-0093](tasks/AR-0093.md): Native Windows UI qualification | Qualify real Windows GUI and TUI interaction, packaging, resizing, and bridge output on native supported architectures. | Add native Windows GUI/TUI interaction qualification and architecture attestation. | - |
+| P1 | [AR-0094](tasks/AR-0094.md): Real cross-platform remote bootstrap round trip | Prove the one-command remote GUI/TUI decision flow from real Windows and POSIX clients through SSH and back. | Implement Windows and POSIX remote bootstrap round trips with failure/reconnect coverage. | - |
 | P1 | [AR-0095](tasks/AR-0095.md): Scenario artifact provenance and freshness | Make terminal and GUI scenario artifacts reproducible, attributable, and fail-closed when stale. | Add provenance manifests and freshness checks for all scenario recordings, screenshots, and Markdown. | - |
