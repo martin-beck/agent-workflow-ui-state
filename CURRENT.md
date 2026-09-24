@@ -9,7 +9,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0083](tasks/AR-0083.md): Company dashboard pane | Add a board view to awui-live consuming rollup pages via a new board request type in the coordinator TUI bridge, with revision-bound envelopes. | Await PR #112 checks; merge when all checks are green, then reconcile release evidence. | ui-ar0083-dashboard |
 | P1 | [AR-0085](tasks/AR-0085.md): Directive entry for board instructions | Add a board-instruction entry path in the TUI using the revision-bound envelope and decision batch token contract. | Implement the directive entry path and scenario, then open a review PR. | ar0085-directive |
-| P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Decision packets now render effective windows, rollback ancestry, and conflict reasons with regression coverage. | Verify future checkpoint and conflict displays against the revision-bound packet contract. | codex-ar0087 |
 
 ## Planned
 
@@ -105,3 +104,4 @@ Never edit this file directly.
 | P1 | [AR-0081](tasks/AR-0081.md): Real-environment dynamic-token qualification | Qualify Coordinator-issued token sessions across separate machines, platforms, architectures, and failure modes. | Extend the qualification matrix when additional supported architectures or host operating systems are introduced. | - |
 | P1 | [AR-0082](tasks/AR-0082.md): Dynamic-token operator documentation and compatibility release | Publish the supported dynamic-token workflow and synchronize compatible Agent Workflow releases after qualification. | Verify future releases against the dynamic-token operator and compatibility contract. | - |
 | P1 | [AR-0086](tasks/AR-0086.md): Paused-session card and resume flow | Render paused sessions in the TUI and resume them through the host transport and handoff contract. | Implement paused-session cards and resume, then open a review PR. | - |
+| P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Decision packets now render effective windows, rollback ancestry, and conflict reasons with regression coverage. | Verify future checkpoint and conflict displays against the revision-bound packet contract. | - |
