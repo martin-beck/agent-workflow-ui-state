@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**104 ARs tracked** across 2 active status categories.
+**104 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 103 |
+| **Done** | Accepted, integrated, and durably verified | 104 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -134,7 +134,7 @@ flowchart LR
         AR_0101["AR-0101 - Done"]:::status_done
         AR_0102["AR-0102 - Done"]:::status_done
         AR_0103["AR-0103 - Done"]:::status_done
-        AR_0104["AR-0104 - In progress"]:::status_in_progress
+        AR_0104["AR-0104 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -446,13 +446,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | ar0104-release-hardening | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. |
-
-### Done (103)
+### Done (104)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -559,3 +553,4 @@ flowchart LR
 | P1 | [AR-0100](tasks/AR-0100.md): Decision workspace intelligence and batch control | Unclaimed | Turn the decision list into a scalable workspace with batch progress, dependency explanations, and evidence drill-down. | Implement dependency-aware batch filtering, grouping, progress, and evidence drill-down in both renderers. |
 | P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | Unclaimed | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Review and merge PR #123 after required CI checks pass; then close AR-0101. |
 | P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | Unclaimed | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. |
+| P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Unclaimed | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. |

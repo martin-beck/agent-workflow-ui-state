@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. | ar0104-release-hardening |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -116,3 +110,4 @@ Never edit this file directly.
 | P1 | [AR-0100](tasks/AR-0100.md): Decision workspace intelligence and batch control | Turn the decision list into a scalable workspace with batch progress, dependency explanations, and evidence drill-down. | Implement dependency-aware batch filtering, grouping, progress, and evidence drill-down in both renderers. | - |
 | P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Review and merge PR #123 after required CI checks pass; then close AR-0101. | - |
 | P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. | - |
+| P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. | - |
