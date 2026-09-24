@@ -10,21 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #112 | `ar/ar-0083-company-dashboard-pane@85dfea342dc3` | `main` | DIRTY | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add revision-bound company dashboard pane |
+| #112 | `ar/ar-0083-company-dashboard-pane@3daf6981e290` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add revision-bound company dashboard pane |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35937951404 | `844a00e11862` | push | TUI Windows compatibility | in_progress:- |
-| 35937951375 | `844a00e11862` | push | TUI scenarios | in_progress:- |
+| 35938097643 | `3daf6981e290` | pull_request | TUI Windows compatibility | completed:success |
+| 35938097602 | `3daf6981e290` | pull_request | TUI scenarios | in_progress:- |
+| 35938093471 | `3daf6981e290` | push | TUI scenarios | in_progress:- |
+| 35938093449 | `3daf6981e290` | push | TUI Windows compatibility | completed:success |
+| 35937951404 | `844a00e11862` | push | TUI Windows compatibility | completed:success |
+| 35937951375 | `844a00e11862` | push | TUI scenarios | completed:success |
 | 35937843853 | `85dfea342dc3` | pull_request | TUI Windows compatibility | completed:success |
-| 35937843798 | `85dfea342dc3` | pull_request | TUI scenarios | in_progress:- |
+| 35937843798 | `85dfea342dc3` | pull_request | TUI scenarios | completed:cancelled |
 | 35937833915 | `85dfea342dc3` | push | TUI Windows compatibility | completed:success |
-| 35937833898 | `85dfea342dc3` | push | TUI scenarios | in_progress:- |
+| 35937833898 | `85dfea342dc3` | push | TUI scenarios | completed:cancelled |
 | 35937829255 | `340aab0971c6` | push | TUI scenarios | completed:cancelled |
 | 35937829237 | `340aab0971c6` | push | TUI Windows compatibility | completed:success |
-| 35937786085 | `31c7521c11a0` | push | TUI scenarios | completed:cancelled |
-| 35937786057 | `31c7521c11a0` | push | TUI Windows compatibility | completed:cancelled |
-| 35937628415 | `75efe60f0fa7` | pull_request | TUI Windows compatibility | completed:success |
-| 35937628401 | `75efe60f0fa7` | pull_request | TUI scenarios | completed:success |
