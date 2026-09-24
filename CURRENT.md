@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0085](tasks/AR-0085.md): Directive entry for board instructions | Add a board-instruction entry path in the TUI using the revision-bound envelope and decision batch token contract. | Implement the directive entry path and scenario, then open a review PR. | ar0085-directive |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Render decision packets with effective-window and rollback markings so the user sees the current effective decision and rollback state. | Implement effective-window and rollback display, then open a review PR. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -16,7 +22,6 @@ Never edit this file directly.
 | P1 | [AR-0083](tasks/AR-0083.md): Company dashboard pane | Add a board view to awui-live consuming rollup pages via a new board request type in the coordinator TUI bridge, with revision-bound envelopes. | Implement the dashboard pane and bridge types, then open a review PR. | - |
 | P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | Add task-tree navigation (company, role/team, task) with bounded depth, consuming coordinator rollup pages. | Implement hierarchy drill-down and scenarios, then open a review PR. | - |
 | P1 | [AR-0086](tasks/AR-0086.md): Paused-session card and resume flow | Render paused sessions in the TUI and resume them through the host transport and handoff contract. | Implement paused-session cards and resume, then open a review PR. | - |
-| P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Render decision packets with effective-window and rollback markings so the user sees the current effective decision and rollback state. | Implement effective-window and rollback display, then open a review PR. | - |
 | P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | Extend scenarios/corpus.json and the UX/requirement-matrix documentation for all new flows. | Extend the scenario corpus and UX docs, then open a review PR. | - |
 
 ## Done
