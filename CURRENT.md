@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0098](tasks/AR-0098.md): Session recovery, cancellation, and bounded transport control | Make remote and local sessions recoverable, cancellable, bounded, and cleanup-safe under real transport failures. | PR #122 is open; wait for replay-and-refresh and native qualification, then merge and run full targeted transport/recovery gates. | ar0098-session-recovery |
-| P1 | [AR-0099](tasks/AR-0099.md): Discoverable keyboard, accessibility, and focus system | Make the full decision workflow discoverable, keyboard-complete, and accessible with consistent GUI/TUI controls. | Implement the shared command palette, key-hint footer, focus model, and accessibility checks for GUI and TUI. | ar0099_accessibility |
 
 ## Planned
 
@@ -121,3 +120,4 @@ Never edit this file directly.
 | P1 | [AR-0094](tasks/AR-0094.md): Real cross-platform remote bootstrap round trip | Prove the one-command remote GUI/TUI decision flow from real Windows and POSIX clients through SSH and back. | Implement Windows and POSIX remote bootstrap round trips with failure/reconnect coverage. | - |
 | P1 | [AR-0095](tasks/AR-0095.md): Scenario artifact provenance and freshness | Make terminal and GUI scenario artifacts reproducible, attributable, and fail-closed when stale. | Add provenance manifests and freshness checks for all scenario recordings, screenshots, and Markdown. | - |
 | P1 | [AR-0096](tasks/AR-0096.md): Compatibility release and operator qualification | Publish a compatibility-verified UI and umbrella release after cross-project, native-platform, remote, and artifact gates pass. | Integrate the completed qualification series, update the umbrella pins, and publish a synchronized release. | - |
+| P1 | [AR-0099](tasks/AR-0099.md): Discoverable keyboard, accessibility, and focus system | Make the full decision workflow discoverable, keyboard-complete, and accessible with consistent GUI/TUI controls. | Implement the shared command palette, key-hint footer, focus model, and accessibility checks for GUI and TUI. | - |
