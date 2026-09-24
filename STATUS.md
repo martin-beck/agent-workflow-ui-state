@@ -450,7 +450,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0098](tasks/AR-0098.md): Session recovery, cancellation, and bounded transport control | ar0098-session-recovery | Make remote and local sessions recoverable, cancellable, bounded, and cleanup-safe under real transport failures. | Implement bounded reconnect/cancel/timeout lifecycle control and prove cleanup under injected transport failures. |
+| P0 | [AR-0098](tasks/AR-0098.md): Session recovery, cancellation, and bounded transport control | ar0098-session-recovery | Make remote and local sessions recoverable, cancellable, bounded, and cleanup-safe under real transport failures. | PR #122 is open; wait for replay-and-refresh and native qualification, then merge and run full targeted transport/recovery gates. |
 | P1 | [AR-0099](tasks/AR-0099.md): Discoverable keyboard, accessibility, and focus system | ar0099_accessibility | Make the full decision workflow discoverable, keyboard-complete, and accessible with consistent GUI/TUI controls. | Implement the shared command palette, key-hint footer, focus model, and accessibility checks for GUI and TUI. |
 
 ### Planned (5)
