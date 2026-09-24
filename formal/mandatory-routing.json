@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "spec_id": "AWG-SPEC-MANDATORY-AUTONOMOUS-ROUTING",
+  "objective": "Require important autonomous-worker decisions to use one revision-bound Guidance-Coordinator-workflow-ui batch.",
+  "owners": {
+    "guidance": "decision trigger and AR authorization",
+    "coordinator": "batch identity, revision, and durable persistence",
+    "workflow-ui": "typed user response for every point",
+    "worker": "resume only after persisted response"
+  },
+  "invariants": [
+    "An important or ambiguous decision has a Guidance trigger",
+    "All independent AR points share one Coordinator batch and one UI session",
+    "Every response and persistence reference matches the current task revision",
+    "A conversational answer, stale response, partial batch, or cross-AR event fails closed",
+    "The worker resumes only from the complete Coordinator persistence event"
+  ],
+  "checker": "tools/check_mandatory_routing.py",
+  "positive_trace": "formal/mandatory-routing.pass.json",
+  "negative_traces": [
+    "formal/mandatory-routing.bypass.invalid.json",
+    "formal/mandatory-routing.stale.invalid.json",
+    "formal/mandatory-routing.partial.invalid.json",
+    "formal/mandatory-routing.cross-ar.invalid.json"
+  ]
+}
