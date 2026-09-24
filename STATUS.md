@@ -387,7 +387,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0084](tasks/AR-0084.md): Authoritative dynamic-token issuance and publication | ar0084-tokens | Ensure the Coordinator issues each batch token on the authoritative host and publishes the matching registry and request atomically before the user command is printed. | Specify and test the Coordinator-to-authority publication transaction, including crash recovery, expiry, and no-local-only-token failure. |
+| P0 | [AR-0084](tasks/AR-0084.md): Authoritative dynamic-token issuance and publication | ar0084-tokens | Authoritative token publication is atomic, private, digest-only, restart-safe, and covered by hosted checks. | Verify future authority publication against the batch-binding and replay contract. |
 
 ### Planned (3)
 
