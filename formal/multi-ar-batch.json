@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "name": "authoritative-multi-ar-batch",
+  "owner": "coordinator",
+  "checker": "tools/check_multi_ar_batch.py",
+  "required_projections": ["design", "workplan"],
+  "required_clients": ["tui", "gui"],
+  "invariants": [
+    "all points share one project, task revision, and batch identity",
+    "each AR/decision identity occurs exactly once",
+    "both Markdown projections contain one distinct anchor per point",
+    "TUI and GUI consume identical point and per-document anchor maps"
+  ],
+  "negative_fixtures": [
+    "multi-ar-batch.empty.invalid.json",
+    "multi-ar-batch.duplicate.invalid.json",
+    "multi-ar-batch.stale.invalid.json",
+    "multi-ar-batch.partial.invalid.json"
+  ]
+}

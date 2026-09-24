@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "owner": "coordinator",
+  "project_id": "agent-workflow-tui",
+  "batch_id": "batch-0092",
+  "task_revision": 3,
+  "structure_graph": {"owner": "coordinator", "project_id": "agent-workflow-tui", "task_revision": 3, "digest": "sha256:graph-0092"},
+  "points": [
+    {"ar_id": "AR-0101", "decision_id": "retention", "task_revision": 3, "dependency_ids": [], "proposals": ["retain", "remove"]},
+    {"ar_id": "AR-0102", "decision_id": "rollout", "task_revision": 3, "dependency_ids": ["AR-0101:retention"], "proposals": ["canary", "all-at-once"]}
+  ],
+  "projections": {
+    "design": {"batch_id": "batch-0092", "task_revision": 3, "markdown": "# Design\n\n## Retention {#ar-0101-retention}\n\n## Rollout {#ar-0102-rollout}\n", "anchors": [{"ar_id": "AR-0101", "decision_id": "retention", "task_revision": 3, "anchor": "#ar-0101-retention"}, {"ar_id": "AR-0102", "decision_id": "rollout", "task_revision": 3, "anchor": "#ar-0102-rollout"}]},
+    "workplan": {"batch_id": "batch-0092", "task_revision": 3, "markdown": "# Work plan\n\n## Retention {#ar-0101-retention-work}\n\n## Rollout {#ar-0102-rollout-work}\n", "anchors": [{"ar_id": "AR-0101", "decision_id": "retention", "task_revision": 3, "anchor": "#ar-0101-retention-work"}, {"ar_id": "AR-0102", "decision_id": "rollout", "task_revision": 3, "anchor": "#ar-0102-rollout-work"}]}
+  },
+  "clients": {
+    "tui": {"batch_id": "batch-0092", "task_revision": 3, "point_keys": [["AR-0101", "retention"], ["AR-0102", "rollout"]], "anchors": {"design": {"AR-0101:retention": "#ar-0101-retention", "AR-0102:rollout": "#ar-0102-rollout"}, "workplan": {"AR-0101:retention": "#ar-0101-retention-work", "AR-0102:rollout": "#ar-0102-rollout-work"}}},
+    "gui": {"batch_id": "batch-0092", "task_revision": 3, "point_keys": [["AR-0101", "retention"], ["AR-0102", "rollout"]], "anchors": {"design": {"AR-0101:retention": "#ar-0101-retention", "AR-0102:rollout": "#ar-0102-rollout"}, "workplan": {"AR-0101:retention": "#ar-0101-retention-work", "AR-0102:rollout": "#ar-0102-rollout-work"}}}
+  }
+}
