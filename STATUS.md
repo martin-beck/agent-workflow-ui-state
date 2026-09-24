@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**104 ARs tracked** across 3 active status categories.
+**104 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 102 |
+| **Done** | Accepted, integrated, and durably verified | 103 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -133,7 +133,7 @@ flowchart LR
         AR_0100["AR-0100 - Done"]:::status_done
         AR_0101["AR-0101 - Done"]:::status_done
         AR_0102["AR-0102 - Done"]:::status_done
-        AR_0103["AR-0103 - In progress"]:::status_in_progress
+        AR_0103["AR-0103 - Done"]:::status_done
         AR_0104["AR-0104 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -446,19 +446,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | ar0103_resilience | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. |
-
 ### Planned (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Unclaimed | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. |
 
-### Done (102)
+### Done (103)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -495,6 +489,7 @@ flowchart LR
 | P0 | [AR-0092](tasks/AR-0092.md): Authoritative multi-AR batch and document projection | Unclaimed | Generate one complete revision-bound decision batch and matching Design/Work plan Markdown for all independent AR decisions. | Implement the multi-AR batch envelope and structure-graph Markdown/highlight projection. |
 | P0 | [AR-0097](tasks/AR-0097.md): Durable save and GUI/TUI persistence parity | Unclaimed | Make GUI and TUI persistence controls produce identical durable revision-bound journals instead of local-only saved flags. | Implement durable Save and Save + Exit event parity for GUI and TUI, then add crash-safe recovery tests. |
 | P0 | [AR-0098](tasks/AR-0098.md): Session recovery, cancellation, and bounded transport control | Unclaimed | Make remote and local sessions recoverable, cancellable, bounded, and cleanup-safe under real transport failures. | PR #122 is open; wait for replay-and-refresh and native qualification, then merge and run full targeted transport/recovery gates. |
+| P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Unclaimed | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |

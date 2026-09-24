@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. | ar0103_resilience |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -52,6 +46,7 @@ Never edit this file directly.
 | P0 | [AR-0092](tasks/AR-0092.md): Authoritative multi-AR batch and document projection | Generate one complete revision-bound decision batch and matching Design/Work plan Markdown for all independent AR decisions. | Implement the multi-AR batch envelope and structure-graph Markdown/highlight projection. | - |
 | P0 | [AR-0097](tasks/AR-0097.md): Durable save and GUI/TUI persistence parity | Make GUI and TUI persistence controls produce identical durable revision-bound journals instead of local-only saved flags. | Implement durable Save and Save + Exit event parity for GUI and TUI, then add crash-safe recovery tests. | - |
 | P0 | [AR-0098](tasks/AR-0098.md): Session recovery, cancellation, and bounded transport control | Make remote and local sessions recoverable, cancellable, bounded, and cleanup-safe under real transport failures. | PR #122 is open; wait for replay-and-refresh and native qualification, then merge and run full targeted transport/recovery gates. | - |
+| P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
