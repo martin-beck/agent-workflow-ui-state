@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0083](tasks/AR-0083.md): Company dashboard pane | Add a board view to awui-live consuming rollup pages via a new board request type in the coordinator TUI bridge, with revision-bound envelopes. | Await PR #112 checks; merge when all checks are green, then reconcile release evidence. | ui-ar0083-dashboard |
-| P1 | [AR-0085](tasks/AR-0085.md): Directive entry for board instructions | Add a board-instruction entry path in the TUI using the revision-bound envelope and decision batch token contract. | Implement the directive entry path and scenario, then open a review PR. | ar0085-directive |
+| P1 | [AR-0085](tasks/AR-0085.md): Directive entry for board instructions | Directive entry is revision-bound, token-aware, expiry-safe, and round-trip tested. | Verify future directive releases against the bridge and token contract. | ar0085-directive |
 
 ## Planned
 
