@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**88 ARs tracked** across 3 active status categories.
+**88 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 85 |
+| **Done** | Accepted, integrated, and durably verified | 86 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -110,7 +110,7 @@ flowchart LR
         AR_0080["AR-0080 - Done"]:::status_done
         AR_0081["AR-0081 - Done"]:::status_done
         AR_0082["AR-0082 - Done"]:::status_done
-        AR_0083["AR-0083 - In progress"]:::status_in_progress
+        AR_0083["AR-0083 - Done"]:::status_done
         AR_0084["AR-0084 - Planned"]:::status_planned
         AR_0085["AR-0085 - Done"]:::status_done
         AR_0086["AR-0086 - Done"]:::status_done
@@ -379,12 +379,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0083](tasks/AR-0083.md): Company dashboard pane | ui-ar0083-dashboard | Add a board view to awui-live consuming rollup pages via a new board request type in the coordinator TUI bridge, with revision-bound envelopes. | Await PR #112 checks; merge when all checks are green, then reconcile release evidence. |
-
 ### Planned (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -392,7 +386,7 @@ flowchart LR
 | P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | Unclaimed | Add task-tree navigation (company, role/team, task) with bounded depth, consuming coordinator rollup pages. | Implement hierarchy drill-down and scenarios, then open a review PR. |
 | P1 | [AR-0088](tasks/AR-0088.md): Scenario corpus and UX docs update | Unclaimed | Extend scenarios/corpus.json and the UX/requirement-matrix documentation for all new flows. | Extend the scenario corpus and UX docs, then open a review PR. |
 
-### Done (85)
+### Done (86)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -478,6 +472,7 @@ flowchart LR
 | P1 | [AR-0080](tasks/AR-0080.md): Remote-machine installation and environment prerequisites | Unclaimed | Make dynamic-token launch reliable on fresh Windows, Linux, and macOS controlling machines. | Verify future installer releases against fresh-machine routing and capability detection. |
 | P1 | [AR-0081](tasks/AR-0081.md): Real-environment dynamic-token qualification | Unclaimed | Qualify Coordinator-issued token sessions across separate machines, platforms, architectures, and failure modes. | Extend the qualification matrix when additional supported architectures or host operating systems are introduced. |
 | P1 | [AR-0082](tasks/AR-0082.md): Dynamic-token operator documentation and compatibility release | Unclaimed | Publish the supported dynamic-token workflow and synchronize compatible Agent Workflow releases after qualification. | Verify future releases against the dynamic-token operator and compatibility contract. |
+| P1 | [AR-0083](tasks/AR-0083.md): Company dashboard pane | Unclaimed | Add a board view to awui-live consuming rollup pages via a new board request type in the coordinator TUI bridge, with revision-bound envelopes. | Await PR #112 checks; merge when all checks are green, then reconcile release evidence. |
 | P1 | [AR-0085](tasks/AR-0085.md): Directive entry for board instructions | Unclaimed | Directive entry is revision-bound, token-aware, expiry-safe, and round-trip tested. | Verify future directive releases against the bridge and token contract. |
 | P1 | [AR-0086](tasks/AR-0086.md): Paused-session card and resume flow | Unclaimed | Render paused sessions in the TUI and resume them through the host transport and handoff contract. | Implement paused-session cards and resume, then open a review PR. |
 | P1 | [AR-0087](tasks/AR-0087.md): Rollback and conflict decision display | Unclaimed | Decision packets now render effective windows, rollback ancestry, and conflict reasons with regression coverage. | Verify future checkpoint and conflict displays against the revision-bound packet contract. |
