@@ -10,8 +10,9 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `docs/recordings/add-alternative.cast`, `docs/recordings/alternative-clarify.cast`, `docs/recordings/basic-select.cast`, `docs/recordings/batch-clarify.cast`, `docs/recordings/batch-partial.cast`, `docs/recordings/cancel-after-review.cast`, `docs/recordings/clarify-ownership.cast`, `docs/recordings/escape-exit.cast`, `docs/recordings/evidence-then-reject.cast`, `docs/recordings/explicit-document-views.cast`, `docs/recordings/full-contest.cast`, `docs/recordings/more-evidence.cast`, `docs/recordings/multi-point-handoff.cast`, `docs/recordings/navigate-documents.cast`, `docs/recordings/proposal-reject.cast`, `docs/recordings/proposal-with-navigation.cast`, `docs/recordings/reask-after-gap.cast`, `docs/recordings/reject-risk.cast`, `docs/recordings/reopen-save.cast`, `docs/recordings/revise-selection.cast`, `docs/recordings/revision-reopen.cast`, `docs/recordings/safe-exit.cast`, `docs/recordings/targeted-reopen.cast`, `docs/recordings/transport-roundtrip.cast` |
 | `agent-workflow-ui-ar0085` | `ar-0085-directive-entry` | `d97a68731891` | 0 | behind 7, ahead 1 |
 | `agent-workflow-ui-ar0088` | `ar-0088-scenario-corpus` | `8ba1cc8996be` | 0 | behind 2, ahead 2 |
-| `agent-workflow-ui-ar0093` | `ar-0093-native-windows` | `f89103b70d18` | 6 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/windows-smoke.yml`, `docs/REMOTE_ROUNDTRIP.md`, `tests/test_windows_qualification.py`, `tools/qualify_windows.py`, `build/`, `src/agent_workflow_ui.egg-info/` |
+| `agent-workflow-ui-ar0093` | `ar-0093-native-windows` | `b11e79e3d448` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `build/`, `src/agent_workflow_ui.egg-info/` |
+| `agent-workflow-ui-ar0095` | `ar-0095-scenario-artifact-provenance` | `f70fefeeff37` | 0 | behind 0, ahead 1 |
 | `agent-workflow-tui-ar0035` | `feature/ar-0035-scenario-artifact-hardening` | `32dfc428d32c` | 0 | behind 97, ahead 0 |
 | `agent-workflow-tui-ar0040` | `feature/ar-0040-terminal-lifecycle-v2` | `be4e8de93fb9` | 0 | behind 90, ahead 0 |
 | `agent-workflow-ui-ar0085-work` | `ar-0085-windows-qualification` | `a836fad8d4e1` | 24 | behind 10, ahead 1 |
