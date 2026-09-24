@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0092](tasks/AR-0092.md): Authoritative multi-AR batch and document projection | Generate one complete revision-bound decision batch and matching Design/Work plan Markdown for all independent AR decisions. | Implement the multi-AR batch envelope and structure-graph Markdown/highlight projection. | worker-ar0092 |
 | P1 | [AR-0090](tasks/AR-0090.md): Pinned-family compatibility probe | Machine-check the umbrella's immutable UI, Coordinator, Guidance, and Quality release pins and shared bridge schemas. | Implement the immutable cross-project compatibility probe and its CI gate. | worker-ar0090 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0092](tasks/AR-0092.md): Authoritative multi-AR batch and document projection | Generate one complete revision-bound decision batch and matching Design/Work plan Markdown for all independent AR decisions. | Implement the multi-AR batch envelope and structure-graph Markdown/highlight projection. | - |
 
 ## Planned
 
