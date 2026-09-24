@@ -383,7 +383,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | ui-ar0083-dashboard | Add task-tree navigation (company, role/team, task) with bounded depth, consuming coordinator rollup pages. | Await PR #113 hosted checks; merge when all checks are green, then release and reconcile. |
+| P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | ui-ar0083-dashboard | Bounded company/team/task hierarchy drill-down is revision-bound, depth-limited, and scenario-tested. | Verify future hierarchy releases against rollup identity and bounded-navigation contract. |
 
 ### Planned (1)
 
