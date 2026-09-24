@@ -16,7 +16,9 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35962857275 | `2439c42dc7c1` | push | TUI Windows compatibility | in_progress:- |
+| 35962926289 | `709965e08dd3` | push | TUI scenarios | in_progress:- |
+| 35962926282 | `709965e08dd3` | push | TUI Windows compatibility | in_progress:- |
+| 35962857275 | `2439c42dc7c1` | push | TUI Windows compatibility | completed:success |
 | 35962857185 | `2439c42dc7c1` | push | TUI scenarios | in_progress:- |
 | 35962721262 | `262cc762b99c` | pull_request | TUI Windows compatibility | completed:success |
 | 35962721225 | `262cc762b99c` | pull_request | TUI scenarios | in_progress:- |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35962422144 | `2db5b5b1c733` | pull_request | TUI scenarios | completed:success |
 | 35962415343 | `2db5b5b1c733` | push | TUI scenarios | completed:success |
 | 35962415336 | `2db5b5b1c733` | push | TUI Windows compatibility | completed:success |
-| 35962349589 | `1c9cc87fe9a7` | pull_request | TUI scenarios | completed:failure |
-| 35962349554 | `1c9cc87fe9a7` | pull_request | TUI Windows compatibility | completed:success |

@@ -24,8 +24,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `docs/recordings/add-alternative.cast`, `docs/recordings/alternative-clarify.cast`, `docs/recordings/basic-select.cast`, `docs/recordings/batch-clarify.cast`, `docs/recordings/batch-partial.cast`, `docs/recordings/cancel-after-review.cast`, `docs/recordings/clarify-ownership.cast`, `docs/recordings/escape-exit.cast`, `docs/recordings/evidence-then-reject.cast`, `docs/recordings/explicit-document-views.cast`, `docs/recordings/full-contest.cast`, `docs/recordings/more-evidence.cast`, `docs/recordings/multi-point-handoff.cast`, `docs/recordings/navigate-documents.cast`, `docs/recordings/proposal-reject.cast`, `docs/recordings/proposal-with-navigation.cast`, `docs/recordings/reask-after-gap.cast`, `docs/recordings/reject-risk.cast`, `docs/recordings/reopen-save.cast`, `docs/recordings/revise-selection.cast`, `docs/recordings/revision-reopen.cast`, `docs/recordings/safe-exit.cast`, `docs/recordings/targeted-reopen.cast`, `docs/recordings/transport-roundtrip.cast` |
 | `agent-workflow-ui-ar0089` | `ar-0089-release` | `a771bc6770f3` | 0 | behind 13, ahead 1 |
 | `agent-workflow-tui-ar0038` | `DETACHED` | `93438838e8a3` | 0 | behind 105, ahead 0 |
-| `agent-workflow-tui-ar0098` | `ar0098-session-recovery-control` | `2db5b5b1c733` | 2 | behind 0, ahead 2 |
-| changed files | - | - | - | `src/awtui/connect.py`, `tests/test_connect.py` |
+| `agent-workflow-tui-ar0098` | `ar0098-session-recovery-control` | `709965e08dd3` | 0 | behind 0, ahead 3 |
 | `agent-workflow-ui-ar0096` | `ar0096-compatibility-release` | `ccc0e410435d` | 0 | behind 1, ahead 0 |
 | `awtui-ar34.e9He2e` | `DETACHED` | `7928cc5eca0d` | 0 | behind 120, ahead 0 |
 | `awui-ar0073` | `ar0076-integration-gates` | `5a699ed34cef` | 0 | behind 32, ahead 2 |
