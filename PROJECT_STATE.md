@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #123 | `ar0101-synchronized-document-navigation@2d5f8025ee01` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SKIPPED | feat: precise synchronized document anchors (AR-0101) |
+| #123 | `ar0101-synchronized-document-navigation@2d5f8025ee01` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SKIPPED | feat: precise synchronized document anchors (AR-0101) |
 
 ## Recent workflows
 
@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35965671895 | `daeffc64162f` | pull_request | TUI scenarios | completed:success |
 | 35965671894 | `daeffc64162f` | pull_request | TUI Windows compatibility | completed:success |
 | 35965668966 | `daeffc64162f` | push | TUI Windows compatibility | completed:success |
-| 35965668760 | `daeffc64162f` | push | TUI scenarios | in_progress:- |
+| 35965668760 | `daeffc64162f` | push | TUI scenarios | completed:success |
 | 35965194294 | `a9c7a63b26ea` | push | TUI Windows compatibility | completed:success |
 | 35965194285 | `a9c7a63b26ea` | push | TUI scenarios | completed:success |
 | 35965130668 | `2d5f8025ee01` | push | TUI scenarios | completed:success |
