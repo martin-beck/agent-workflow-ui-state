@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
@@ -111,7 +111,7 @@ flowchart LR
         AR_0081["AR-0081 - Done"]:::status_done
         AR_0082["AR-0082 - Done"]:::status_done
         AR_0083["AR-0083 - Done"]:::status_done
-        AR_0084["AR-0084 - Open"]:::status_open
+        AR_0084["AR-0084 - In progress"]:::status_in_progress
         AR_0085["AR-0085 - Done"]:::status_done
         AR_0086["AR-0086 - Done"]:::status_done
         AR_0087["AR-0087 - Done"]:::status_done
@@ -379,11 +379,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | Unclaimed | Add task-tree navigation (company, role/team, task) with bounded depth, consuming coordinator rollup pages. | Implement hierarchy drill-down and scenarios, then open a review PR. |
+| P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | ui-ar0083-dashboard | Add task-tree navigation (company, role/team, task) with bounded depth, consuming coordinator rollup pages. | Implement hierarchy drill-down and scenarios, then open a review PR. |
 
 ### Planned (1)
 

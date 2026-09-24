@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | Add task-tree navigation (company, role/team, task) with bounded depth, consuming coordinator rollup pages. | Implement hierarchy drill-down and scenarios, then open a review PR. | - |
+| P1 | [AR-0084](tasks/AR-0084.md): Hierarchy drill-down navigation | Add task-tree navigation (company, role/team, task) with bounded depth, consuming coordinator rollup pages. | Implement hierarchy drill-down and scenarios, then open a review PR. | ui-ar0083-dashboard |
 
 ## Planned
 
