@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0094](tasks/AR-0094.md): Real cross-platform remote bootstrap round trip | Prove the one-command remote GUI/TUI decision flow from real Windows and POSIX clients through SSH and back. | Implement Windows and POSIX remote bootstrap round trips with failure/reconnect coverage. | worker-ar0094 |
 | P1 | [AR-0095](tasks/AR-0095.md): Scenario artifact provenance and freshness | Make terminal and GUI scenario artifacts reproducible, attributable, and fail-closed when stale. | Add provenance manifests and freshness checks for all scenario recordings, screenshots, and Markdown. | worker-ar0095 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0094](tasks/AR-0094.md): Real cross-platform remote bootstrap round trip | Prove the one-command remote GUI/TUI decision flow from real Windows and POSIX clients through SSH and back. | Implement Windows and POSIX remote bootstrap round trips with failure/reconnect coverage. | - |
 
 ## Planned
 
