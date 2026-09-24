@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #121 | `ar0099-accessible-command-system@262cc762b99c` | `main` | UNKNOWN | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SKIPPED, COMPLETED:SKIPPED | AR-0099: shared accessible command system |
+| #121 | `ar0099-accessible-command-system@262cc762b99c` | `main` | DIRTY | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SKIPPED, COMPLETED:SKIPPED | AR-0099: shared accessible command system |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35962857275 | `2439c42dc7c1` | push | TUI Windows compatibility | queued:- |
-| 35962857185 | `2439c42dc7c1` | push | TUI scenarios | queued:- |
+| 35962857275 | `2439c42dc7c1` | push | TUI Windows compatibility | in_progress:- |
+| 35962857185 | `2439c42dc7c1` | push | TUI scenarios | in_progress:- |
 | 35962721262 | `262cc762b99c` | pull_request | TUI Windows compatibility | completed:success |
 | 35962721225 | `262cc762b99c` | pull_request | TUI scenarios | in_progress:- |
 | 35962718188 | `262cc762b99c` | push | TUI scenarios | in_progress:- |
