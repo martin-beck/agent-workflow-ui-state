@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**96 ARs tracked** across 3 active status categories.
+**96 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 4 |
+| **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 91 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -120,7 +120,7 @@ flowchart LR
         AR_0090["AR-0090 - Done"]:::status_done
         AR_0091["AR-0091 - Done"]:::status_done
         AR_0092["AR-0092 - In progress"]:::status_in_progress
-        AR_0093["AR-0093 - Planned"]:::status_planned
+        AR_0093["AR-0093 - Open"]:::status_open
         AR_0094["AR-0094 - Planned"]:::status_planned
         AR_0095["AR-0095 - Planned"]:::status_planned
         AR_0096["AR-0096 - Planned"]:::status_planned
@@ -420,11 +420,16 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0092](tasks/AR-0092.md): Authoritative multi-AR batch and document projection | worker-ar0092 | Generate one complete revision-bound decision batch and matching Design/Work plan Markdown for all independent AR decisions. | Implement the multi-AR batch envelope and structure-graph Markdown/highlight projection. |
 
-### Planned (4)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0093](tasks/AR-0093.md): Native Windows UI qualification | Unclaimed | Qualify real Windows GUI and TUI interaction, packaging, resizing, and bridge output on native supported architectures. | Add native Windows GUI/TUI interaction qualification and architecture attestation. |
+
+### Planned (3)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0094](tasks/AR-0094.md): Real cross-platform remote bootstrap round trip | Unclaimed | Prove the one-command remote GUI/TUI decision flow from real Windows and POSIX clients through SSH and back. | Implement Windows and POSIX remote bootstrap round trips with failure/reconnect coverage. |
 | P1 | [AR-0095](tasks/AR-0095.md): Scenario artifact provenance and freshness | Unclaimed | Make terminal and GUI scenario artifacts reproducible, attributable, and fail-closed when stale. | Add provenance manifests and freshness checks for all scenario recordings, screenshots, and Markdown. |
 | P1 | [AR-0096](tasks/AR-0096.md): Compatibility release and operator qualification | Unclaimed | Publish a compatibility-verified UI and umbrella release after cross-project, native-platform, remote, and artifact gates pass. | Integrate the completed qualification series, update the umbrella pins, and publish a synchronized release. |

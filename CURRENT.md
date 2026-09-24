@@ -9,11 +9,16 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0092](tasks/AR-0092.md): Authoritative multi-AR batch and document projection | Generate one complete revision-bound decision batch and matching Design/Work plan Markdown for all independent AR decisions. | Implement the multi-AR batch envelope and structure-graph Markdown/highlight projection. | worker-ar0092 |
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0093](tasks/AR-0093.md): Native Windows UI qualification | Qualify real Windows GUI and TUI interaction, packaging, resizing, and bridge output on native supported architectures. | Add native Windows GUI/TUI interaction qualification and architecture attestation. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0094](tasks/AR-0094.md): Real cross-platform remote bootstrap round trip | Prove the one-command remote GUI/TUI decision flow from real Windows and POSIX clients through SSH and back. | Implement Windows and POSIX remote bootstrap round trips with failure/reconnect coverage. | - |
 | P1 | [AR-0095](tasks/AR-0095.md): Scenario artifact provenance and freshness | Make terminal and GUI scenario artifacts reproducible, attributable, and fail-closed when stale. | Add provenance manifests and freshness checks for all scenario recordings, screenshots, and Markdown. | - |
 | P1 | [AR-0096](tasks/AR-0096.md): Compatibility release and operator qualification | Publish a compatibility-verified UI and umbrella release after cross-project, native-platform, remote, and artifact gates pass. | Integrate the completed qualification series, update the umbrella pins, and publish a synchronized release. | - |
