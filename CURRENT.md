@@ -3,6 +3,18 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0110](tasks/AR-0110.md): Android bridge conformance and live-batch contract | Conformance-test Android batches and canonical events with desktop renderers. | Implement Android bridge conformance and live-batch contract. | - |
+| P0 | [AR-0111](tasks/AR-0111.md): Android credential and lifecycle hardening | Protect device credentials and qualify revocation, rotation, and reconnect. | Harden Android credential and lifecycle handling. | - |
+| P0 | [AR-0112](tasks/AR-0112.md): Android interaction and accessibility parity | Make every decision, document, and save interaction usable on Android. | Complete Android interaction and accessibility parity. | - |
+| P0 | [AR-0113](tasks/AR-0113.md): Android emulator and device end-to-end qualification | Qualify the complete registered-phone decision journey. | Add emulator and physical-device Android end-to-end qualification. | - |
+| P0 | [AR-0114](tasks/AR-0114.md): Android CI runner matrix | Run reproducible Android unit, APK, lint, and emulator qualification in CI. | Create the pinned Android CI runner and emulator matrix. | - |
+| P1 | [AR-0115](tasks/AR-0115.md): Remote/network Android qualification | Verify network, SSH, restart, and remote-state event handling for Android. | Qualify remote and SSH-forwarded Android service operation. | - |
+| P1 | [AR-0116](tasks/AR-0116.md): Android development release and compatibility evidence | Make the Android development build reproducible and auditable. | Publish reproducible unsigned APK evidence and compatibility metadata. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
