@@ -3,6 +3,18 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0118](tasks/AR-0118.md): SSH endpoint and connection-name enumeration | Enumerate SSH aliases, resolved names, IPv4/IPv6 addresses, ports, and host-key fingerprints for phone-reachable endpoint candidates. | Implement SSH-config and connection/name candidate enumeration. | - |
+| P0 | [AR-0119](tasks/AR-0119.md): Public endpoint and relay candidate discovery | Discover optional externally reachable SSH or relay candidates and select them by verification from the phone network. | Implement optional public-address and relay candidate discovery with phone-side probing. | - |
+| P0 | [AR-0120](tasks/AR-0120.md): Consented SSH enrollment and host-key security | Enroll the Android public key safely without transmitting private keys or silently mutating authorized_keys. | Implement consented enrollment, restricted authorized keys, and host-key verification. | - |
+| P0 | [AR-0121](tasks/AR-0121.md): Android SSH tunnel lifecycle | Maintain a least-privilege outbound Android SSH tunnel to the selected reachable candidate. | Implement Android outbound SSH tunnel, reconnect, teardown, and credential rotation. | - |
+| P0 | [AR-0122](tasks/AR-0122.md): Workflow service SSH bridge and transport fallback | Route authoritative Android decision batches and events over the selected tunnel without weakening the existing service contract. | Connect the coordinator batch/event bridge to the tunnel and preserve HTTPS fallback. | - |
+| P1 | [AR-0123](tasks/AR-0123.md): SSH discovery and tunnel end-to-end matrix | Exercise endpoint discovery and SSH-tunnel pairing across supported systems, architectures, and failure modes. | Add disposable OpenSSH, split-DNS, IPv4/IPv6, relay, Android emulator, Linux, and Windows integration tests. | - |
+| P1 | [AR-0124](tasks/AR-0124.md): SSH relay release and compatibility synchronization | Document, release, and pin the endpoint-discovery and SSH-relay contract across the Agent Workflow family. | Publish transport/discovery schemas, update documentation, and synchronize compatible releases. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
