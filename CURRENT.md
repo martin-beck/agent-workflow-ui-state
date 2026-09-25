@@ -3,16 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0120](tasks/AR-0120.md): Consented SSH enrollment and host-key security | Enroll the Android public key safely without transmitting private keys or silently mutating authorized_keys. | Implement consented enrollment, restricted authorized keys, and host-key verification. | - |
-| P0 | [AR-0121](tasks/AR-0121.md): Android SSH tunnel lifecycle | Maintain a least-privilege outbound Android SSH tunnel to the selected reachable candidate. | Implement Android outbound SSH tunnel, reconnect, teardown, and credential rotation. | - |
-| P0 | [AR-0122](tasks/AR-0122.md): Workflow service SSH bridge and transport fallback | Route authoritative Android decision batches and events over the selected tunnel without weakening the existing service contract. | Connect the coordinator batch/event bridge to the tunnel and preserve HTTPS fallback. | - |
-| P1 | [AR-0123](tasks/AR-0123.md): SSH discovery and tunnel end-to-end matrix | Exercise endpoint discovery and SSH-tunnel pairing across supported systems, architectures, and failure modes. | Add disposable OpenSSH, split-DNS, IPv4/IPv6, relay, Android emulator, Linux, and Windows integration tests. | - |
-| P1 | [AR-0124](tasks/AR-0124.md): SSH relay release and compatibility synchronization | Document, release, and pin the endpoint-discovery and SSH-relay contract across the Agent Workflow family. | Publish transport/discovery schemas, update documentation, and synchronize compatible releases. | - |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -62,6 +52,9 @@ Never edit this file directly.
 | P0 | [AR-0114](tasks/AR-0114.md): Android CI runner matrix | Run reproducible Android unit, APK, lint, and emulator qualification in CI. | Retain the pinned local runner and manual qualification workflow. | - |
 | P0 | [AR-0118](tasks/AR-0118.md): SSH endpoint and connection-name enumeration | Enumerate SSH aliases, resolved names, IPv4/IPv6 addresses, ports, and host-key fingerprints for phone-reachable endpoint candidates. | Retain merged SSH-config and connection/name candidate enumeration. | - |
 | P0 | [AR-0119](tasks/AR-0119.md): Public endpoint and relay candidate discovery | Discover optional externally reachable SSH or relay candidates and select them by verification from the phone network. | Retain merged public-address and relay candidate discovery with phone-side probing. | - |
+| P0 | [AR-0120](tasks/AR-0120.md): Consented SSH enrollment and host-key security | Enroll the Android public key safely without transmitting private keys or silently mutating authorized_keys. | none | - |
+| P0 | [AR-0121](tasks/AR-0121.md): Android SSH tunnel lifecycle | Maintain a least-privilege outbound Android SSH tunnel to the selected reachable candidate. | none | - |
+| P0 | [AR-0122](tasks/AR-0122.md): Workflow service SSH bridge and transport fallback | Route authoritative Android decision batches and events over the selected tunnel without weakening the existing service contract. | none | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
@@ -136,3 +129,5 @@ Never edit this file directly.
 | P1 | [AR-0115](tasks/AR-0115.md): Remote/network Android qualification | Verify network, SSH, restart, and remote-state event handling for Android. | Retain revision-bound remote client and reconnect qualification. | - |
 | P1 | [AR-0116](tasks/AR-0116.md): Android development release and compatibility evidence | Make the Android development build reproducible and auditable. | Retain checksum-bound unsigned APK, SBOM, and compatibility evidence artifacts. | - |
 | P1 | [AR-0117](tasks/AR-0117.md): Local Android runner and controlled self-hosted qualification | Provide a private local runner for Android emulator qualification. | Retain the merged local runner and use its manual qualification workflow when needed. | - |
+| P1 | [AR-0123](tasks/AR-0123.md): SSH discovery and tunnel end-to-end matrix | Exercise endpoint discovery and SSH-tunnel pairing across supported systems, architectures, and failure modes. | none | - |
+| P1 | [AR-0124](tasks/AR-0124.md): SSH relay release and compatibility synchronization | Document, release, and pin the endpoint-discovery and SSH-relay contract across the Agent Workflow family. | none | - |
