@@ -12,9 +12,9 @@
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 7 |
+| **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 117 |
+| **Done** | Accepted, integrated, and durably verified | 119 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -148,8 +148,8 @@ flowchart LR
         AR_0115["AR-0115 - Done"]:::status_done
         AR_0116["AR-0116 - Done"]:::status_done
         AR_0117["AR-0117 - Done"]:::status_done
-        AR_0118["AR-0118 - Planned"]:::status_planned
-        AR_0119["AR-0119 - Planned"]:::status_planned
+        AR_0118["AR-0118 - Done"]:::status_done
+        AR_0119["AR-0119 - Done"]:::status_done
         AR_0120["AR-0120 - Planned"]:::status_planned
         AR_0121["AR-0121 - Planned"]:::status_planned
         AR_0122["AR-0122 - Planned"]:::status_planned
@@ -520,19 +520,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (7)
+### Planned (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0118](tasks/AR-0118.md): SSH endpoint and connection-name enumeration | Unclaimed | Enumerate SSH aliases, resolved names, IPv4/IPv6 addresses, ports, and host-key fingerprints for phone-reachable endpoint candidates. | Implement SSH-config and connection/name candidate enumeration. |
-| P0 | [AR-0119](tasks/AR-0119.md): Public endpoint and relay candidate discovery | Unclaimed | Discover optional externally reachable SSH or relay candidates and select them by verification from the phone network. | Implement optional public-address and relay candidate discovery with phone-side probing. |
 | P0 | [AR-0120](tasks/AR-0120.md): Consented SSH enrollment and host-key security | Unclaimed | Enroll the Android public key safely without transmitting private keys or silently mutating authorized_keys. | Implement consented enrollment, restricted authorized keys, and host-key verification. |
 | P0 | [AR-0121](tasks/AR-0121.md): Android SSH tunnel lifecycle | Unclaimed | Maintain a least-privilege outbound Android SSH tunnel to the selected reachable candidate. | Implement Android outbound SSH tunnel, reconnect, teardown, and credential rotation. |
 | P0 | [AR-0122](tasks/AR-0122.md): Workflow service SSH bridge and transport fallback | Unclaimed | Route authoritative Android decision batches and events over the selected tunnel without weakening the existing service contract. | Connect the coordinator batch/event bridge to the tunnel and preserve HTTPS fallback. |
 | P1 | [AR-0123](tasks/AR-0123.md): SSH discovery and tunnel end-to-end matrix | Unclaimed | Exercise endpoint discovery and SSH-tunnel pairing across supported systems, architectures, and failure modes. | Add disposable OpenSSH, split-DNS, IPv4/IPv6, relay, Android emulator, Linux, and Windows integration tests. |
 | P1 | [AR-0124](tasks/AR-0124.md): SSH relay release and compatibility synchronization | Unclaimed | Document, release, and pin the endpoint-discovery and SSH-relay contract across the Agent Workflow family. | Publish transport/discovery schemas, update documentation, and synchronize compatible releases. |
 
-### Done (117)
+### Done (119)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -579,6 +577,8 @@ flowchart LR
 | P0 | [AR-0112](tasks/AR-0112.md): Android interaction and accessibility parity | Unclaimed | Make every decision, document, and save interaction usable on Android. | None; merged through PR #138. |
 | P0 | [AR-0113](tasks/AR-0113.md): Android emulator and device end-to-end qualification | Unclaimed | Qualify the complete registered-phone decision journey. | Retain the merged emulator journey and perform the documented physical-device smoke when hardware is available. |
 | P0 | [AR-0114](tasks/AR-0114.md): Android CI runner matrix | Unclaimed | Run reproducible Android unit, APK, lint, and emulator qualification in CI. | Retain the pinned local runner and manual qualification workflow. |
+| P0 | [AR-0118](tasks/AR-0118.md): SSH endpoint and connection-name enumeration | Unclaimed | Enumerate SSH aliases, resolved names, IPv4/IPv6 addresses, ports, and host-key fingerprints for phone-reachable endpoint candidates. | Retain merged SSH-config and connection/name candidate enumeration. |
+| P0 | [AR-0119](tasks/AR-0119.md): Public endpoint and relay candidate discovery | Unclaimed | Discover optional externally reachable SSH or relay candidates and select them by verification from the phone network. | Retain merged public-address and relay candidate discovery with phone-side probing. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
