@@ -3,6 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0105](tasks/AR-0105.md): Android decision bridge and registration contract | Define the revision-bound Android registration, transport, and decision-event contract without weakening Coordinator authority. | Specify and validate the Android registration and decision bridge envelopes. | - |
+| P0 | [AR-0106](tasks/AR-0106.md): Android service and reconnect lifecycle | Keep a registered Android endpoint connected and route authoritative pending decisions to it safely. | Implement the authenticated project-side phone service, routing, reconnect, and revocation lifecycle. | - |
+| P0 | [AR-0107](tasks/AR-0107.md): Android decision client parity | Deliver an unsigned development APK that provides the same authoritative decision workflow as GUI and TUI. | Implement the Android development client with renderer and interaction parity for registered decision batches. | - |
+| P0 | [AR-0108](tasks/AR-0108.md): QR registration and phone onboarding | Make phone registration a short QR scan with explicit consent, expiry, replay protection, and revocation. | Implement project registration QR display and Android scan/consent/bootstrap flow. | - |
+| P1 | [AR-0109](tasks/AR-0109.md): Android APK, device, and release qualification | Qualify and publish the unsigned Android development build and its complete registration/decision workflow. | Add unsigned debug APK CI, emulator/device end-to-end tests, and Android compatibility release documentation. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |

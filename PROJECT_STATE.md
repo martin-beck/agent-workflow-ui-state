@@ -15,11 +15,11 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35971794089 | `3ceee11e302b` | push | TUI scenarios | in_progress:- |
+| 35971794089 | `3ceee11e302b` | push | TUI scenarios | completed:success |
 | 35971794026 | `3ceee11e302b` | push | TUI Windows compatibility | completed:success |
 | 35971793920 | `3ceee11e302b` | push | Release qualification | completed:failure |
 | 35971767673 | `3ceee11e302b` | push | TUI Windows compatibility | completed:success |
-| 35971767601 | `3ceee11e302b` | push | TUI scenarios | in_progress:- |
+| 35971767601 | `3ceee11e302b` | push | TUI scenarios | completed:success |
 | 35971300111 | `3e5cdba940de` | pull_request | TUI scenarios | completed:success |
 | 35971300059 | `3e5cdba940de` | pull_request | TUI Windows compatibility | completed:success |
 | 35971295653 | `3e5cdba940de` | push | TUI Windows compatibility | completed:success |
