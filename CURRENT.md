@@ -3,15 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0113](tasks/AR-0113.md): Android emulator and device end-to-end qualification | Qualify the complete registered-phone decision journey. | Add emulator and physical-device Android end-to-end qualification. | - |
-| P0 | [AR-0114](tasks/AR-0114.md): Android CI runner matrix | Run reproducible Android unit, APK, lint, and emulator qualification in CI. | Create the pinned Android CI runner and emulator matrix. | - |
-| P1 | [AR-0115](tasks/AR-0115.md): Remote/network Android qualification | Verify network, SSH, restart, and remote-state event handling for Android. | Qualify remote and SSH-forwarded Android service operation. | - |
-| P1 | [AR-0116](tasks/AR-0116.md): Android development release and compatibility evidence | Make the Android development build reproducible and auditable. | Publish reproducible unsigned APK evidence and compatibility metadata. | - |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -57,6 +48,8 @@ Never edit this file directly.
 | P0 | [AR-0110](tasks/AR-0110.md): Android bridge conformance and live-batch contract | Conformance-test Android batches and canonical events with desktop renderers. | None; merged through PR #138. | - |
 | P0 | [AR-0111](tasks/AR-0111.md): Android credential and lifecycle hardening | Protect device credentials and qualify revocation, rotation, and reconnect. | None; merged through PR #138. | - |
 | P0 | [AR-0112](tasks/AR-0112.md): Android interaction and accessibility parity | Make every decision, document, and save interaction usable on Android. | None; merged through PR #138. | - |
+| P0 | [AR-0113](tasks/AR-0113.md): Android emulator and device end-to-end qualification | Qualify the complete registered-phone decision journey. | Retain the merged emulator journey and perform the documented physical-device smoke when hardware is available. | - |
+| P0 | [AR-0114](tasks/AR-0114.md): Android CI runner matrix | Run reproducible Android unit, APK, lint, and emulator qualification in CI. | Retain the pinned local runner and manual qualification workflow. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
@@ -128,4 +121,6 @@ Never edit this file directly.
 | P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. | - |
 | P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. | - |
 | P1 | [AR-0109](tasks/AR-0109.md): Android APK, device, and release qualification | Qualify and publish the unsigned Android development build and its complete registration/decision workflow. | None; merged in agent-workflow-ui PR #131. | - |
+| P1 | [AR-0115](tasks/AR-0115.md): Remote/network Android qualification | Verify network, SSH, restart, and remote-state event handling for Android. | Retain revision-bound remote client and reconnect qualification. | - |
+| P1 | [AR-0116](tasks/AR-0116.md): Android development release and compatibility evidence | Make the Android development build reproducible and auditable. | Retain checksum-bound unsigned APK, SBOM, and compatibility evidence artifacts. | - |
 | P1 | [AR-0117](tasks/AR-0117.md): Local Android runner and controlled self-hosted qualification | Provide a private local runner for Android emulator qualification. | Retain the merged local runner and use its manual qualification workflow when needed. | - |
