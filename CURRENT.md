@@ -11,6 +11,7 @@ Never edit this file directly.
 | P0 | [AR-0114](tasks/AR-0114.md): Android CI runner matrix | Run reproducible Android unit, APK, lint, and emulator qualification in CI. | Create the pinned Android CI runner and emulator matrix. | - |
 | P1 | [AR-0115](tasks/AR-0115.md): Remote/network Android qualification | Verify network, SSH, restart, and remote-state event handling for Android. | Qualify remote and SSH-forwarded Android service operation. | - |
 | P1 | [AR-0116](tasks/AR-0116.md): Android development release and compatibility evidence | Make the Android development build reproducible and auditable. | Publish reproducible unsigned APK evidence and compatibility metadata. | - |
+| P1 | [AR-0117](tasks/AR-0117.md): Local Android runner and controlled self-hosted qualification | Provide a private local runner for Android emulator qualification. | Merge the reproducible local Android runner and retain its qualification evidence. | - |
 
 ## Done
 

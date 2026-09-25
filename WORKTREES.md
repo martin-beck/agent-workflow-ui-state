@@ -4,63 +4,65 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-tui` | `chore/release-047` | `78e55de7f813` | 24 | behind 77, ahead 1 |
+| `agent-workflow-tui` | `chore/release-047` | `78e55de7f813` | 24 | behind 78, ahead 1 |
 | changed files | - | - | - | `docs/recordings/add-alternative.cast`, `docs/recordings/alternative-clarify.cast`, `docs/recordings/basic-select.cast`, `docs/recordings/batch-clarify.cast`, `docs/recordings/batch-partial.cast`, `docs/recordings/cancel-after-review.cast`, `docs/recordings/clarify-ownership.cast`, `docs/recordings/escape-exit.cast`, `docs/recordings/evidence-then-reject.cast`, `docs/recordings/explicit-document-views.cast`, `docs/recordings/full-contest.cast`, `docs/recordings/more-evidence.cast`, `docs/recordings/multi-point-handoff.cast`, `docs/recordings/navigate-documents.cast`, `docs/recordings/proposal-reject.cast`, `docs/recordings/proposal-with-navigation.cast`, `docs/recordings/reask-after-gap.cast`, `docs/recordings/reject-risk.cast`, `docs/recordings/reopen-save.cast`, `docs/recordings/revise-selection.cast`, `docs/recordings/revision-reopen.cast`, `docs/recordings/safe-exit.cast`, `docs/recordings/targeted-reopen.cast`, `docs/recordings/transport-roundtrip.cast` |
-| `agent-workflow-ui-ar0084` | `ar-0084-authoritative-token-publication` | `565e94e58402` | 24 | behind 56, ahead 1 |
+| `agent-workflow-ui-ar0084` | `ar-0084-authoritative-token-publication` | `565e94e58402` | 24 | behind 57, ahead 1 |
 | changed files | - | - | - | `docs/recordings/add-alternative.cast`, `docs/recordings/alternative-clarify.cast`, `docs/recordings/basic-select.cast`, `docs/recordings/batch-clarify.cast`, `docs/recordings/batch-partial.cast`, `docs/recordings/cancel-after-review.cast`, `docs/recordings/clarify-ownership.cast`, `docs/recordings/escape-exit.cast`, `docs/recordings/evidence-then-reject.cast`, `docs/recordings/explicit-document-views.cast`, `docs/recordings/full-contest.cast`, `docs/recordings/more-evidence.cast`, `docs/recordings/multi-point-handoff.cast`, `docs/recordings/navigate-documents.cast`, `docs/recordings/proposal-reject.cast`, `docs/recordings/proposal-with-navigation.cast`, `docs/recordings/reask-after-gap.cast`, `docs/recordings/reject-risk.cast`, `docs/recordings/reopen-save.cast`, `docs/recordings/revise-selection.cast`, `docs/recordings/revision-reopen.cast`, `docs/recordings/safe-exit.cast`, `docs/recordings/targeted-reopen.cast`, `docs/recordings/transport-roundtrip.cast` |
-| `agent-workflow-ui-ar0085` | `ar-0085-directive-entry` | `d97a68731891` | 0 | behind 53, ahead 1 |
-| `agent-workflow-ui-ar0088` | `ar-0088-scenario-corpus` | `8ba1cc8996be` | 0 | behind 48, ahead 2 |
-| `agent-workflow-ui-ar0093` | `ar-0093-native-windows` | `b11e79e3d448` | 2 | behind 45, ahead 0 |
+| `agent-workflow-ui-ar0085` | `ar-0085-directive-entry` | `d97a68731891` | 0 | behind 54, ahead 1 |
+| `agent-workflow-ui-ar0088` | `ar-0088-scenario-corpus` | `8ba1cc8996be` | 0 | behind 49, ahead 2 |
+| `agent-workflow-ui-ar0093` | `ar-0093-native-windows` | `b11e79e3d448` | 2 | behind 46, ahead 0 |
 | changed files | - | - | - | `build/`, `src/agent_workflow_ui.egg-info/` |
-| `agent-workflow-ui-ar0099-accessible-command-system` | `ar0099-accessible-command-system` | `927ab3ba6589` | 0 | behind 27, ahead 0 |
-| `agent-workflow-ui-ar0100` | `ar0100-decision-workspace-control` | `daeffc64162f` | 0 | behind 24, ahead 0 |
-| `agent-workflow-ui-ar0102` | `ar0102-audit-privacy-control-plane` | `f9c25e5055eb` | 0 | behind 16, ahead 0 |
-| `agent-workflow-ui-ar0103` | `ar0103-fault-injection-resilience` | `9c132c27354b` | 2 | behind 11, ahead 0 |
+| `agent-workflow-ui-ar0099-accessible-command-system` | `ar0099-accessible-command-system` | `927ab3ba6589` | 0 | behind 28, ahead 0 |
+| `agent-workflow-ui-ar0100` | `ar0100-decision-workspace-control` | `daeffc64162f` | 0 | behind 25, ahead 0 |
+| `agent-workflow-ui-ar0102` | `ar0102-audit-privacy-control-plane` | `f9c25e5055eb` | 0 | behind 17, ahead 0 |
+| `agent-workflow-ui-ar0103` | `ar0103-fault-injection-resilience` | `9c132c27354b` | 2 | behind 12, ahead 0 |
 | changed files | - | - | - | `artifacts/gui-screenshots/`, `src/agent_workflow_ui.egg-info/` |
-| `agent-workflow-ui-ar0104` | `main` | `f8dbc19add89` | 0 | behind 108, ahead 4 |
-| `agent-workflow-ui-ar0105` | `ar0105-android-bridge-contract` | `df043243f308` | 0 | behind 6, ahead 0 |
-| `agent-workflow-ui-ar0106` | `ar0106-android-service-lifecycle` | `3d44b7d047bd` | 0 | behind 3, ahead 0 |
-| `agent-workflow-ui-ar0107` | `ar0114-android-ci` | `7efb405c152d` | 0 | behind 0, ahead 2 |
-| `agent-workflow-ui-repair-sequence` | `repair/android-sequence` | `05063abc4f41` | 0 | behind 0, ahead 5 |
-| `agent-workflow-ui-v062` | `release-v0.6.2` | `3e5cdba940de` | 0 | behind 9, ahead 1 |
-| `agent-workflow-ui-ar0095` | `ar-0095-scenario-artifact-provenance` | `f70fefeeff37` | 0 | behind 45, ahead 0 |
-| `agent-workflow-ui-ar0101` | `ar0101-synchronized-document-navigation` | `ea6912a866c7` | 0 | behind 23, ahead 3 |
-| `agent-workflow-tui-ar0035` | `feature/ar-0035-scenario-artifact-hardening` | `32dfc428d32c` | 0 | behind 143, ahead 0 |
-| `agent-workflow-tui-ar0040` | `feature/ar-0040-terminal-lifecycle-v2` | `be4e8de93fb9` | 0 | behind 136, ahead 0 |
-| `agent-workflow-tui-ar0094` | `ar0094-cross-platform-remote-bootstrap` | `d9644c092435` | 0 | behind 38, ahead 0 |
-| `agent-workflow-tui-ar0097` | `ar0097-durable-save-parity` | `2db5b5b1c733` | 0 | behind 34, ahead 2 |
-| `agent-workflow-ui-ar0085-work` | `ar-0085-windows-qualification` | `a836fad8d4e1` | 24 | behind 56, ahead 1 |
+| `agent-workflow-ui-ar0104` | `main` | `f8dbc19add89` | 0 | behind 109, ahead 4 |
+| `agent-workflow-ui-ar0105` | `ar0105-android-bridge-contract` | `df043243f308` | 0 | behind 7, ahead 0 |
+| `agent-workflow-ui-ar0106` | `ar0106-android-service-lifecycle` | `3d44b7d047bd` | 0 | behind 4, ahead 0 |
+| `agent-workflow-ui-ar0107` | `ar0114-android-ci` | `7efb405c152d` | 0 | behind 1, ahead 2 |
+| `agent-workflow-ui-repair-sequence` | `repair/android-sequence` | `05063abc4f41` | 0 | behind 1, ahead 5 |
+| `agent-workflow-ui-v062` | `release-v0.6.2` | `3e5cdba940de` | 0 | behind 10, ahead 1 |
+| `agent-workflow-ui-ar0095` | `ar-0095-scenario-artifact-provenance` | `f70fefeeff37` | 0 | behind 46, ahead 0 |
+| `agent-workflow-ui-ar0101` | `ar0101-synchronized-document-navigation` | `ea6912a866c7` | 0 | behind 24, ahead 3 |
+| `agent-workflow-tui-ar0035` | `feature/ar-0035-scenario-artifact-hardening` | `32dfc428d32c` | 0 | behind 144, ahead 0 |
+| `agent-workflow-tui-ar0040` | `feature/ar-0040-terminal-lifecycle-v2` | `be4e8de93fb9` | 0 | behind 137, ahead 0 |
+| `agent-workflow-tui-ar0094` | `ar0094-cross-platform-remote-bootstrap` | `d9644c092435` | 0 | behind 39, ahead 0 |
+| `agent-workflow-tui-ar0097` | `ar0097-durable-save-parity` | `2db5b5b1c733` | 0 | behind 35, ahead 2 |
+| `agent-workflow-ui-ar0085-work` | `ar-0085-windows-qualification` | `a836fad8d4e1` | 24 | behind 57, ahead 1 |
 | changed files | - | - | - | `docs/recordings/add-alternative.cast`, `docs/recordings/alternative-clarify.cast`, `docs/recordings/basic-select.cast`, `docs/recordings/batch-clarify.cast`, `docs/recordings/batch-partial.cast`, `docs/recordings/cancel-after-review.cast`, `docs/recordings/clarify-ownership.cast`, `docs/recordings/escape-exit.cast`, `docs/recordings/evidence-then-reject.cast`, `docs/recordings/explicit-document-views.cast`, `docs/recordings/full-contest.cast`, `docs/recordings/more-evidence.cast`, `docs/recordings/multi-point-handoff.cast`, `docs/recordings/navigate-documents.cast`, `docs/recordings/proposal-reject.cast`, `docs/recordings/proposal-with-navigation.cast`, `docs/recordings/reask-after-gap.cast`, `docs/recordings/reject-risk.cast`, `docs/recordings/reopen-save.cast`, `docs/recordings/revise-selection.cast`, `docs/recordings/revision-reopen.cast`, `docs/recordings/safe-exit.cast`, `docs/recordings/targeted-reopen.cast`, `docs/recordings/transport-roundtrip.cast` |
-| `agent-workflow-ui-ar0087-rollback` | `ar-0087-rollback-conflict-display` | `bf0760e10856` | 24 | behind 53, ahead 1 |
+| `agent-workflow-ui-ar0087-rollback` | `ar-0087-rollback-conflict-display` | `bf0760e10856` | 24 | behind 54, ahead 1 |
 | changed files | - | - | - | `docs/recordings/add-alternative.cast`, `docs/recordings/alternative-clarify.cast`, `docs/recordings/basic-select.cast`, `docs/recordings/batch-clarify.cast`, `docs/recordings/batch-partial.cast`, `docs/recordings/cancel-after-review.cast`, `docs/recordings/clarify-ownership.cast`, `docs/recordings/escape-exit.cast`, `docs/recordings/evidence-then-reject.cast`, `docs/recordings/explicit-document-views.cast`, `docs/recordings/full-contest.cast`, `docs/recordings/more-evidence.cast`, `docs/recordings/multi-point-handoff.cast`, `docs/recordings/navigate-documents.cast`, `docs/recordings/proposal-reject.cast`, `docs/recordings/proposal-with-navigation.cast`, `docs/recordings/reask-after-gap.cast`, `docs/recordings/reject-risk.cast`, `docs/recordings/reopen-save.cast`, `docs/recordings/revise-selection.cast`, `docs/recordings/revision-reopen.cast`, `docs/recordings/safe-exit.cast`, `docs/recordings/targeted-reopen.cast`, `docs/recordings/transport-roundtrip.cast` |
-| `agent-workflow-ui-ar0089` | `ar-0089-release` | `a771bc6770f3` | 0 | behind 47, ahead 1 |
-| `agent-workflow-tui-ar0038` | `DETACHED` | `93438838e8a3` | 0 | behind 139, ahead 0 |
-| `agent-workflow-tui-ar0098` | `ar0098-session-recovery-control` | `14d4c952f4b8` | 0 | behind 26, ahead 2 |
-| `agent-workflow-ui-ar0096` | `ar0096-compatibility-release` | `ccc0e410435d` | 0 | behind 35, ahead 0 |
-| `awtui-ar34.e9He2e` | `DETACHED` | `7928cc5eca0d` | 0 | behind 154, ahead 0 |
-| `awui-ar0073` | `ar0076-integration-gates` | `5a699ed34cef` | 0 | behind 66, ahead 2 |
-| `awui-ar0074` | `ar0074-launcher-install` | `d8197689b84e` | 0 | behind 66, ahead 1 |
-| `awui-ar0110-new` | `ar0110-0112-android-contract` | `088fcd3448c7` | 1 | behind 0, ahead 2 |
+| `agent-workflow-ui-ar0089` | `ar-0089-release` | `a771bc6770f3` | 0 | behind 48, ahead 1 |
+| `agent-workflow-tui-ar0038` | `DETACHED` | `93438838e8a3` | 0 | behind 140, ahead 0 |
+| `agent-workflow-tui-ar0098` | `ar0098-session-recovery-control` | `14d4c952f4b8` | 0 | behind 27, ahead 2 |
+| `agent-workflow-ui-ar0096` | `ar0096-compatibility-release` | `ccc0e410435d` | 0 | behind 36, ahead 0 |
+| `awtui-ar34.e9He2e` | `DETACHED` | `7928cc5eca0d` | 0 | behind 155, ahead 0 |
+| `awui-ar0073` | `ar0076-integration-gates` | `5a699ed34cef` | 0 | behind 67, ahead 2 |
+| `awui-ar0074` | `ar0074-launcher-install` | `d8197689b84e` | 0 | behind 67, ahead 1 |
+| `awui-ar0110-new` | `ar0110-0112-android-contract` | `088fcd3448c7` | 1 | behind 1, ahead 2 |
 | changed files | - | - | - | `artifacts/gui-screenshots/` |
-| `awui-ar75` | `ar0075-tokenized-launcher` | `4449d7e94cac` | 0 | behind 64, ahead 3 |
-| `awui-audit.bNLU1Z` | `DETACHED` | `f89103b70d18` | 0 | behind 46, ahead 0 |
-| `awui-fix` | `fix/bootstrap-temp-path-v0413` | `434b26c093cd` | 24 | behind 70, ahead 5 |
+| `awui-ar0113-review` | `repair/ar0113-16-review` | `041a226c31b4` | 0 | behind 0, ahead 8 |
+| `awui-ar75` | `ar0075-tokenized-launcher` | `4449d7e94cac` | 0 | behind 65, ahead 3 |
+| `awui-audit.bNLU1Z` | `DETACHED` | `f89103b70d18` | 0 | behind 47, ahead 0 |
+| `awui-fix` | `fix/bootstrap-temp-path-v0413` | `434b26c093cd` | 24 | behind 71, ahead 5 |
 | changed files | - | - | - | `docs/recordings/add-alternative.cast`, `docs/recordings/alternative-clarify.cast`, `docs/recordings/basic-select.cast`, `docs/recordings/batch-clarify.cast`, `docs/recordings/batch-partial.cast`, `docs/recordings/cancel-after-review.cast`, `docs/recordings/clarify-ownership.cast`, `docs/recordings/escape-exit.cast`, `docs/recordings/evidence-then-reject.cast`, `docs/recordings/explicit-document-views.cast`, `docs/recordings/full-contest.cast`, `docs/recordings/more-evidence.cast`, `docs/recordings/multi-point-handoff.cast`, `docs/recordings/navigate-documents.cast`, `docs/recordings/proposal-reject.cast`, `docs/recordings/proposal-with-navigation.cast`, `docs/recordings/reask-after-gap.cast`, `docs/recordings/reject-risk.cast`, `docs/recordings/reopen-save.cast`, `docs/recordings/revise-selection.cast`, `docs/recordings/revision-reopen.cast`, `docs/recordings/safe-exit.cast`, `docs/recordings/targeted-reopen.cast`, `docs/recordings/transport-roundtrip.cast` |
-| `awui-fix2` | `fix/bootstrap-temp-path-v0413-2` | `ce5d13d4901c` | 0 | behind 69, ahead 1 |
-| `awui-integration` | `DETACHED` | `8479958d9511` | 0 | behind 66, ahead 3 |
-| `awui-linux` | `DETACHED` | `7057a961abca` | 0 | behind 62, ahead 1 |
-| `awui-linuxfix` | `fix/linux-installer-safety` | `3b7afd57dad8` | 24 | behind 62, ahead 3 |
+| `awui-fix2` | `fix/bootstrap-temp-path-v0413-2` | `ce5d13d4901c` | 0 | behind 70, ahead 1 |
+| `awui-integration` | `DETACHED` | `8479958d9511` | 0 | behind 67, ahead 3 |
+| `awui-linux` | `DETACHED` | `7057a961abca` | 0 | behind 63, ahead 1 |
+| `awui-linuxfix` | `fix/linux-installer-safety` | `3b7afd57dad8` | 24 | behind 63, ahead 3 |
 | changed files | - | - | - | `docs/recordings/add-alternative.cast`, `docs/recordings/alternative-clarify.cast`, `docs/recordings/basic-select.cast`, `docs/recordings/batch-clarify.cast`, `docs/recordings/batch-partial.cast`, `docs/recordings/cancel-after-review.cast`, `docs/recordings/clarify-ownership.cast`, `docs/recordings/escape-exit.cast`, `docs/recordings/evidence-then-reject.cast`, `docs/recordings/explicit-document-views.cast`, `docs/recordings/full-contest.cast`, `docs/recordings/more-evidence.cast`, `docs/recordings/multi-point-handoff.cast`, `docs/recordings/navigate-documents.cast`, `docs/recordings/proposal-reject.cast`, `docs/recordings/proposal-with-navigation.cast`, `docs/recordings/reask-after-gap.cast`, `docs/recordings/reject-risk.cast`, `docs/recordings/reopen-save.cast`, `docs/recordings/revise-selection.cast`, `docs/recordings/revision-reopen.cast`, `docs/recordings/safe-exit.cast`, `docs/recordings/targeted-reopen.cast`, `docs/recordings/transport-roundtrip.cast` |
-| `awui-pr118.AtOYt6` | `DETACHED` | `b7352941ffc6` | 1 | behind 39, ahead 0 |
+| `awui-pr118.AtOYt6` | `DETACHED` | `b7352941ffc6` | 1 | behind 40, ahead 0 |
 | changed files | - | - | - | `artifacts/scenario-provenance.json` |
-| `awui-pr135` | `DETACHED` | `c7744c67a759` | 0 | behind 0, ahead 1 |
-| `awui-release` | `release/v0.4.14` | `7da7bd110756` | 0 | behind 67, ahead 1 |
-| `awui-release05` | `feat/linux-installer-followup` | `7057a961abca` | 24 | behind 62, ahead 1 |
+| `awui-pr135` | `DETACHED` | `c7744c67a759` | 0 | behind 1, ahead 1 |
+| `awui-release` | `release/v0.4.14` | `7da7bd110756` | 0 | behind 68, ahead 1 |
+| `awui-release05` | `feat/linux-installer-followup` | `7057a961abca` | 24 | behind 63, ahead 1 |
 | changed files | - | - | - | `docs/recordings/add-alternative.cast`, `docs/recordings/alternative-clarify.cast`, `docs/recordings/basic-select.cast`, `docs/recordings/batch-clarify.cast`, `docs/recordings/batch-partial.cast`, `docs/recordings/cancel-after-review.cast`, `docs/recordings/clarify-ownership.cast`, `docs/recordings/escape-exit.cast`, `docs/recordings/evidence-then-reject.cast`, `docs/recordings/explicit-document-views.cast`, `docs/recordings/full-contest.cast`, `docs/recordings/more-evidence.cast`, `docs/recordings/multi-point-handoff.cast`, `docs/recordings/navigate-documents.cast`, `docs/recordings/proposal-reject.cast`, `docs/recordings/proposal-with-navigation.cast`, `docs/recordings/reask-after-gap.cast`, `docs/recordings/reject-risk.cast`, `docs/recordings/reopen-save.cast`, `docs/recordings/revise-selection.cast`, `docs/recordings/revision-reopen.cast`, `docs/recordings/safe-exit.cast`, `docs/recordings/targeted-reopen.cast`, `docs/recordings/transport-roundtrip.cast` |
-| `awui-release051` | `DETACHED` | `927af2c8b9e6` | 0 | behind 56, ahead 0 |
-| `awui-review137.P8Sq` | `repair/android-event-journal` | `87c97eb2de2c` | 1 | behind 0, ahead 7 |
+| `awui-release051` | `DETACHED` | `927af2c8b9e6` | 0 | behind 57, ahead 0 |
+| `awui-review-134` | `DETACHED` | `02ee4533e7a6` | 0 | behind 0, ahead 6 |
+| `awui-review137.P8Sq` | `repair/android-event-journal` | `87c97eb2de2c` | 1 | behind 1, ahead 7 |
 | changed files | - | - | - | `artifacts/gui-screenshots/` |
-| `awui-short` | `fix/short-bootstrap-handoff` | `930b1a31a71b` | 0 | behind 68, ahead 1 |
-| `awui-verify` | `DETACHED` | `945a41c7623f` | 24 | behind 68, ahead 0 |
+| `awui-short` | `fix/short-bootstrap-handoff` | `930b1a31a71b` | 0 | behind 69, ahead 1 |
+| `awui-verify` | `DETACHED` | `945a41c7623f` | 24 | behind 69, ahead 0 |
 | changed files | - | - | - | `docs/recordings/add-alternative.cast`, `docs/recordings/alternative-clarify.cast`, `docs/recordings/basic-select.cast`, `docs/recordings/batch-clarify.cast`, `docs/recordings/batch-partial.cast`, `docs/recordings/cancel-after-review.cast`, `docs/recordings/clarify-ownership.cast`, `docs/recordings/escape-exit.cast`, `docs/recordings/evidence-then-reject.cast`, `docs/recordings/explicit-document-views.cast`, `docs/recordings/full-contest.cast`, `docs/recordings/more-evidence.cast`, `docs/recordings/multi-point-handoff.cast`, `docs/recordings/navigate-documents.cast`, `docs/recordings/proposal-reject.cast`, `docs/recordings/proposal-with-navigation.cast`, `docs/recordings/reask-after-gap.cast`, `docs/recordings/reject-risk.cast`, `docs/recordings/reopen-save.cast`, `docs/recordings/revise-selection.cast`, `docs/recordings/revision-reopen.cast`, `docs/recordings/safe-exit.cast`, `docs/recordings/targeted-reopen.cast`, `docs/recordings/transport-roundtrip.cast` |
-| `pr134-review` | `review-repair-pr134` | `0e3e89993ad6` | 0 | behind 0, ahead 6 |
+| `pr134-review` | `review-repair-pr134` | `0e3e89993ad6` | 0 | behind 1, ahead 6 |

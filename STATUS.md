@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**116 ARs tracked** across 2 active status categories.
+**117 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 4 |
+| **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 112 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -147,6 +147,7 @@ flowchart LR
         AR_0114["AR-0114 - Planned"]:::status_planned
         AR_0115["AR-0115 - Planned"]:::status_planned
         AR_0116["AR-0116 - Planned"]:::status_planned
+        AR_0117["AR-0117 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -355,8 +356,10 @@ flowchart LR
     AR_0112 --> AR_0113
     AR_0113 --> AR_0114
     AR_0113 --> AR_0116
+    AR_0113 --> AR_0117
     AR_0114 --> AR_0115
     AR_0114 --> AR_0116
+    AR_0114 --> AR_0117
     AR_0115 --> AR_0116
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -484,14 +487,15 @@ flowchart LR
 | [AR-0110](tasks/AR-0110.md) | [AR-0107](tasks/AR-0107.md) | [AR-0111](tasks/AR-0111.md), [AR-0112](tasks/AR-0112.md) |
 | [AR-0111](tasks/AR-0111.md) | [AR-0106](tasks/AR-0106.md), [AR-0110](tasks/AR-0110.md) | [AR-0113](tasks/AR-0113.md), [AR-0115](tasks/AR-0115.md) |
 | [AR-0112](tasks/AR-0112.md) | [AR-0110](tasks/AR-0110.md) | [AR-0113](tasks/AR-0113.md) |
-| [AR-0113](tasks/AR-0113.md) | [AR-0111](tasks/AR-0111.md), [AR-0112](tasks/AR-0112.md) | [AR-0114](tasks/AR-0114.md), [AR-0116](tasks/AR-0116.md) |
-| [AR-0114](tasks/AR-0114.md) | [AR-0113](tasks/AR-0113.md) | [AR-0115](tasks/AR-0115.md), [AR-0116](tasks/AR-0116.md) |
+| [AR-0113](tasks/AR-0113.md) | [AR-0111](tasks/AR-0111.md), [AR-0112](tasks/AR-0112.md) | [AR-0114](tasks/AR-0114.md), [AR-0116](tasks/AR-0116.md), [AR-0117](tasks/AR-0117.md) |
+| [AR-0114](tasks/AR-0114.md) | [AR-0113](tasks/AR-0113.md) | [AR-0115](tasks/AR-0115.md), [AR-0116](tasks/AR-0116.md), [AR-0117](tasks/AR-0117.md) |
 | [AR-0115](tasks/AR-0115.md) | [AR-0111](tasks/AR-0111.md), [AR-0114](tasks/AR-0114.md) | [AR-0116](tasks/AR-0116.md) |
 | [AR-0116](tasks/AR-0116.md) | [AR-0113](tasks/AR-0113.md), [AR-0114](tasks/AR-0114.md), [AR-0115](tasks/AR-0115.md) | None |
+| [AR-0117](tasks/AR-0117.md) | [AR-0113](tasks/AR-0113.md), [AR-0114](tasks/AR-0114.md) | None |
 
 ## Complete AR inventory
 
-### Planned (4)
+### Planned (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -499,6 +503,7 @@ flowchart LR
 | P0 | [AR-0114](tasks/AR-0114.md): Android CI runner matrix | Unclaimed | Run reproducible Android unit, APK, lint, and emulator qualification in CI. | Create the pinned Android CI runner and emulator matrix. |
 | P1 | [AR-0115](tasks/AR-0115.md): Remote/network Android qualification | Unclaimed | Verify network, SSH, restart, and remote-state event handling for Android. | Qualify remote and SSH-forwarded Android service operation. |
 | P1 | [AR-0116](tasks/AR-0116.md): Android development release and compatibility evidence | Unclaimed | Make the Android development build reproducible and auditable. | Publish reproducible unsigned APK evidence and compatibility metadata. |
+| P1 | [AR-0117](tasks/AR-0117.md): Local Android runner and controlled self-hosted qualification | Unclaimed | Provide a private local runner for Android emulator qualification. | Merge the reproducible local Android runner and retain its qualification evidence. |
 
 ### Done (112)
 
