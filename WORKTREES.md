@@ -18,6 +18,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-ui-ar0103` | `ar0103-fault-injection-resilience` | `9c132c27354b` | 2 | behind 3, ahead 0 |
 | changed files | - | - | - | `artifacts/gui-screenshots/`, `src/agent_workflow_ui.egg-info/` |
 | `agent-workflow-ui-ar0104` | `main` | `f8dbc19add89` | 0 | behind 100, ahead 4 |
+| `agent-workflow-ui-ar0105` | `ar0105-android-bridge-contract` | `df043243f308` | 0 | behind 0, ahead 2 |
 | `agent-workflow-ui-v062` | `release-v0.6.2` | `3e5cdba940de` | 0 | behind 1, ahead 1 |
 | `agent-workflow-ui-ar0095` | `ar-0095-scenario-artifact-provenance` | `f70fefeeff37` | 0 | behind 37, ahead 0 |
 | `agent-workflow-ui-ar0101` | `ar0101-synchronized-document-navigation` | `ea6912a866c7` | 0 | behind 15, ahead 3 |

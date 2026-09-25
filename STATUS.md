@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**109 ARs tracked** across 3 active status categories.
+**109 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 104 |
+| **Done** | Accepted, integrated, and durably verified | 105 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -135,7 +135,7 @@ flowchart LR
         AR_0102["AR-0102 - Done"]:::status_done
         AR_0103["AR-0103 - Done"]:::status_done
         AR_0104["AR-0104 - Done"]:::status_done
-        AR_0105["AR-0105 - In progress"]:::status_in_progress
+        AR_0105["AR-0105 - Done"]:::status_done
         AR_0106["AR-0106 - Planned"]:::status_planned
         AR_0107["AR-0107 - Planned"]:::status_planned
         AR_0108["AR-0108 - Planned"]:::status_planned
@@ -465,12 +465,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0105](tasks/AR-0105.md): Android decision bridge and registration contract | android-bridge-worker | Define the revision-bound Android registration, transport, and decision-event contract without weakening Coordinator authority. | Specify and validate the Android registration and decision bridge envelopes. |
-
 ### Planned (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -480,7 +474,7 @@ flowchart LR
 | P0 | [AR-0108](tasks/AR-0108.md): QR registration and phone onboarding | Unclaimed | Make phone registration a short QR scan with explicit consent, expiry, replay protection, and revocation. | Implement project registration QR display and Android scan/consent/bootstrap flow. |
 | P1 | [AR-0109](tasks/AR-0109.md): Android APK, device, and release qualification | Unclaimed | Qualify and publish the unsigned Android development build and its complete registration/decision workflow. | Add unsigned debug APK CI, emulator/device end-to-end tests, and Android compatibility release documentation. |
 
-### Done (104)
+### Done (105)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -518,6 +512,7 @@ flowchart LR
 | P0 | [AR-0097](tasks/AR-0097.md): Durable save and GUI/TUI persistence parity | Unclaimed | Make GUI and TUI persistence controls produce identical durable revision-bound journals instead of local-only saved flags. | Implement durable Save and Save + Exit event parity for GUI and TUI, then add crash-safe recovery tests. |
 | P0 | [AR-0098](tasks/AR-0098.md): Session recovery, cancellation, and bounded transport control | Unclaimed | Make remote and local sessions recoverable, cancellable, bounded, and cleanup-safe under real transport failures. | PR #122 is open; wait for replay-and-refresh and native qualification, then merge and run full targeted transport/recovery gates. |
 | P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Unclaimed | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. |
+| P0 | [AR-0105](tasks/AR-0105.md): Android decision bridge and registration contract | Unclaimed | Define the revision-bound Android registration, transport, and decision-event contract without weakening Coordinator authority. | Specify and validate the Android registration and decision bridge envelopes. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
