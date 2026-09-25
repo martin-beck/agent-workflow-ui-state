@@ -3,14 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0107](tasks/AR-0107.md): Android decision client parity | Deliver an unsigned development APK that provides the same authoritative decision workflow as GUI and TUI. | Implement the Android development client with renderer and interaction parity for registered decision batches. | - |
-| P0 | [AR-0108](tasks/AR-0108.md): QR registration and phone onboarding | Make phone registration a short QR scan with explicit consent, expiry, replay protection, and revocation. | Implement project registration QR display and Android scan/consent/bootstrap flow. | - |
-| P1 | [AR-0109](tasks/AR-0109.md): Android APK, device, and release qualification | Qualify and publish the unsigned Android development build and its complete registration/decision workflow. | Add unsigned debug APK CI, emulator/device end-to-end tests, and Android compatibility release documentation. | - |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -51,6 +43,8 @@ Never edit this file directly.
 | P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. | - |
 | P0 | [AR-0105](tasks/AR-0105.md): Android decision bridge and registration contract | Define the revision-bound Android registration, transport, and decision-event contract without weakening Coordinator authority. | Specify and validate the Android registration and decision bridge envelopes. | - |
 | P0 | [AR-0106](tasks/AR-0106.md): Android service and reconnect lifecycle | Keep a registered Android endpoint connected and route authoritative pending decisions to it safely. | Implement the authenticated project-side phone service, routing, reconnect, and revocation lifecycle. | - |
+| P0 | [AR-0107](tasks/AR-0107.md): Android decision client parity | Deliver an unsigned development APK that provides the same authoritative decision workflow as GUI and TUI. | None; merged in agent-workflow-ui PR #131. | - |
+| P0 | [AR-0108](tasks/AR-0108.md): QR registration and phone onboarding | Make phone registration a short QR scan with explicit consent, expiry, replay protection, and revocation. | None; merged in agent-workflow-ui PR #131. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
@@ -121,3 +115,4 @@ Never edit this file directly.
 | P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Review and merge PR #123 after required CI checks pass; then close AR-0101. | - |
 | P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. | - |
 | P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. | - |
+| P1 | [AR-0109](tasks/AR-0109.md): Android APK, device, and release qualification | Qualify and publish the unsigned Android development build and its complete registration/decision workflow. | None; merged in agent-workflow-ui PR #131. | - |

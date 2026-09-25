@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**109 ARs tracked** across 2 active status categories.
+**109 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 3 |
+| **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 106 |
+| **Done** | Accepted, integrated, and durably verified | 109 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -137,9 +137,9 @@ flowchart LR
         AR_0104["AR-0104 - Done"]:::status_done
         AR_0105["AR-0105 - Done"]:::status_done
         AR_0106["AR-0106 - Done"]:::status_done
-        AR_0107["AR-0107 - Planned"]:::status_planned
-        AR_0108["AR-0108 - Planned"]:::status_planned
-        AR_0109["AR-0109 - Planned"]:::status_planned
+        AR_0107["AR-0107 - Done"]:::status_done
+        AR_0108["AR-0108 - Done"]:::status_done
+        AR_0109["AR-0109 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -465,15 +465,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (3)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0107](tasks/AR-0107.md): Android decision client parity | Unclaimed | Deliver an unsigned development APK that provides the same authoritative decision workflow as GUI and TUI. | Implement the Android development client with renderer and interaction parity for registered decision batches. |
-| P0 | [AR-0108](tasks/AR-0108.md): QR registration and phone onboarding | Unclaimed | Make phone registration a short QR scan with explicit consent, expiry, replay protection, and revocation. | Implement project registration QR display and Android scan/consent/bootstrap flow. |
-| P1 | [AR-0109](tasks/AR-0109.md): Android APK, device, and release qualification | Unclaimed | Qualify and publish the unsigned Android development build and its complete registration/decision workflow. | Add unsigned debug APK CI, emulator/device end-to-end tests, and Android compatibility release documentation. |
-
-### Done (106)
+### Done (109)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -513,6 +505,8 @@ flowchart LR
 | P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Unclaimed | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. |
 | P0 | [AR-0105](tasks/AR-0105.md): Android decision bridge and registration contract | Unclaimed | Define the revision-bound Android registration, transport, and decision-event contract without weakening Coordinator authority. | Specify and validate the Android registration and decision bridge envelopes. |
 | P0 | [AR-0106](tasks/AR-0106.md): Android service and reconnect lifecycle | Unclaimed | Keep a registered Android endpoint connected and route authoritative pending decisions to it safely. | Implement the authenticated project-side phone service, routing, reconnect, and revocation lifecycle. |
+| P0 | [AR-0107](tasks/AR-0107.md): Android decision client parity | Unclaimed | Deliver an unsigned development APK that provides the same authoritative decision workflow as GUI and TUI. | None; merged in agent-workflow-ui PR #131. |
+| P0 | [AR-0108](tasks/AR-0108.md): QR registration and phone onboarding | Unclaimed | Make phone registration a short QR scan with explicit consent, expiry, replay protection, and revocation. | None; merged in agent-workflow-ui PR #131. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
@@ -583,3 +577,4 @@ flowchart LR
 | P1 | [AR-0101](tasks/AR-0101.md): Precise synchronized document navigation | Unclaimed | Make selected-decision highlighting precise and synchronized across repeated phrases, scrolling, resizing, and both renderers. | Review and merge PR #123 after required CI checks pass; then close AR-0101. |
 | P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | Unclaimed | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. |
 | P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Unclaimed | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. |
+| P1 | [AR-0109](tasks/AR-0109.md): Android APK, device, and release qualification | Unclaimed | Qualify and publish the unsigned Android development build and its complete registration/decision workflow. | None; merged in agent-workflow-ui PR #131. |
