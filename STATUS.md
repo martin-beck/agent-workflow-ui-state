@@ -12,9 +12,9 @@
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 5 |
+| **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 112 |
+| **Done** | Accepted, integrated, and durably verified | 113 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -147,7 +147,7 @@ flowchart LR
         AR_0114["AR-0114 - Planned"]:::status_planned
         AR_0115["AR-0115 - Planned"]:::status_planned
         AR_0116["AR-0116 - Planned"]:::status_planned
-        AR_0117["AR-0117 - Planned"]:::status_planned
+        AR_0117["AR-0117 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -495,7 +495,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (5)
+### Planned (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -503,9 +503,8 @@ flowchart LR
 | P0 | [AR-0114](tasks/AR-0114.md): Android CI runner matrix | Unclaimed | Run reproducible Android unit, APK, lint, and emulator qualification in CI. | Create the pinned Android CI runner and emulator matrix. |
 | P1 | [AR-0115](tasks/AR-0115.md): Remote/network Android qualification | Unclaimed | Verify network, SSH, restart, and remote-state event handling for Android. | Qualify remote and SSH-forwarded Android service operation. |
 | P1 | [AR-0116](tasks/AR-0116.md): Android development release and compatibility evidence | Unclaimed | Make the Android development build reproducible and auditable. | Publish reproducible unsigned APK evidence and compatibility metadata. |
-| P1 | [AR-0117](tasks/AR-0117.md): Local Android runner and controlled self-hosted qualification | Unclaimed | Provide a private local runner for Android emulator qualification. | Merge the reproducible local Android runner and retain its qualification evidence. |
 
-### Done (112)
+### Done (113)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -621,3 +620,4 @@ flowchart LR
 | P1 | [AR-0102](tasks/AR-0102.md): Audit, privacy, and operator control plane | Unclaimed | Give operators transparent session control and safe diagnostics without leaking private decision material. | Implement revision-bound audit/diagnostic views, redacted export, dry-run, and retention controls. |
 | P1 | [AR-0104](tasks/AR-0104.md): Large-batch performance and release hardening | Unclaimed | Harden the next UI release for large batches, long documents, predictable performance, and complete UX/control evidence. | Add scale benchmarks/budgets and publish the integrated UX, control, resilience, and performance release qualification. |
 | P1 | [AR-0109](tasks/AR-0109.md): Android APK, device, and release qualification | Unclaimed | Qualify and publish the unsigned Android development build and its complete registration/decision workflow. | None; merged in agent-workflow-ui PR #131. |
+| P1 | [AR-0117](tasks/AR-0117.md): Local Android runner and controlled self-hosted qualification | Unclaimed | Provide a private local runner for Android emulator qualification. | Retain the merged local runner and use its manual qualification workflow when needed. |
