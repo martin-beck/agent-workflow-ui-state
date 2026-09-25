@@ -12,9 +12,9 @@
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 7 |
+| **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 109 |
+| **Done** | Accepted, integrated, and durably verified | 112 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -140,9 +140,9 @@ flowchart LR
         AR_0107["AR-0107 - Done"]:::status_done
         AR_0108["AR-0108 - Done"]:::status_done
         AR_0109["AR-0109 - Done"]:::status_done
-        AR_0110["AR-0110 - Planned"]:::status_planned
-        AR_0111["AR-0111 - Planned"]:::status_planned
-        AR_0112["AR-0112 - Planned"]:::status_planned
+        AR_0110["AR-0110 - Done"]:::status_done
+        AR_0111["AR-0111 - Done"]:::status_done
+        AR_0112["AR-0112 - Done"]:::status_done
         AR_0113["AR-0113 - Planned"]:::status_planned
         AR_0114["AR-0114 - Planned"]:::status_planned
         AR_0115["AR-0115 - Planned"]:::status_planned
@@ -491,19 +491,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (7)
+### Planned (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0110](tasks/AR-0110.md): Android bridge conformance and live-batch contract | Unclaimed | Conformance-test Android batches and canonical events with desktop renderers. | Implement Android bridge conformance and live-batch contract. |
-| P0 | [AR-0111](tasks/AR-0111.md): Android credential and lifecycle hardening | Unclaimed | Protect device credentials and qualify revocation, rotation, and reconnect. | Harden Android credential and lifecycle handling. |
-| P0 | [AR-0112](tasks/AR-0112.md): Android interaction and accessibility parity | Unclaimed | Make every decision, document, and save interaction usable on Android. | Complete Android interaction and accessibility parity. |
 | P0 | [AR-0113](tasks/AR-0113.md): Android emulator and device end-to-end qualification | Unclaimed | Qualify the complete registered-phone decision journey. | Add emulator and physical-device Android end-to-end qualification. |
 | P0 | [AR-0114](tasks/AR-0114.md): Android CI runner matrix | Unclaimed | Run reproducible Android unit, APK, lint, and emulator qualification in CI. | Create the pinned Android CI runner and emulator matrix. |
 | P1 | [AR-0115](tasks/AR-0115.md): Remote/network Android qualification | Unclaimed | Verify network, SSH, restart, and remote-state event handling for Android. | Qualify remote and SSH-forwarded Android service operation. |
 | P1 | [AR-0116](tasks/AR-0116.md): Android development release and compatibility evidence | Unclaimed | Make the Android development build reproducible and auditable. | Publish reproducible unsigned APK evidence and compatibility metadata. |
 
-### Done (109)
+### Done (112)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -545,6 +542,9 @@ flowchart LR
 | P0 | [AR-0106](tasks/AR-0106.md): Android service and reconnect lifecycle | Unclaimed | Keep a registered Android endpoint connected and route authoritative pending decisions to it safely. | Implement the authenticated project-side phone service, routing, reconnect, and revocation lifecycle. |
 | P0 | [AR-0107](tasks/AR-0107.md): Android decision client parity | Unclaimed | Deliver an unsigned development APK that provides the same authoritative decision workflow as GUI and TUI. | None; merged in agent-workflow-ui PR #131. |
 | P0 | [AR-0108](tasks/AR-0108.md): QR registration and phone onboarding | Unclaimed | Make phone registration a short QR scan with explicit consent, expiry, replay protection, and revocation. | None; merged in agent-workflow-ui PR #131. |
+| P0 | [AR-0110](tasks/AR-0110.md): Android bridge conformance and live-batch contract | Unclaimed | Conformance-test Android batches and canonical events with desktop renderers. | None; merged through PR #138. |
+| P0 | [AR-0111](tasks/AR-0111.md): Android credential and lifecycle hardening | Unclaimed | Protect device credentials and qualify revocation, rotation, and reconnect. | None; merged through PR #138. |
+| P0 | [AR-0112](tasks/AR-0112.md): Android interaction and accessibility parity | Unclaimed | Make every decision, document, and save interaction usable on Android. | None; merged through PR #138. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |

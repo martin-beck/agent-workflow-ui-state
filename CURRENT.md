@@ -7,9 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0110](tasks/AR-0110.md): Android bridge conformance and live-batch contract | Conformance-test Android batches and canonical events with desktop renderers. | Implement Android bridge conformance and live-batch contract. | - |
-| P0 | [AR-0111](tasks/AR-0111.md): Android credential and lifecycle hardening | Protect device credentials and qualify revocation, rotation, and reconnect. | Harden Android credential and lifecycle handling. | - |
-| P0 | [AR-0112](tasks/AR-0112.md): Android interaction and accessibility parity | Make every decision, document, and save interaction usable on Android. | Complete Android interaction and accessibility parity. | - |
 | P0 | [AR-0113](tasks/AR-0113.md): Android emulator and device end-to-end qualification | Qualify the complete registered-phone decision journey. | Add emulator and physical-device Android end-to-end qualification. | - |
 | P0 | [AR-0114](tasks/AR-0114.md): Android CI runner matrix | Run reproducible Android unit, APK, lint, and emulator qualification in CI. | Create the pinned Android CI runner and emulator matrix. | - |
 | P1 | [AR-0115](tasks/AR-0115.md): Remote/network Android qualification | Verify network, SSH, restart, and remote-state event handling for Android. | Qualify remote and SSH-forwarded Android service operation. | - |
@@ -57,6 +54,9 @@ Never edit this file directly.
 | P0 | [AR-0106](tasks/AR-0106.md): Android service and reconnect lifecycle | Keep a registered Android endpoint connected and route authoritative pending decisions to it safely. | Implement the authenticated project-side phone service, routing, reconnect, and revocation lifecycle. | - |
 | P0 | [AR-0107](tasks/AR-0107.md): Android decision client parity | Deliver an unsigned development APK that provides the same authoritative decision workflow as GUI and TUI. | None; merged in agent-workflow-ui PR #131. | - |
 | P0 | [AR-0108](tasks/AR-0108.md): QR registration and phone onboarding | Make phone registration a short QR scan with explicit consent, expiry, replay protection, and revocation. | None; merged in agent-workflow-ui PR #131. | - |
+| P0 | [AR-0110](tasks/AR-0110.md): Android bridge conformance and live-batch contract | Conformance-test Android batches and canonical events with desktop renderers. | None; merged through PR #138. | - |
+| P0 | [AR-0111](tasks/AR-0111.md): Android credential and lifecycle hardening | Protect device credentials and qualify revocation, rotation, and reconnect. | None; merged through PR #138. | - |
+| P0 | [AR-0112](tasks/AR-0112.md): Android interaction and accessibility parity | Make every decision, document, and save interaction usable on Android. | None; merged through PR #138. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. | - |
