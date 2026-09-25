@@ -12,9 +12,9 @@
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 4 |
+| **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 105 |
+| **Done** | Accepted, integrated, and durably verified | 106 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -136,7 +136,7 @@ flowchart LR
         AR_0103["AR-0103 - Done"]:::status_done
         AR_0104["AR-0104 - Done"]:::status_done
         AR_0105["AR-0105 - Done"]:::status_done
-        AR_0106["AR-0106 - Planned"]:::status_planned
+        AR_0106["AR-0106 - Done"]:::status_done
         AR_0107["AR-0107 - Planned"]:::status_planned
         AR_0108["AR-0108 - Planned"]:::status_planned
         AR_0109["AR-0109 - Planned"]:::status_planned
@@ -465,16 +465,15 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (4)
+### Planned (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0106](tasks/AR-0106.md): Android service and reconnect lifecycle | Unclaimed | Keep a registered Android endpoint connected and route authoritative pending decisions to it safely. | Implement the authenticated project-side phone service, routing, reconnect, and revocation lifecycle. |
 | P0 | [AR-0107](tasks/AR-0107.md): Android decision client parity | Unclaimed | Deliver an unsigned development APK that provides the same authoritative decision workflow as GUI and TUI. | Implement the Android development client with renderer and interaction parity for registered decision batches. |
 | P0 | [AR-0108](tasks/AR-0108.md): QR registration and phone onboarding | Unclaimed | Make phone registration a short QR scan with explicit consent, expiry, replay protection, and revocation. | Implement project registration QR display and Android scan/consent/bootstrap flow. |
 | P1 | [AR-0109](tasks/AR-0109.md): Android APK, device, and release qualification | Unclaimed | Qualify and publish the unsigned Android development build and its complete registration/decision workflow. | Add unsigned debug APK CI, emulator/device end-to-end tests, and Android compatibility release documentation. |
 
-### Done (105)
+### Done (106)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -513,6 +512,7 @@ flowchart LR
 | P0 | [AR-0098](tasks/AR-0098.md): Session recovery, cancellation, and bounded transport control | Unclaimed | Make remote and local sessions recoverable, cancellable, bounded, and cleanup-safe under real transport failures. | PR #122 is open; wait for replay-and-refresh and native qualification, then merge and run full targeted transport/recovery gates. |
 | P0 | [AR-0103](tasks/AR-0103.md): Fault-injection and resilience qualification | Unclaimed | Qualify crash, network, storage, acknowledgement, and stale-revision recovery instead of relying only on happy-path tests. | Build the deterministic fault-injection harness and CI recovery matrix for renderer and transport failures. |
 | P0 | [AR-0105](tasks/AR-0105.md): Android decision bridge and registration contract | Unclaimed | Define the revision-bound Android registration, transport, and decision-event contract without weakening Coordinator authority. | Specify and validate the Android registration and decision bridge envelopes. |
+| P0 | [AR-0106](tasks/AR-0106.md): Android service and reconnect lifecycle | Unclaimed | Keep a registered Android endpoint connected and route authoritative pending decisions to it safely. | Implement the authenticated project-side phone service, routing, reconnect, and revocation lifecycle. |
 | P1 | [AR-0004](tasks/AR-0004.md): Discussion packet presentation | Unclaimed | Present privacy-safe discussion packets in the TUI. | Render AWG discussion packets with ranked alternatives, confidence, implications, and formal evidence. |
 | P1 | [AR-0005](tasks/AR-0005.md): Decision and proposal interaction | Unclaimed | Capture explicit oracle decisions and added solutions without cross-point authorization. | Implement per-point selection, rejection, clarification, and evaluated user-authored alternatives. |
 | P1 | [AR-0006](tasks/AR-0006.md): Session persistence and recovery | Unclaimed | Persist complete TUI sessions and return durable output to ARs. | Implement atomic session journal, safe exit, resume, re-ask, and bounded future-request mapping. |
