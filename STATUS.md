@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**109 ARs tracked** across 2 active status categories.
+**109 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 5 |
+| **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 104 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -135,7 +135,7 @@ flowchart LR
         AR_0102["AR-0102 - Done"]:::status_done
         AR_0103["AR-0103 - Done"]:::status_done
         AR_0104["AR-0104 - Done"]:::status_done
-        AR_0105["AR-0105 - Planned"]:::status_planned
+        AR_0105["AR-0105 - In progress"]:::status_in_progress
         AR_0106["AR-0106 - Planned"]:::status_planned
         AR_0107["AR-0107 - Planned"]:::status_planned
         AR_0108["AR-0108 - Planned"]:::status_planned
@@ -465,11 +465,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (5)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0105](tasks/AR-0105.md): Android decision bridge and registration contract | Unclaimed | Define the revision-bound Android registration, transport, and decision-event contract without weakening Coordinator authority. | Specify and validate the Android registration and decision bridge envelopes. |
+| P0 | [AR-0105](tasks/AR-0105.md): Android decision bridge and registration contract | android-bridge-worker | Define the revision-bound Android registration, transport, and decision-event contract without weakening Coordinator authority. | Specify and validate the Android registration and decision bridge envelopes. |
+
+### Planned (4)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0106](tasks/AR-0106.md): Android service and reconnect lifecycle | Unclaimed | Keep a registered Android endpoint connected and route authoritative pending decisions to it safely. | Implement the authenticated project-side phone service, routing, reconnect, and revocation lifecycle. |
 | P0 | [AR-0107](tasks/AR-0107.md): Android decision client parity | Unclaimed | Deliver an unsigned development APK that provides the same authoritative decision workflow as GUI and TUI. | Implement the Android development client with renderer and interaction parity for registered decision batches. |
 | P0 | [AR-0108](tasks/AR-0108.md): QR registration and phone onboarding | Unclaimed | Make phone registration a short QR scan with explicit consent, expiry, replay protection, and revocation. | Implement project registration QR display and Android scan/consent/bootstrap flow. |
