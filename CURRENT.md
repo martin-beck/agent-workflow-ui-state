@@ -131,3 +131,4 @@ Never edit this file directly.
 | P1 | [AR-0117](tasks/AR-0117.md): Local Android runner and controlled self-hosted qualification | Provide a private local runner for Android emulator qualification. | Retain the merged local runner and use its manual qualification workflow when needed. | - |
 | P1 | [AR-0123](tasks/AR-0123.md): SSH discovery and tunnel end-to-end matrix | Exercise endpoint discovery and SSH-tunnel pairing across supported systems, architectures, and failure modes. | none | - |
 | P1 | [AR-0124](tasks/AR-0124.md): SSH relay release and compatibility synchronization | Document, release, and pin the endpoint-discovery and SSH-relay contract across the Agent Workflow family. | none | - |
+| P1 | [AR-0125](tasks/AR-0125.md): HTTPS service startup during Android pairing | Start or reuse the HTTPS Android pairing service before creating the QR bootstrap. | none | - |

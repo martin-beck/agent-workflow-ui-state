@@ -5,7 +5,7 @@
 
 ## Portfolio overview
 
-**124 ARs tracked** across 1 active status categories.
+**125 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
@@ -14,7 +14,7 @@
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 124 |
+| **Done** | Accepted, integrated, and durably verified | 125 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -155,6 +155,7 @@ flowchart LR
         AR_0122["AR-0122 - Done"]:::status_done
         AR_0123["AR-0123 - Done"]:::status_done
         AR_0124["AR-0124 - Done"]:::status_done
+        AR_0125["AR-0125 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -379,6 +380,7 @@ flowchart LR
     AR_0121 --> AR_0122
     AR_0122 --> AR_0123
     AR_0123 --> AR_0124
+    AR_0124 --> AR_0125
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -516,11 +518,12 @@ flowchart LR
 | [AR-0121](tasks/AR-0121.md) | [AR-0106](tasks/AR-0106.md), [AR-0120](tasks/AR-0120.md) | [AR-0122](tasks/AR-0122.md) |
 | [AR-0122](tasks/AR-0122.md) | [AR-0110](tasks/AR-0110.md), [AR-0121](tasks/AR-0121.md) | [AR-0123](tasks/AR-0123.md) |
 | [AR-0123](tasks/AR-0123.md) | [AR-0122](tasks/AR-0122.md) | [AR-0124](tasks/AR-0124.md) |
-| [AR-0124](tasks/AR-0124.md) | [AR-0123](tasks/AR-0123.md) | None |
+| [AR-0124](tasks/AR-0124.md) | [AR-0123](tasks/AR-0123.md) | [AR-0125](tasks/AR-0125.md) |
+| [AR-0125](tasks/AR-0125.md) | [AR-0124](tasks/AR-0124.md) | None |
 
 ## Complete AR inventory
 
-### Done (124)
+### Done (125)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -648,3 +651,4 @@ flowchart LR
 | P1 | [AR-0117](tasks/AR-0117.md): Local Android runner and controlled self-hosted qualification | Unclaimed | Provide a private local runner for Android emulator qualification. | Retain the merged local runner and use its manual qualification workflow when needed. |
 | P1 | [AR-0123](tasks/AR-0123.md): SSH discovery and tunnel end-to-end matrix | Unclaimed | Exercise endpoint discovery and SSH-tunnel pairing across supported systems, architectures, and failure modes. | none |
 | P1 | [AR-0124](tasks/AR-0124.md): SSH relay release and compatibility synchronization | Unclaimed | Document, release, and pin the endpoint-discovery and SSH-relay contract across the Agent Workflow family. | none |
+| P1 | [AR-0125](tasks/AR-0125.md): HTTPS service startup during Android pairing | Unclaimed | Start or reuse the HTTPS Android pairing service before creating the QR bootstrap. | none |
