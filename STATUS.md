@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**125 ARs tracked** across 1 active status categories.
+**127 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 125 |
+| **Done** | Accepted, integrated, and durably verified | 126 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -156,6 +156,8 @@ flowchart LR
         AR_0123["AR-0123 - Done"]:::status_done
         AR_0124["AR-0124 - Done"]:::status_done
         AR_0125["AR-0125 - Done"]:::status_done
+        AR_0126["AR-0126 - Done"]:::status_done
+        AR_0129["AR-0129 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -379,8 +381,12 @@ flowchart LR
     AR_0120 --> AR_0121
     AR_0121 --> AR_0122
     AR_0122 --> AR_0123
+    AR_0122 --> AR_0129
     AR_0123 --> AR_0124
+    AR_0123 --> AR_0129
     AR_0124 --> AR_0125
+    AR_0124 --> AR_0129
+    AR_0125 --> AR_0126
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -516,14 +522,22 @@ flowchart LR
 | [AR-0119](tasks/AR-0119.md) | [AR-0118](tasks/AR-0118.md) | [AR-0120](tasks/AR-0120.md) |
 | [AR-0120](tasks/AR-0120.md) | [AR-0111](tasks/AR-0111.md), [AR-0119](tasks/AR-0119.md) | [AR-0121](tasks/AR-0121.md) |
 | [AR-0121](tasks/AR-0121.md) | [AR-0106](tasks/AR-0106.md), [AR-0120](tasks/AR-0120.md) | [AR-0122](tasks/AR-0122.md) |
-| [AR-0122](tasks/AR-0122.md) | [AR-0110](tasks/AR-0110.md), [AR-0121](tasks/AR-0121.md) | [AR-0123](tasks/AR-0123.md) |
-| [AR-0123](tasks/AR-0123.md) | [AR-0122](tasks/AR-0122.md) | [AR-0124](tasks/AR-0124.md) |
-| [AR-0124](tasks/AR-0124.md) | [AR-0123](tasks/AR-0123.md) | [AR-0125](tasks/AR-0125.md) |
-| [AR-0125](tasks/AR-0125.md) | [AR-0124](tasks/AR-0124.md) | None |
+| [AR-0122](tasks/AR-0122.md) | [AR-0110](tasks/AR-0110.md), [AR-0121](tasks/AR-0121.md) | [AR-0123](tasks/AR-0123.md), [AR-0129](tasks/AR-0129.md) |
+| [AR-0123](tasks/AR-0123.md) | [AR-0122](tasks/AR-0122.md) | [AR-0124](tasks/AR-0124.md), [AR-0129](tasks/AR-0129.md) |
+| [AR-0124](tasks/AR-0124.md) | [AR-0123](tasks/AR-0123.md) | [AR-0125](tasks/AR-0125.md), [AR-0129](tasks/AR-0129.md) |
+| [AR-0125](tasks/AR-0125.md) | [AR-0124](tasks/AR-0124.md) | [AR-0126](tasks/AR-0126.md) |
+| [AR-0126](tasks/AR-0126.md) | [AR-0125](tasks/AR-0125.md) | None |
+| [AR-0129](tasks/AR-0129.md) | [AR-0122](tasks/AR-0122.md), [AR-0123](tasks/AR-0123.md), [AR-0124](tasks/AR-0124.md) | None |
 
 ## Complete AR inventory
 
-### Done (125)
+### Planned (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0129](tasks/AR-0129.md): Android authoritative decision reliability and parity qualification | Unclaimed | Make Android a reliable, authoritative replacement for the TUI and GUI across batch publication, event persistence, reconnect, lifecycle, and endpoint security. | Implement authoritative Android reliability and parity qualification. |
+
+### Done (126)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -652,3 +666,4 @@ flowchart LR
 | P1 | [AR-0123](tasks/AR-0123.md): SSH discovery and tunnel end-to-end matrix | Unclaimed | Exercise endpoint discovery and SSH-tunnel pairing across supported systems, architectures, and failure modes. | none |
 | P1 | [AR-0124](tasks/AR-0124.md): SSH relay release and compatibility synchronization | Unclaimed | Document, release, and pin the endpoint-discovery and SSH-relay contract across the Agent Workflow family. | none |
 | P1 | [AR-0125](tasks/AR-0125.md): HTTPS service startup during Android pairing | Unclaimed | Start or reuse the HTTPS Android pairing service before creating the QR bootstrap. | none |
+| P1 | [AR-0126](tasks/AR-0126.md): SSH-rendezvous HTTPS bootstrap | Unclaimed | Route first phone HTTPS registration through the SSH rendezvous endpoint encoded in the QR. | none |
