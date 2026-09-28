@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0129](tasks/AR-0129.md): Android authoritative decision reliability and parity qualification | Make Android a reliable, authoritative replacement for the TUI and GUI across batch publication, event persistence, reconnect, lifecycle, and endpoint security. | Implement authoritative Android reliability and parity qualification. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -132,3 +138,4 @@ Never edit this file directly.
 | P1 | [AR-0123](tasks/AR-0123.md): SSH discovery and tunnel end-to-end matrix | Exercise endpoint discovery and SSH-tunnel pairing across supported systems, architectures, and failure modes. | none | - |
 | P1 | [AR-0124](tasks/AR-0124.md): SSH relay release and compatibility synchronization | Document, release, and pin the endpoint-discovery and SSH-relay contract across the Agent Workflow family. | none | - |
 | P1 | [AR-0125](tasks/AR-0125.md): HTTPS service startup during Android pairing | Start or reuse the HTTPS Android pairing service before creating the QR bootstrap. | none | - |
+| P1 | [AR-0126](tasks/AR-0126.md): SSH-rendezvous HTTPS bootstrap | Route first phone HTTPS registration through the SSH rendezvous endpoint encoded in the QR. | none | - |
